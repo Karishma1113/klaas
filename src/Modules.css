@@ -1,0 +1,82 @@
+.modules-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .search-bar {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .modules-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .modules-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .module-card {
+    background-color: #f4f6ff;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .module-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .module-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .overview-btn {
+    background-color: #d4eeb1;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .submodules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .submodule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    background: #eef1ff;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  .module-btn {
+    background: white;
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
