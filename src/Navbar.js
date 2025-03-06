@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="divider"></div>
         <Link to="/resources" className="nav-button">Resources</Link>
         <div className="divider"></div>
-        <Link to="/moduleshome" className="nav-button">Modules</Link>
+        <Link to="/modules" className="nav-button">Modules</Link>
       </div>
       <button className="leave-button">ESCAPE</button>
     </nav>
