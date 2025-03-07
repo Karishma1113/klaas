@@ -67,10 +67,18 @@
     font-weight: bold;
   }
   
-  .hero-image {
+
+  .home-graphic {
     flex: 1;
-    background: gray;
-    height: 200px;
-    text-align: center;
-   
-  }  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-image {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px; /* Optional styling */
+  }
+  

@@ -18,7 +18,9 @@ const Home = () => {
             <span className="highlight">reclaim your online presence</span>.
           </p>
         </div>
-        <div className="hero-image">Image or slideshow</div>
+        <div className="home-graphic">
+          <img src="/img/home-graphic.png" alt="Home Graphic" className="home-image" />
+        </div>
       </div>
 
       <div className="content-section">
