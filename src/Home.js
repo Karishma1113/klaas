@@ -7,15 +7,14 @@ const Home = () => {
       <div className="hero-section">
         <div className="hero-text">
           <h1>
-            navigating online <span className="highlight">vulnerability</span> and <br />
-            achieving <span className="highlight">autonomy</span>
+            navigating online vulnerability and achieving autonomy
           </h1>
           <p>
             Our platform is dedicated to supporting domestic violence survivors by providing{" "}
             <span className="highlight">resources</span> and{" "}
             <span className="highlight">guidance</span> to{" "}
-            <span className="highlight">enhance your digital safety</span> and{" "}
-            <span className="highlight">reclaim your online presence</span>.
+            <span className="highlight-2">enhance your digital safety</span> and{" "}
+            <span className="highlight-2">reclaim your online presence</span>.
           </p>
         </div>
         <div className="home-graphic">
