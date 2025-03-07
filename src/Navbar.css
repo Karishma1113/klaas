@@ -13,7 +13,8 @@
   }
   
   .logo {
-    height: 40px; /* Adjust as needed */
+    height: 50px;
+    margin-left: 20px;
   }
   
   .nav-links {
@@ -45,7 +46,7 @@
   
   .leave-button {
     padding: 8px 15px;
-    background-color: black;
+    background-color: hotpink;
     color: white;
     border: none;
     border-radius: 10px;
@@ -53,6 +54,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: opacity 0.3s;
+    margin-right: 20px;
   }
   
   .leave-button:hover {
