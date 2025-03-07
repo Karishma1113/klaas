@@ -1,76 +1,117 @@
 .home-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .nav-button {
-    background: #eef1ff;
-    border: none;
-    padding: 8px 15px;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .escape-button {
-    background: black;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .hero-section {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .hero-text {
-    flex: 1;
-  }
-  
-  .hero-text h1 {
-    font-size: 28px;
-    line-height: 1.4;
-  }
-  
-  .hero-text p {
-    font-size: 16px;
-    margin-top: 10px;
-  }
-  
-  .highlight {
-    color: #6c63ff;
-    font-weight: bold;
-  }
-  
-  .hero-image {
-    flex: 1;
-    background: gray;
-    height: 200px;
-    text-align: center;
-   
-  }  
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-button {
+  background: #eef1ff;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.escape-button {
+  background: black;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 28px;
+  line-height: 1.4;
+  color: #89ADC5;
+  max-width: 500px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-top: 10px;
+  max-width: 500px;
+}
+
+.highlight {
+  color: #9A86AD;
+  font-weight: bold;
+}
+
+.highlight-2 {
+  color: #939DBB;
+  font-weight: bold;
+}
+
+.hero-image {
+  flex: 1;
+  background: gray;
+  height: 200px;
+  text-align: center;
+
+}
+
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  /* Optional: Adjusts spacing between boxes */
+}
+
+.content-box {
+  flex: 1;
+  /* Optional: Adjusts the width of the boxes */
+  margin-right: 20px;
+  margin-top: 20px;
+  /* Optional: Adds space around the boxes */
+  /*padding: 20px; */
+  /* Optional: Adds padding inside the boxes */
+  border: none;
+  /* Optional: Adds a border to the boxes */
+  flex-direction: column;
+  /* Stacks the boxes vertically */
+}
+
+.info-box {
+  background-color: #F1F4FF;
+  /* Sets the background color to light blue */
+  padding: 20px;
+  /* Optional: Adds padding inside the boxes */
+  border: 1px solid #ccc;
+  /* Optional: Adds a border to the boxes */
+  margin-bottom: 10px;
+  /* Adds space between the boxes */
+  border-radius: 10px;
+  /* Rounds the corners of the boxes */
+}
