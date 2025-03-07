@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="divider"></div>
         <Link to="/modules" className="nav-button">Modules</Link>
       </div>
-      <button className="leave-button">ESCAPE</button>
+      <button className="leave-button">Leave Site</button>
     </nav>
   );
 };

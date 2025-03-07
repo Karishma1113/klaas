@@ -5,6 +5,7 @@ import Home from "./Home";
 import Survey from "./Survey";
 import Resources from "./Resources";
 import ModulesHome from "./ModulesHome";
+import MFA1 from "./MFA/MFA1";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/survey" element={<Survey />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/modules" element={<ModulesHome />} />
+          <Route path="/MFA1" element={<MFA1 />} />
 
           {/* Redirect unknown routes to homepage */}
           <Route path="*" element={<Navigate to="/" />} />

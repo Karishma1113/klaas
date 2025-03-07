@@ -1,0 +1,68 @@
+.mfa-container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8faff;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .mfa-tabs {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    background-color: #dde3ff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .tab.active {
+    background-color: white;
+    border: 2px solid #bcc7ff;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #d2f0bd;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .mfa-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .mfa-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .mfa-list li {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  
+  .next-btn {
+    background-color: #c3e6b3;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right;
+  }
+  
