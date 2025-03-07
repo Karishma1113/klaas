@@ -3,6 +3,10 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const handleLeaveSite = () => {
+    window.location.href = "https://www.google.com";
+  };
+
   return (
     <nav className="navbar">
       <div className="logo-container">
@@ -17,7 +21,7 @@ const Navbar = () => {
         <div className="divider"></div>
         <Link to="/modules" className="nav-button">Modules</Link>
       </div>
-      <button className="leave-button">Leave Site</button>
+      <button className="leave-button" onClick={handleLeaveSite}>Leave Site</button>
     </nav>
   );
 };
