@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Modules.css";
 
 const ModulesHome = () => {
+  const navigate = useNavigate();
+  const [searchQuery, setSearchQuery] = useState("");
+
   const modules = [
     {
       title: "Securing Your Google Account",
@@ -21,32 +25,50 @@ const ModulesHome = () => {
     },
   ];
 
+  const filteredModules = modules.filter((module) =>
+    module.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="modules-container">
-      <input type="text" placeholder="Search modules..." className="search-bar" />
+      <input
+        type="text"
+        placeholder="Search modules..."
+        className="search-bar"
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+      />
 
       <h1 className="modules-title">MODULES</h1>
 
       <div className="modules-grid">
-        {modules.map((module, index) => (
-          <div key={index} className="module-card">
-            <div className="module-header">
-              <h2 className="module-title">{module.title}</h2>
-              <button className="overview-btn">Overview →</button>
-            </div>
-
-            {module.submodules.length > 0 && (
-              <div className="submodules-list">
-                {module.submodules.map((submodule, idx) => (
-                  <div key={idx} className="submodule-item">
-                    {submodule}
-                    <button className="module-btn">Module →</button>
-                  </div>
-                ))}
+        {filteredModules.length > 0 ? (
+          filteredModules.map((module, index) => (
+            <div key={index} className="module-card">
+              <div className="module-header">
+                <h2 className="module-title">{module.title}</h2>
+                <button className="btn overview-btn" onClick={() => navigate(`/module/${index}`)}>
+                  Overview →
+                </button>
               </div>
-            )}
-          </div>
-        ))}
+
+              {module.submodules.length > 0 && (
+                <div className="submodules-list">
+                  {module.submodules.map((submodule, idx) => (
+                    <div key={idx} className="submodule-item">
+                      {submodule}
+                      <button className="btn module-btn" onClick={() => navigate(`/module/${index}/submodule/${idx}`)}>
+                        Module →
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))
+        ) : (
+          <p className="no-results">No modules found</p>
+        )}
       </div>
     </div>
   );

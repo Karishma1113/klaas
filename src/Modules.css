@@ -54,7 +54,11 @@
     cursor: pointer;
     border-radius: 5px;
   }
-  
+
+  .overview-btn:hover {
+    background-color: #b0c793;
+  }
+
   .submodules-list {
     display: flex;
     flex-direction: column;
@@ -78,5 +82,9 @@
     font-size: 12px;
     cursor: pointer;
     border-radius: 5px;
+  }
+
+  .module-btn:hover {
+    background: #e6e6e6;
   }
   
