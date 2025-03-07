@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import Home from "./Home";
-import Survey from "./survey1"; // Keeping your local path
+import Survey from "./Survey"; // Keeping your local path
 import Resources from "./Resources";
 import ModulesHome from "./ModulesHome";
 import MFA1 from "./MFA/MFA1";
