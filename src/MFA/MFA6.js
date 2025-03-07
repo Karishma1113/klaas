@@ -12,8 +12,8 @@ const MFA6 = () => {
         <button className="tab">2. Access Account</button>
         <button className="tab">3. Security Settings</button>
         <button className="tab">4. Get Started</button>
-        <button className="tab active">5. Verification Methods</button>
-        <button className="tab">6. Complete</button>
+        <button className="tab">5. Verification Methods</button>
+        <button className="tab active">6. Complete</button>
       </div>
 
       <button className="close-btn">X</button>
