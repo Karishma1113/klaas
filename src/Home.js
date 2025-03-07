@@ -7,7 +7,9 @@ const Home = () => {
       <div className="hero-section">
         <div className="hero-text">
           <h1>
-            navigating online vulnerability and achieving autonomy
+            navigating online {" "}
+            <span className="highlight">vulnerability</span> and achieving {" "}
+            <span className="highlight">autonomy</span>
           </h1>
           <p>
             Our platform is dedicated to supporting domestic violence survivors by providing{" "}
