@@ -6,34 +6,33 @@ const MFA2 = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
-      <div className="mfa-container">
-        <div className="mfa-header">
-          <h1>Setting Up Multi-Factor Authentication (MFA) for Your Google Account</h1>
-        </div>
-        <p>
-          Multi-Factor Authentication (MFA) adds an extra layer of security to your Google account by 
-          requiring a second form of verification in addition to your password. This helps protect your 
-          account from unauthorized access, even if someone steals or guesses your password.
-        </p>
-        <p>
-          MFA is a security feature that requires users to provide two forms of authentication to verify 
-          their identity.
-        </p>
+    <div className="mfa-container">
+      <div className="mfa-tabs">
+        <button className="tab">1. Overview</button>
+        <button className="tab active">2. Access Account</button>
+        <button className="tab">3. Security Settings</button>
+        <button className="tab">4. Get Started</button>
+        <button className="tab">5. Verification Methods</button>
+        <button className="tab">6. Complete</button>
+      </div>
 
-        <h3>Why set up MFA?</h3>
-        <ul className="mfa-list">
-          <li> Prevents unauthorized access</li>
-          <li> Enhances security for data</li>
-          <li> Reduces the risk of identity theft</li>
-          <li> Protects against phishing attacks</li>
-        </ul>
+      <button className="close-btn">X</button>
 
-        <div className="mfa-navigation">
-          <button className="next-btn" onClick={() => navigate("/mfa/mfa3")}>
-            Next →
-          </button>
+      <div className="mfa-content">
+        <div className="step-info">
+          <h3>Step 1</h3>
+          <p><strong>Access Your Google Account</strong></p>
+          <p>Sign in at:<br /><a href="https://myaccount.google.com" target="_blank" rel="noopener noreferrer">myaccount.google.com</a></p>
         </div>
+
+        <div className="google-signin">
+          <img src="/google-signin.png" alt="Google Sign In" className="signin-img" />
+        </div>
+      </div>
+
+      <div className="mfa-navigation">
+        <button className="back-btn" onClick={() => navigate("/mfa1")}>← Back</button>
+        <button className="next-btn" onClick={() => navigate("/mfa/mfa3")}>Next →</button>
       </div>
     </div>
   );
