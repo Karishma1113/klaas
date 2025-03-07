@@ -1,6 +1,14 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f8faff; /* Set the blue background */
+  }
+
 .mfa-container {
     width: 100%;
-    max-width: 900px;
+    height: 100%;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
     background-color: #f8faff;
@@ -39,6 +47,10 @@
     cursor: pointer;
     border-radius: 5px;
   }
+
+  .close-btn:hover {
+    background: #b0c793;
+  }
   
   .mfa-title {
     font-size: 24px;
@@ -66,7 +78,6 @@
     float: right;
   }
 
-  
   .back-btn {
     background-color: #c3e6b3;
     border: none;
@@ -75,4 +86,22 @@
     cursor: pointer;
     border-radius: 5px;
     float: left;
+  }
+
+  .next-btn:hover, .back-btn:hover {
+    background: #b0c793;
+  }
+
+  .step-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .step-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }

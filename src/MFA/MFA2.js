@@ -16,8 +16,8 @@ const MFA2 = () => {
         <button className="tab">6. Complete</button>
       </div>
 
-      <button className="close-btn">X</button>
-
+      <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
+      
       <div className="mfa-content">
         <div className="step-info">
           <h3>Step 1</h3>
@@ -25,8 +25,8 @@ const MFA2 = () => {
           <p>Sign in at:<br /><a href="https://myaccount.google.com" target="_blank" rel="noopener noreferrer">myaccount.google.com</a></p>
         </div>
 
-        <div className="google-signin">
-          <img src="/google-signin.png" alt="Google Sign In" className="signin-img" />
+        <div className="step-image">
+          <img src="/img/google-signin.png" alt="Google Sign In" className="signin-img" />
         </div>
       </div>
 

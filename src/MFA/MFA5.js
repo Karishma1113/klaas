@@ -16,7 +16,7 @@ const MFA5 = () => {
         <button className="tab">6. Complete</button>
       </div>
 
-      <button className="close-btn">X</button>
+      <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
 
       <div className="mfa-content">
         <div className="mfa-steps">
@@ -37,8 +37,8 @@ const MFA5 = () => {
               <p>Text Message or Call: Receive code via SMS or voice call</p>
             </div>
           </div>
-          <div className="secong-steps">
-            <img src="/images/secong-steps.png" alt="Second steps" />
+          <div className="step-image">
+            <img src="/img/second-steps.png" alt="Second steps" />
           </div>
         </div>
       </div>

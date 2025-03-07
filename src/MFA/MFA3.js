@@ -16,7 +16,7 @@ const MFA3 = () => {
         <button className="tab">6. Complete</button>
       </div>
 
-      <button className="close-btn">X</button>
+      <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
 
       <div className="mfa-content">
         <div className="mfa-steps">
@@ -28,7 +28,7 @@ const MFA3 = () => {
             </div>
           </div>
           <div className="step-image">
-            <img src="/images/security-settings.png" alt="Google Security Settings" />
+            <img src="/img/security-settings.png" alt="Google Security Settings" />
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const MFA3 = () => {
             </div>
           </div>
           <div className="step-image">
-            <img src="/images/2-step-verification.png" alt="Google 2-Step Verification" />
+            <img src="/img/2-step-verification.png" alt="Google 2-Step Verification" />
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ const MFA6 = () => {
         <button className="tab active">6. Complete</button>
       </div>
 
-      <button className="close-btn">X</button>
+      <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
 
       <div className="mfa-content">
         <div className="mfa-steps">
@@ -32,7 +32,7 @@ const MFA6 = () => {
           <div className="step">
             <h3>Need Help?</h3>
             <div className="instruction-box">
-              <p>For detailed guidance, visit Google's 2-Step Verification Help Page</p>
+              <p>For detailed guidance, visit <a href="https://support.google.com/accounts/answer/10956730" target="_blank" rel="noopener noreferrer">Google's 2-Step Verification Help Page</a></p>
             </div>
           </div>
         </div>

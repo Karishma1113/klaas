@@ -16,7 +16,7 @@ const MFA4 = () => {
         <button className="tab">6. Complete</button>
       </div>
 
-      <button className="close-btn">X</button>
+      <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
 
       <div className="mfa-content">
         <div className="step-info">
@@ -25,8 +25,8 @@ const MFA4 = () => {
           <p>Click "Turn on 2 step verification" and follow the prompts.</p>
         </div>
 
-        <div className="2-step-verification2">
-          <img src="/2-step-verification2.png" alt="2-step verification" />
+        <div className="step-image">
+          <img src="/img/2-step-verification2.png" alt="2-step verification" />
         </div>
       </div>
 

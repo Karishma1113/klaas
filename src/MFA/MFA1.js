@@ -16,7 +16,7 @@ const MFA1 = () => {
         <button className="tab">6. Complete</button>
       </div>
 
-      <button className="close-btn">X</button>
+      <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
 
       <h1 className="mfa-title">Setting Up Multi-Factor Authentication (MFA) for Your Google Account</h1>
 
