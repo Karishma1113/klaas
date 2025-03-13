@@ -55,7 +55,7 @@ const Home = () => {
           <div className="info-box">
             Posting personal information (doxxing) to expose, humiliate, or endanger the survivor.
           </div>
-          <button className="learn-more-button">Learn more</button>
+          <button className="learn-more-button">Learn more →</button>
         </div>
       </div>
     </div>

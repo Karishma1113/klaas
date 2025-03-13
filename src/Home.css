@@ -128,3 +128,17 @@
     height: auto;
     border-radius: 10px;
   }
+
+  .learn-more-button {
+    background-color: #d4eeb1;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .learn-more-button:hover {
+    background-color: #b0c793;
+  }
+  
