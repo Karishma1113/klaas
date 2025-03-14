@@ -31,33 +31,29 @@
   font-weight: bold;
   font-size: 14px;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .survey-options label {
   display: block;
   margin: 5px 0;
   font-size: 14px;
+  text-align: left;
 }
 
-.survey-box {
+.yes-no-options {
+  display: flex;
+  gap: 15px;
+}
+
+.yes-no-options label {
   display: flex;
   align-items: center;
-  background-color: white;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.survey-box input {
-  margin-right: 10px;
-  width: 20px;
-  height: 20px;
-}
-
-.survey-box p {
-  margin: 0;
   font-size: 14px;
+}
+
+.yes-no-options input {
+  margin-right: 5px;
 }
 
 .continue-button {

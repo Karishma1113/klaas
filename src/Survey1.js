@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Survey.css";
 
 const Survey1 = () => {
+  const navigate = useNavigate();
+
+  const handleContinue = () => {
+    navigate("/survey2");
+  };
+
   return (
     <div className="survey-container">
       <h2 className="survey-title">Survey</h2>
@@ -28,49 +35,46 @@ const Survey1 = () => {
       </div>
 
       <div className="survey-section">
-        <p className="survey-question">
-          Are you currently living with your abuser?
-        </p>
-        <div className="survey-options">
+        <p className="survey-question">Are you currently residing with your abuser?</p>
+        <div className="yes-no-options">
           <label>
-            <input type="checkbox" /> Yes
+            <input type="radio" name="residingAbuser" value="yes" /> Yes
           </label>
           <label>
-            <input type="checkbox" /> No
+            <input type="radio" name="residingAbuser" value="no" /> No
+          </label>
+        </div>
+      </div>
+
+      <div className="survey-section">
+        <p className="survey-question">Do you have any children?</p>
+        <div className="yes-no-options">
+          <label>
+            <input type="radio" name="haveChildren" value="yes" /> Yes
+          </label>
+          <label>
+            <input type="radio" name="haveChildren" value="no" /> No
           </label>
         </div>
       </div>
 
       <div className="survey-section">
         <p className="survey-question">
-          Do you have any children?
+          If you are not living with your abuser, do you have any concerns
+          regarding potential stalking?
         </p>
-        <div className="survey-options">
+        <div className="yes-no-options">
           <label>
-            <input type="checkbox" /> Yes
+            <input type="radio" name="stalkingConcerns" value="yes" /> Yes
           </label>
           <label>
-            <input type="checkbox" /> No
-          </label>
-        </div>
-      </div>
-
-      <div className="survey-section">
-        <p className="survey-question">
-          If you are not living with your abuser, do you have any concerns regarding potential stalking?
-        </p>
-        <div className="survey-options">
-          <label>
-            <input type="checkbox" /> Yes
-          </label>
-          <label>
-            <input type="checkbox" /> No
+            <input type="radio" name="stalkingConcerns" value="no" /> No
           </label>
         </div>
       </div>
 
 
-      <button className="continue-button">Continue →</button>
+      <button className="continue-button" onClick={handleContinue}>Continue →</button>
     </div>
   );
 };

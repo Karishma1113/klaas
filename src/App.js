@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Survey1 from "./Survey1";
+import Survey2 from "./Survey2";
+import SurveyResults from "./SurveyResults";
 import Resources from "./Resources";
 import ModulesHome from "./ModulesHome";
 import MFA1 from "./MFA/MFA1";
@@ -19,7 +21,9 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/survey1" element={<Survey1 />} /> 
+          <Route path="/survey1" element={<Survey1 />} />
+          <Route path="/survey2" element={<Survey2 />} /> 
+          <Route path="/surveyresults" element={<SurveyResults />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/modules" element={<ModulesHome />} />
           <Route path="/mfa1" element={<MFA1 />} />
