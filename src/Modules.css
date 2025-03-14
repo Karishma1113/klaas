@@ -1,12 +1,109 @@
-/* 🔹 Main Container */
+.modules-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.modules-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.module-card {
+  background-color: #f4f6ff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.module-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.overview-btn {
+  background-color: #d4eeb1;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.overview-btn:hover {
+  background-color: #b0c793;
+}
+
+.submodules-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.submodule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  background: #eef1ff;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.module-btn {
+  background: white;
+  border: 1px solid black;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.module-btn:hover {
+  background: #e6e6e6;
+}
+
+
+
+
+
+
+
+
+/* 🔹 Main Container
 .modules-container {
   padding: 30px;
   max-width: 1200px;
   margin: auto;
   font-family: 'Poppins', sans-serif;
-}
+} */
 /* 🔹 Search Bar */
-.search-bar {
+/* .search-bar {
   width: 100%;
   padding: 14px;
   margin-bottom: 25px;
@@ -20,26 +117,26 @@
 .search-bar:focus {
   border-color: #4caf50;
   box-shadow: 0px 0px 10px rgba(76, 175, 80, 0.4);
-}
+} */
 
 /* 🔹 Title */
-.modules-title {
+/* .modules-title {
   text-align: center;
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 30px;
   color: #333;
-}
+} */
 
 /* 🔹 Grid Layout */
-.modules-grid {
+/* .modules-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
-}
+} */
 
 /* 🔹 Module Card Styling */
-.module-card {
+/* .module-card {
   background: #ffffff;
   padding: 25px;
   border-radius: 18px;
@@ -53,10 +150,10 @@
 .module-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* 🔹 Module Backgrounds */
-.google-module {
+/* .google-module {
   background-image: url("/public/img/google image 2.png");
   background-size: 65%;
   background-position: center;
@@ -70,10 +167,10 @@
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-}
+} */
 
 /* 🔹 Soft Blur Overlay for Readability */
-.google-module::before,
+/* .google-module::before,
 .kids-module::before {
   content: "";
   position: absolute;
@@ -92,18 +189,18 @@
 .kids-module * {
   position: relative;
   z-index: 1;
-}
+} */
 
 /* 🔹 Module Titles */
-.module-title {
+/* .module-title {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 12px;
   color: #fff;
-}
+} */
 
 /* 🔹 Buttons */
-.btn {
+/* .btn {
   display: inline-block;
   padding: 12px 18px;
   border: none;
@@ -114,10 +211,10 @@
   text-align: center;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* 🔹 Overview Button */
-.overview-btn {
+/* .overview-btn {
   background: linear-gradient(to right, #4caf50, #2e7d32);
   color: white;
   font-size: 16px;
@@ -128,30 +225,30 @@
 .overview-btn:hover {
   background: linear-gradient(to right, #388e3c, #1b5e20);
   box-shadow: 0 5px 12px rgba(76, 175, 80, 0.4);
-}
+} */
 
 
-.module-btn {
+/* .module-btn {
   background: linear-gradient(to right, #f8f9fa, #e9ecef);
   color: black;
   border: 1px solid #ccc;
   font-weight: bold;
   font-size: 15px;
   padding: 12px;
-  border-radius: 25px; /* Rounded pill shape */
+  border-radius: 25px;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.3s ease-in-out, transform 0.2s ease-in-out;
-}
+} */
 
-.module-btn:hover {
+/* .module-btn:hover {
   background: linear-gradient(to right, #e9ecef, #dee2e6);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   transform: scale(1.05);
-}
+} */
 
 /* 🔹 Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .modules-grid {
     grid-template-columns: 1fr;
   }
@@ -164,4 +261,4 @@
   .kids-module {
     background-size: 55%;
   }
-}
+} */
