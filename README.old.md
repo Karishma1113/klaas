@@ -1,5 +1,5 @@
-# SecureSteps
-SecureSteps is a secure platform designed to help domestic violence survivors protect their online information and defend against tech-enabled abuse. It provides privacy tools, security checkups, encrypted communication, and legal resources to ensure digital safety.
+# NOVAA
+NOVAA (Navigating Online Vulnerability and Achieving Autonomy) is a secure platform designed to help domestic violence survivors protect their online information and defend against tech-enabled abuse. It provides privacy tools, security checkups, encrypted communication, and legal resources to ensure digital safety.
 
 # Codebase
 Frontend: Built with React.js for a responsive user experience.
