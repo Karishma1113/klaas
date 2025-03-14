@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const handleLeaveSite = () => {
-    window.location.href = "https://www.google.com";
+    window.location.href = "https://en.wikipedia.org/wiki/Main_Page";
   };
 
   return (
