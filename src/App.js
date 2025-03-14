@@ -13,6 +13,7 @@ import MFA3 from "./MFA/MFA3";
 import MFA4 from "./MFA/MFA4";
 import MFA5 from "./MFA/MFA5";
 import MFA6 from "./MFA/MFA6";
+import ModuleOverview from "./ModuleOverview"; 
 
 export default function App() {
   return (
@@ -22,7 +23,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/survey1" element={<Survey1 />} />
-          <Route path="/survey2" element={<Survey2 />} /> 
+          <Route path="/survey2" element={<Survey2 />} />
           <Route path="/surveyresults" element={<SurveyResults />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/modules" element={<ModulesHome />} />
@@ -32,8 +33,7 @@ export default function App() {
           <Route path="/mfa/mfa4" element={<MFA4 />} />
           <Route path="/mfa/mfa5" element={<MFA5 />} />
           <Route path="/mfa/mfa6" element={<MFA6 />} />
-
-          {/* Redirect unknown routes to homepage */}
+          <Route path="/module/:moduleId" element={<ModuleOverview />} /> {/* New route */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
