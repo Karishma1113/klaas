@@ -13,7 +13,7 @@ import MFA3 from "./MFA/MFA3";
 import MFA4 from "./MFA/MFA4";
 import MFA5 from "./MFA/MFA5";
 import MFA6 from "./MFA/MFA6";
-import ModuleOverview from "./ModuleOverview"; 
+import ModuleOverview from "./ModuleOverview";
 
 export default function App() {
   return (

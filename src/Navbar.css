@@ -1,63 +1,67 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: white;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    height: 50px;
-    margin-left: 20px;
-  }
-  
-  .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .nav-button {
-    padding: 8px 15px;
-    background-color: rgba(230, 234, 255, 0.5); /* Light blue tint */
-    border-radius: 10px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 16px;
-    transition: background 0.3s;
-  }
-  
-  .nav-button:hover {
-    background-color: rgba(200, 210, 255, 0.7);
-  }
-  
-  .divider {
-    width: 1px;
-    height: 20px;
-    background-color: black;
-  }
-  
-  .leave-button {
-    padding: 8px 15px;
-    background-color: hotpink;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: opacity 0.3s;
-    margin-right: 20px;
-  }
-  
-  .leave-button:hover {
-    opacity: 0.8;
-  }
-  
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  justify-content: space-between; 
+}
+
+.logo {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  position: absolute; 
+  left: 50%; 
+  transform: translateX(-50%);
+}
+
+.nav-button {
+  padding: 8px 15px;
+  background-color: rgba(230, 234, 255, 0.5);
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.nav-button:hover {
+  background-color: rgba(200, 210, 255, 0.7);
+}
+
+.divider {
+  width: 1px;
+  height: 20px;
+  background-color: black;
+}
+
+.leave-button {
+  position: fixed; 
+  top: 20px;
+  right: 20px;
+  background-color: hotpink;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.leave-button:hover {
+  opacity: 0.8;
+}
+
+.spacer {
+  width: 120px; 
+  visibility: hidden; 
+}
