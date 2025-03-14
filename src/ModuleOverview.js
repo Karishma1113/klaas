@@ -10,6 +10,7 @@ const ModuleOverview = () => {
     0: {
       title: "Securing Your Google Account",
       image: "/img/GoogleAccOverview.png", 
+      imageSource: "https://guidebooks.google.com/android/getstarted/keepyourgoogleaccountsecure",
       content: `
         Your Google account is connected to many personal details, including emails, saved passwords, and location history. Keeping it secure is essential for protecting your privacy and preventing unauthorized access.
 
@@ -35,11 +36,16 @@ const ModuleOverview = () => {
       <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
       <h1 className="title">{module.title}</h1>
       {module.image && ( 
-        <img
-          src={module.image}
-          alt="Module Image"
-          className="module-image"
-        />
+        <div className="image-container">
+          <img
+            src={module.image}
+            alt="Module Image"
+            className="module-image"
+          />
+          <p className="image-credit">
+            Image: <a href={module.imageSource} target="_blank" rel="noopener noreferrer">Google Guidebooks</a>
+          </p>
+        </div>
       )}
       <div className="overview-content">
         {module.content.split('\n').map((line, index) => (
