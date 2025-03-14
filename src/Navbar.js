@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const handleLeaveSite = () => {
-    window.location.href = "https://en.wikipedia.org/wiki/Main_Page";
+    window.open("https://weather.com/", "_blank");
   };
-
+  
   return (
     <>
       <nav className="navbar">

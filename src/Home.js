@@ -2,13 +2,18 @@ import React from "react";
 import "./Home.css";
 
 const Home = () => {
+  const handleLearnMoreClick = () => {
+    window.open("https://www.joyfulheartfoundation.org/blog/digital-abuse-signs-and-help", "_blank");
+  };
+  
+
   return (
     <div className="home-container">
       <div className="hero-section">
         <div className="hero-text">
           <h1>
-            navigating online {" "}
-            <span className="highlight">vulnerability</span> and achieving {" "}
+            navigating online{" "}
+            <span className="highlight">vulnerability</span> and achieving{" "}
             <span className="highlight">autonomy</span>
           </h1>
           <p>
@@ -55,7 +60,9 @@ const Home = () => {
           <div className="info-box">
             Posting personal information (doxxing) to expose, humiliate, or endanger the survivor.
           </div>
-          <button className="learn-more-button">Learn more →</button>
+          <button className="learn-more-button" onClick={handleLearnMoreClick}>
+            Learn more →
+          </button>
         </div>
       </div>
     </div>
