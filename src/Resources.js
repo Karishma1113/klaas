@@ -58,10 +58,10 @@ const Resources = () => {
         <div className="info-box">
           <h3>📞 If You Call a Hotline</h3>
           <ul>
-            <li>✔️ Direct connection to a local domestic violence program.</li>
-            <li>✔️ Help finding resources like shelter, advocacy, counseling, and legal assistance.</li>
-            <li>✔️ Crisis support, safety planning, and emotional assistance.</li>
-            <li>✔️ Hotline advocates available in 170+ languages via interpreter services.</li>
+            <li> Direct connection to a local domestic violence program.</li>
+            <li> Help finding resources like shelter, advocacy, counseling, and legal assistance.</li>
+            <li> Crisis support, safety planning, and emotional assistance.</li>
+            <li> Hotline advocates available in 170+ languages via interpreter services.</li>
           </ul>
         </div>
       </section>
