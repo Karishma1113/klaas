@@ -39,7 +39,7 @@ const ModulesHome = () => {
         onChange={(e) => setSearchQuery(e.target.value)}
       />
 
-      <h1 className="modules-title">MODULES</h1>
+      <h1 className="modules-title">Modules</h1>
 
       <div className="modules-grid">
         {filteredModules.length > 0 ? (
