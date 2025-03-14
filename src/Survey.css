@@ -1,36 +1,77 @@
-/* Center the survey page */
 .survey-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Full height of the screen */
-    padding: 20px;
-  }
-  
-  /* Center images in a row */
-  .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Space between images */
-    flex-wrap: wrap; /* Makes images wrap on smaller screens */
-    width: 100%;
-    margin-top: 20px;
-  }
-  
-  /* Increase image size */
-  .survey-image {
-    width: 50%; /* Increase the width */
-    max-width: 500px; /* Allow a larger max width */
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  /* Add a hover effect */
-  .survey-image:hover {
-    transform: scale(1.05);
-  }
-  
+  width: 60%;
+  margin: auto;
+  background-color: #f7f8fc;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.survey-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.survey-subtitle {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.survey-section {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.survey-question {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.survey-options label {
+  display: block;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.survey-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.survey-box input {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.survey-box p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.continue-button {
+  display: block;
+  margin: auto;
+  background-color: #d9edc2;
+  color: black;
+  padding: 8px 15px;
+  border: 1px solid #b5d19a;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.continue-button:hover {
+  background-color: #cbe3b5;
+}
