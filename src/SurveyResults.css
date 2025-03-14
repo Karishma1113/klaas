@@ -8,22 +8,16 @@
   text-align: center;
 }
 
-.survey-title {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
 .survey-subtitle {
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .survey-section-title {
   font-size: 18px;
   font-weight: bold;
   margin-top: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .smodules-container {
@@ -35,7 +29,6 @@
 
 .smodule-title {
   font-size: 16px;
-  font-weight: bold;
   margin-bottom: 10px;
   color: black;
 }
