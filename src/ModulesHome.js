@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Modules.css";
-import Device1 from "./DeviceSetup/Device1";
 
 const ModulesHome = () => {
   const navigate = useNavigate();
@@ -21,11 +20,16 @@ const ModulesHome = () => {
     },
     {
       title: "Securing Kids’ Devices & Talking About Online Safety",
-      className: "kids-module",
       submodules: [],
     },
-   
-   
+    {
+      title: "Module Title",
+      submodules: [],
+    },
+    {
+      title: "Module Title",
+      submodules: [],
+    },
   ];
 
   const filteredModules = modules.filter((module) =>
@@ -42,18 +46,15 @@ const ModulesHome = () => {
         onChange={(e) => setSearchQuery(e.target.value)}
       />
 
-      <h1 className="modules-title">MODULES</h1>
+      <h1 className="modules-title">Modules</h1>
 
       <div className="modules-grid">
         {filteredModules.length > 0 ? (
           filteredModules.map((module, index) => (
-            <div key={index} className={`module-card ${module.className}`}>
+            <div key={index} className="module-card">
               <div className="module-header">
                 <h2 className="module-title">{module.title}</h2>
-                <button
-                  className="btn overview-btn"
-                  onClick={() => navigate(`/module/${index}`)}
-                >
+                <button className="btn overview-btn" onClick={() => navigate(`/module/${index}`)}>
                   Overview →
                 </button>
               </div>
@@ -63,10 +64,7 @@ const ModulesHome = () => {
                   {module.submodules.map((submodule, idx) => (
                     <div key={idx} className="submodule-item">
                       {submodule.name}
-                      <button
-                        className="btn module-btn"
-                        onClick={() => navigate(submodule.path)}
-                      >
+                      <button className="btn module-btn" onClick={() => navigate(submodule.path)}>
                         Module →
                       </button>
                     </div>
