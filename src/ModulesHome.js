@@ -9,7 +9,13 @@ const ModulesHome = () => {
   const modules = [
     {
       title: "Securing Your Google Account",
-      submodules: ["MFA Setup", "Device Setup", "Password Setup", "Private Browsing", "Recovery Email"],
+      submodules: [
+        { name: "MFA Setup", path: "/mfa1" },
+        { name: "Device Setup", path: "/Device1" },
+        { name: "Password Setup", path: "/password-setup" },
+        { name: "Private Browsing", path: "/private-browsing" },
+        { name: "Recovery Email", path: "/recovery-email" },
+      ],
     },
     {
       title: "Securing Kids’ Devices & Talking About Online Safety",
@@ -56,8 +62,8 @@ const ModulesHome = () => {
                 <div className="submodules-list">
                   {module.submodules.map((submodule, idx) => (
                     <div key={idx} className="submodule-item">
-                      {submodule}
-                      <button className="btn module-btn" onClick={() => navigate(`/mfa1`)}>
+                      {submodule.name}
+                      <button className="btn module-btn" onClick={() => navigate(submodule.path)}>
                         Module →
                       </button>
                     </div>
