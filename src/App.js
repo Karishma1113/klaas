@@ -13,6 +13,11 @@ import MFA3 from "./MFA/MFA3";
 import MFA4 from "./MFA/MFA4";
 import MFA5 from "./MFA/MFA5";
 import MFA6 from "./MFA/MFA6";
+import Device1 from "./DeviceSetup/Device1";
+import Device2 from "./DeviceSetup/Device2";
+import Device3 from "./DeviceSetup/Device3";
+import Device4 from "./DeviceSetup/Device4";
+import Device5 from "./DeviceSetup/Device5";
 
 export default function App() {
   return (
@@ -32,6 +37,13 @@ export default function App() {
           <Route path="/mfa/mfa4" element={<MFA4 />} />
           <Route path="/mfa/mfa5" element={<MFA5 />} />
           <Route path="/mfa/mfa6" element={<MFA6 />} />
+          <Route path="/device1" element={<Device1 />} />
+          <Route path="/device/device2" element={<Device2 />} />
+          <Route path="/device/device3" element={<Device3 />} />
+          <Route path="/device/device4" element={<Device4 />} />
+          <Route path="/device/device5" element={<Device5 />} />
+
+
 
           {/* Redirect unknown routes to homepage */}
           <Route path="*" element={<Navigate to="/" />} />

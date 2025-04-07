@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Modules.css";
+import Device1 from "./DeviceSetup/Device1";
 
 const ModulesHome = () => {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ const ModulesHome = () => {
       className: "google-module",
       submodules: [
         { name: "MFA Setup", path: "/mfa1" },
-        { name: "Device Setup", path: "/device-setup" },
+        { name: "Device Setup", path: "/Device1" },
         { name: "Password Setup", path: "/password-setup" },
         { name: "Private Browsing", path: "/private-browsing" },
         { name: "Recovery Email", path: "/recovery-email" },
