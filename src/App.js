@@ -18,6 +18,7 @@ import Device2 from "./DeviceSetup/Device2";
 import Device3 from "./DeviceSetup/Device3";
 import Device4 from "./DeviceSetup/Device4";
 import Device5 from "./DeviceSetup/Device5";
+import ModuleOverview from "./ModuleOverview";
 
 export default function App() {
   return (
@@ -27,7 +28,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/survey1" element={<Survey1 />} />
-          <Route path="/survey2" element={<Survey2 />} /> 
+          <Route path="/survey2" element={<Survey2 />} />
           <Route path="/surveyresults" element={<SurveyResults />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/modules" element={<ModulesHome />} />
@@ -42,13 +43,11 @@ export default function App() {
           <Route path="/device/device3" element={<Device3 />} />
           <Route path="/device/device4" element={<Device4 />} />
           <Route path="/device/device5" element={<Device5 />} />
-
-
-
-          {/* Redirect unknown routes to homepage */}
+          <Route path="/module/:moduleId" element={<ModuleOverview />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </Router>
   );
 }
+
