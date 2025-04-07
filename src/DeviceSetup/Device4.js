@@ -32,7 +32,7 @@ const Device4 = () => {
     </div>
   );
 
-  
+
 };
 
 export default Device4;
