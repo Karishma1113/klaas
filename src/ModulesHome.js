@@ -12,7 +12,7 @@ const ModulesHome = () => {
       submodules: [
         { name: "MFA Setup", path: "/mfa1" },
         { name: "Device Setup", path: "/Device1" },
-        { name: "Password Setup", path: "/password-setup" },
+        { name: "Password Setup", path: "/Password1" },
         { name: "Private Browsing", path: "/private-browsing" },
         { name: "Recovery Email", path: "/recovery-email" },
       ],
