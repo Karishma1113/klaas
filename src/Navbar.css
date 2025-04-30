@@ -19,14 +19,15 @@
   position: absolute; 
   left: 50%; 
   transform: translateX(-50%);
+  gap: 50px;
 }
 
 .nav-button {
   padding: 8px 15px;
-  background-color: rgba(230, 234, 255, 0.5);
+  background-color: rgba(73, 81, 132, 1);
   border-radius: 10px;
   text-decoration: none;
-  color: black;
+  color: white;
 
   font-size: 16px;
   transition: background 0.3s;
