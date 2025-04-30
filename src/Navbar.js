@@ -16,8 +16,6 @@ const Navbar = () => {
           <img src="/img/logo.png" alt="Novaa Logo" className="logo" />
         </div>
         <div className="nav-links">
-          <Link to="/" className="nav-button">Home</Link>
-          <div className="divider"></div>
           <Link to="/resources" className="nav-button">Resources</Link>
           <div className="divider"></div>
           <Link to="/survey1" className="nav-button">Survey</Link>
