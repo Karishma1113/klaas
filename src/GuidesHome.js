@@ -53,14 +53,14 @@ const GuidesHome = () => {
             <div key={index} className="guides-card">
               <div className="guide-header">
                 <h2 className="guide-title">{guide.title}</h2>
-                <button className="btn overview-btn" onClick={() => navigate(`/guide/${index}`)}>
+                <button className="btn overview-btn" onClick={() => navigate(`/guides/${index}`)}>
                   Overview →
                 </button>
               </div>
 
               {guide.subguides.length > 0 && (
                 <div className="subguides-list">
-                  {guides.subguides.map((subguide, idx) => (
+                  {guide.subguides.map((subguide, idx) => (
                     <div key={idx} className="subguide-item">
                       {subguide.name}
                       <button className="btn guide-btn" onClick={() => navigate(subguide.path)}>
