@@ -5,7 +5,7 @@ const ProgressBar = ({ totalSteps = 6, currentStep = 1, stepLabels = [] }) => {
   const [step] = useState(currentStep);
 
   return (
-    <div className="container">
+    <div className="bar-container">
       <div className="wrapper">
         <div className="arrow-steps clearfix">
           {Array.from({ length: totalSteps }, (_, i) => {

@@ -7,15 +7,20 @@
 
 .bar-container {
 	font-family: 'Lato', sans-serif;
-	width: 1000px;
+	display: flex;
+	justify-content: center;  /* horizontally center */
+	align-items: center;      /* vertically center if parent has height */
+	width: 100%;
 	margin: 0 auto;
-}
+	padding: 40px 0;
+  }
+  
 
-.wrapper {
+/* .wrapper {
 	display: table-cell;
 	height: auto;
 	vertical-align: middle;
-}
+} */
 
 .nav {
 	margin-top: 150px;
