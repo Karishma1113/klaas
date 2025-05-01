@@ -20,6 +20,7 @@ import Device3 from "./DeviceSetup/Device3";
 import Device4 from "./DeviceSetup/Device4";
 import Device5 from "./DeviceSetup/Device5";
 import Password1 from "./PasswordSetup/Password1";
+import Password2 from "./PasswordSetup/Password2";
 
 
 export default function App() {
@@ -48,6 +49,7 @@ export default function App() {
           <Route path="/device/device4" element={<Device4 />} />
           <Route path="/device/device5" element={<Device5 />} />
           <Route path="/password1" element={<Password1 />} />
+          <Route path="password/password2" element={<Password2 />} />
 
         </Routes>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ProgressBar from "../ProgressBarMFA";
 import "./MFA.css";
 
 const MFA1 = () => {
@@ -7,14 +8,18 @@ const MFA1 = () => {
 
   return (
     <div className="mfa-container">
-      <div className="mfa-tabs">
-        <button className="tab active">1. Overview</button>
-        <button className="tab">2. Access Account</button>
-        <button className="tab">3. Security Settings</button>
-        <button className="tab">4. Get Started</button>
-        <button className="tab">5. Verification Methods</button>
-        <button className="tab">6. Complete</button>
-      </div>
+      {/* Replace the old progress bar with the new one */}
+      <ProgressBar 
+      currentStep={1}
+      stepLabels={[
+        "Overview",
+        "Access Account",
+        "Security Settings",
+        "Get Started",
+        "Verification Methods",
+        "Complete"
+      ]}
+      />
 
       <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
 
@@ -22,8 +27,7 @@ const MFA1 = () => {
 
       <p>
         Multi-Factor Authentication (MFA) adds an extra layer of security to your Google account by
-        requiring a second form of verification in addition to your password. This helps protect your
-        account from unauthorized access, even if someone steals or guesses your password.
+        requiring a second form of verification in addition to your password.
       </p>
 
       <p>

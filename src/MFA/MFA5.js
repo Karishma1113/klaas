@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ProgressBar from "../ProgressBarMFA";
 import "./MFA.css";
 
 const MFA5 = () => {
@@ -7,14 +8,17 @@ const MFA5 = () => {
 
   return (
     <div className="mfa-container">
-      <div className="mfa-tabs">
-        <button className="tab">1. Overview</button>
-        <button className="tab">2. Access Account</button>
-        <button className="tab">3. Security Settings</button>
-        <button className="tab">4. Get Started</button>
-        <button className="tab active">5. Verification Methods</button>
-        <button className="tab">6. Complete</button>
-      </div>
+      <ProgressBar 
+      currentStep={5}
+      stepLabels={[
+        "Overview",
+        "Access Account",
+        "Security Settings",
+        "Get Started",
+        "Verification Methods",
+        "Complete"
+      ]}
+      />
 
       <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
 
