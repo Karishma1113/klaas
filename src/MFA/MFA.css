@@ -30,13 +30,14 @@ body, html {
   }
 
   .close-btn:hover {
-    background: black;
+    background: grey;
   }
   
   .mfa-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 15px;
+    margin-top: 30px;
   }
   
   .mfa-list {
@@ -50,17 +51,18 @@ body, html {
   }
   
   .next-btn {
-    background-color: #c3e6b3;
+    background-color: rgba(200, 210, 255, 0.7);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
     float: right;
+    margin-bottom: 50px;
   }
 
   .back-btn {
-    background-color: #c3e6b3;
+    background-color: rgba(200, 210, 255, 0.7);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -70,7 +72,7 @@ body, html {
   }
 
   .next-btn:hover, .back-btn:hover {
-    background: #b0c793;
+    background: rgba(73, 81, 132, 1);
   }
 
   .step-image {
