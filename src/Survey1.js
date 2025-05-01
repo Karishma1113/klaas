@@ -12,7 +12,7 @@ const Survey1 = () => {
   return (
     <div className="survey-container">
       <h1 className="survey-title">Survey</h1>
-      <p className="survey-subtitle">*Select all that apply to receive resources and modules based on your situation</p>
+      <p className="survey-subtitle">*Select all that apply to receive resources and guides based on your situation</p>
 
       <div className="survey-section">
         <p className="survey-question">

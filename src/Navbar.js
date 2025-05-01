@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className="divider"></div>
           <Link to="/survey1" className="nav-button">Survey</Link>
           <div className="divider"></div>
-          <Link to="/modules" className="nav-button">Modules</Link>
+          <Link to="/guides" className="nav-button">Guides</Link>
         </div>
         <div className="spacer"></div> {/* spacer for the Leave Site button */}
       </nav>

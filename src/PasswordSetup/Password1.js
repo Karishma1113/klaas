@@ -12,7 +12,7 @@ const Password1 = () => {
         <button className="tab">2. Tips and Best Practices</button>
       </div>
 
-      <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
+      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
 
       <h1 className="password-title">Secure Password Setup</h1>
       <p>

@@ -6,14 +6,14 @@ import Survey1 from "./Survey1";
 import Survey2 from "./Survey2";
 import SurveyResults from "./SurveyResults";
 import Resources from "./Resources";
-import ModulesHome from "./ModulesHome";
+import GuidesHome from "./GuidesHome";
+import GuideOverview from "./GuideOverview";
 import MFA1 from "./MFA/MFA1";
 import MFA2 from "./MFA/MFA2";
 import MFA3 from "./MFA/MFA3";
 import MFA4 from "./MFA/MFA4";
 import MFA5 from "./MFA/MFA5";
 import MFA6 from "./MFA/MFA6";
-import ModuleOverview from "./ModuleOverview";
 import Device1 from "./DeviceSetup/Device1";
 import Device2 from "./DeviceSetup/Device2";
 import Device3 from "./DeviceSetup/Device3";
@@ -34,14 +34,14 @@ export default function App() {
           <Route path="/survey2" element={<Survey2 />} />
           <Route path="/surveyresults" element={<SurveyResults />} />
           <Route path="/resources" element={<Resources />} />
-          <Route path="/modules" element={<ModulesHome />} />
+          <Route path="/guides" element={<GuidesHome />} />
           <Route path="/mfa1" element={<MFA1 />} />
           <Route path="/mfa/mfa2" element={<MFA2 />} />
           <Route path="/mfa/mfa3" element={<MFA3 />} />
           <Route path="/mfa/mfa4" element={<MFA4 />} />
           <Route path="/mfa/mfa5" element={<MFA5 />} />
           <Route path="/mfa/mfa6" element={<MFA6 />} />
-          <Route path="/module/:moduleId" element={<ModuleOverview />} /> {/* New route */}
+          <Route path="/guide/:guideId" element={<GuideOverview />} /> {/* New route */}
           <Route path="*" element={<Navigate to="/" />} />
           <Route path="/device1" element={<Device1 />} />
           <Route path="/device/device2" element={<Device2 />} />

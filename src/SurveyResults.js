@@ -8,18 +8,18 @@ const SurveyResults = () => {
         Here are some recommendations based on your survey input:
       </p>
 
-      <h3 className="survey-section-title">Modules</h3>
-      <div className="smodules-container">
-        <p className="smodule-title">Securing Your Google Account</p>
+      <h3 className="survey-section-title">Guides</h3>
+      <div className="sguides-container">
+        <p className="sguides-title">Securing Your Google Account</p>
 
-        <div className="smodule-item">
+        <div className="sguides-item">
           <span>MFA Setup</span>
-          <button className="smodule-button">Module →</button>
+          <button className="sguides-button">Guide →</button>
         </div>
 
-        <div className="smodule-item">
+        <div className="sguides-item">
           <span>Device Setup</span>
-          <button className="smodule-button">Module →</button>
+          <button className="sguides-button">Guide →</button>
         </div>
       </div>
 

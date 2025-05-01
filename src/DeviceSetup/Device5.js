@@ -15,7 +15,7 @@ const Device5 = () => {
         <button className="tab active">5. Connected Apps</button>
       </div>
 
-      <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
+      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
 
       <h3>Step 4</h3>
       <p>Review connection apps:</p>

@@ -1,12 +1,12 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import "./ModuleOverview.css";
+import "./GuideOverview.css";
 
-const ModuleOverview = () => {
-  const { moduleId } = useParams();
+const GuideOverview = () => {
+  const { guideId } = useParams();
   const navigate = useNavigate();
 
-  const moduleContent = {
+  const guideContent = {
     0: {
       title: "Securing Your Google Account",
       image: "/img/GoogleAccOverview.png", 
@@ -14,41 +14,41 @@ const ModuleOverview = () => {
       content: `
         Your Google account is connected to many personal details, including emails, saved passwords, and location history. Keeping it secure is essential for protecting your privacy and preventing unauthorized access.
 
-        This module will introduce:
+        This guide will introduce:
         ○ Why securing your Google account matters
         ○ How accounts can be accessed without your knowledge
         ○ Ways Google tracks your activity and what that means for your privacy
 
-        Understanding these risks will help you take control of your account security as you move through the module.
+        Understanding these risks will help you take control of your account security as you move through the guide.
       `,
     },
-    // Add more modules
+    // Add more guides
   };
 
-  const module = moduleContent[moduleId];
+  const guide = guideContent[guideId];
 
-  if (!module) {
-    return <div>Module not found</div>;
+  if (!guide) {
+    return <div>Guide not found</div>;
   }
 
   return (
     <div className="overview-container">
-      <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
-      <h1 className="title">{module.title}</h1>
-      {module.image && ( 
+      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
+      <h1 className="title">{guide.title}</h1>
+      {guide.image && ( 
         <div className="image-container">
           <img
-            src={module.image}
-            alt="Module Image"
-            className="module-image"
+            src={guide.image}
+            alt="Guide Image"
+            className="guide-image"
           />
           <p className="image-credit">
-            Image: <a href={module.imageSource} target="_blank" rel="noopener noreferrer">Google Guidebooks</a>
+            Image: <a href={guide.imageSource} target="_blank" rel="noopener noreferrer">Google Guidebooks</a>
           </p>
         </div>
       )}
       <div className="overview-content">
-        {module.content.split('\n').map((line, index) => (
+        {guide.content.split('\n').map((line, index) => (
           <p key={index}>{line}</p>
         ))}
       </div>
@@ -56,4 +56,4 @@ const ModuleOverview = () => {
   );
 };
 
-export default ModuleOverview;
+export default GuideOverview;

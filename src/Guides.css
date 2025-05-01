@@ -1,4 +1,4 @@
-.modules-container {
+.guides-container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
@@ -15,33 +15,33 @@
   margin-bottom: 20px;
 }
 
-.modules-title {
+.guides-title {
   text-align: center;
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-.modules-grid {
+.guides-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
-.module-card {
+.guides-card {
   background-color: #f4f6ff;
   padding: 15px;
   border-radius: 10px;
 }
 
-.module-header {
+.guides-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.module-title {
+.guides-title {
   font-size: 18px;
   font-weight: bold;
 }
@@ -59,13 +59,13 @@
   background-color: #b0c793;
 }
 
-.submodules-list {
+.subguides-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.submodule-item {
+.subguides-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,7 +75,7 @@
   border-radius: 5px;
 }
 
-.module-btn {
+.guide-btn {
   background: white;
   border: 1px solid black;
   padding: 5px 10px;
@@ -84,7 +84,7 @@
   border-radius: 5px;
 }
 
-.module-btn:hover {
+.guide-btn:hover {
   background: #e6e6e6;
 }
 

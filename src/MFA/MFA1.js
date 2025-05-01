@@ -21,7 +21,7 @@ const MFA1 = () => {
       ]}
       />
 
-      <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
+      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
 
       <h1 className="mfa-title">Setting Up Multi-Factor Authentication (MFA) for Your Google Account</h1>
 

@@ -15,7 +15,7 @@ const Device1 = () => {
         <button className="tab">5. Connected Apps</button>
       </div>
 
-      <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
+      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
 
       <h1 className="device-title">Google Device Setup</h1>
       <p>

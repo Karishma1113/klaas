@@ -15,7 +15,7 @@ const Device3 = () => {
         <button className="tab">5. Connected Apps</button>
       </div>
 
-      <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
+      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
 
       <h3>Step 2</h3>
       <p>Review account activity by checking recent security events and managing devices:</p>

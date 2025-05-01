@@ -20,7 +20,7 @@ const MFA5 = () => {
       ]}
       />
 
-      <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
+      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
 
       <div className="mfa-content">
         <div className="mfa-steps">

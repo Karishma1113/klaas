@@ -15,7 +15,7 @@ const Device4 = () => {
         <button className="tab">5. Connected Apps</button>
       </div>
 
-      <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
+      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
 
       <h3>Step 3</h3>
       <p>Update recovery information by adding or verifying recovery methods.</p>

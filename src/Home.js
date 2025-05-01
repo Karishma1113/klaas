@@ -7,9 +7,10 @@ function NovaaWebsite() {
       <section className="container hero-section">
         <div className="hero-content">
           <h1 className="hero-title">reclaim your digital presence</h1>
-          <h2 className="hero-subtitle">
-            with <span className="highlight">novaa</span> — navigating online vulnerability and achieving autonomy
-          </h2>
+            <h2 className="hero-subtitle">
+              with <span className="highlight">novaa</span> — navigating online vulnerability and achieving autonomy
+            </h2>
+
         </div>
         <div className="hero-image-container">
           <div className="hero-image-wrapper">
@@ -26,9 +27,9 @@ function NovaaWebsite() {
       <section className="container mission-section">
         <p className="mission-text">
           Our platform is dedicated to supporting survivors of relationship-based harm by providing{" "}
-          <span className="highlight">resources</span> and <span className="highlight">guidance</span> to{" "}
-          <span className="highlight">enhance your digital safety</span> and{" "}
-          <span className="highlight">reclaim your online presence</span>.
+          <span className="highlight-diff">resources</span> and <span className="highlight-diff">guidance</span> to{" "}
+          <span className="highlight-diff">enhance your digital safety</span> and{" "}
+          <span className="highlight-diff">reclaim your online presence</span>.
         </p>
         <p className="mission-text secondary">
           Each step of that journey is supported by lessons and guides for key areas of concern, created to help you
@@ -38,7 +39,7 @@ function NovaaWebsite() {
           <a href="/resources" className="action-button">
             Explore resources <span className="arrow">→</span>
           </a>
-          <a href="/lessons" className="action-button">
+          <a href="/guides" className="action-button">
             Explore lessons & guides <span className="arrow">→</span>
           </a>
         </div>

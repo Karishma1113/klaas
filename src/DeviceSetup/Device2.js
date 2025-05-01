@@ -15,7 +15,7 @@ const Device2 = () => {
         <button className="tab">5. Connected Apps</button>
       </div>
 
-      <button className="close-btn" onClick={() => navigate("/modules")}>X</button>
+      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
 
       <h3>Step 1</h3>
       <p>On your device, locate and open the Settings app, then navigate to Google Settings.</p>
