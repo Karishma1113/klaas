@@ -5,16 +5,27 @@ body, html {
     background-color: white;
   }
 
-.mfa-container {
+  .mfa-container {
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    justify-content: space-between; /* pushes top and bottom content apart */
     width: 80%;
     height: 100%;
-    height: 900px;
+    max-height: 900px;
     margin: auto;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
     position: relative;
   }
+
+  .mfa-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }  
   
   .close-btn {
     position: absolute;
