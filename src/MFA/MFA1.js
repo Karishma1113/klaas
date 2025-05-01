@@ -26,13 +26,13 @@ const MFA1 = () => {
       <h1 className="mfa-title">Setting Up Multi-Factor Authentication (MFA) for Your Google Account</h1>
 
       <p>
-        Multi-Factor Authentication (MFA) adds an extra layer of security to your Google account by
-        requiring a second form of verification in addition to your password.
+      Multi-Factor Authentication (MFA), or 2-step verification, adds an extra layer of security to your 
+      Google account by requiring a second form of verification in addition to your password. 
       </p>
 
       <p>
-        MFA is a security feature that requires users to provide two forms of authentication to verify
-        their identity.
+      This helps protect your account from unauthorized access, even if someone steals or guesses your password.
+      MFA is a security feature that requires users to provide two forms of authentication to verify their identity.
       </p>
 
       <h3>Why set up MFA?</h3>

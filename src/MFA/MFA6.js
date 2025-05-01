@@ -27,7 +27,7 @@ const MFA6 = () => {
           <div className="step">
             <h3>Step 1</h3>
             <div className="instruction-box">
-              <p>Complete the Process: Follow the on-screen instructions to finish setting up</p>
+              <p>Complete the process by following the on-screen instructions to finish setting up</p>
             </div>
           </div>
         </div>
