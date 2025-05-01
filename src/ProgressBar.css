@@ -13,12 +13,12 @@
 
 .wrapper {
 	display: table-cell;
-	height: 400px;
+	height: auto;
 	vertical-align: middle;
 }
 
 .nav {
-	margin-top: 40px;
+	margin-top: 150px;
 }
 
 .pull-right {
@@ -26,12 +26,12 @@
 }
 
 a, a:active {
-	color: #333;
+	color: black;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #999;
+	color: black;
 }
 
 /* Breadcrups CSS */
@@ -39,7 +39,7 @@ a:hover {
 .arrow-steps .step {
 	font-size: 14px;
 	text-align: center;
-	color: #666;
+	color: black;
 	cursor: default;
 	margin: 0 3px;
 	padding: 10px 10px 10px 30px;

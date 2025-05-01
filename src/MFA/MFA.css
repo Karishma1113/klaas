@@ -2,45 +2,26 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #f8faff; /* Set the blue background */
+    background-color: white;
   }
 
 .mfa-container {
     width: 100%;
     height: 100%;
     max-width: 1000px;
+    height: 900px;
     margin: auto;
     padding: 20px;
-    background-color: #f8faff;
+    background-color: white;
     border-radius: 10px;
     position: relative;
-  }
-  
-  .mfa-tabs {
-    display: flex;
-    gap: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .tab {
-    background-color: #dde3ff;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  .tab.active {
-    background-color: white;
-    border: 2px solid #bcc7ff;
   }
   
   .close-btn {
     position: absolute;
     top: 15px;
     right: 15px;
-    background-color: #d2f0bd;
+    background-color: black;
     border: none;
     padding: 5px 10px;
     font-size: 16px;
@@ -49,7 +30,7 @@ body, html {
   }
 
   .close-btn:hover {
-    background: #b0c793;
+    background: black;
   }
   
   .mfa-title {
