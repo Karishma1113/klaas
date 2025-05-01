@@ -13,7 +13,9 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="logo-container">
-          <img src="/img/logo.png" alt="Novaa Logo" className="logo" />
+   <Link to="/Home.js">
+  <img src="/img/logo.png" alt="Novaa Logo" className="logo" />
+</Link>
         </div>
         <div className="nav-links">
           <Link to="/resources" className="nav-button">Resources</Link>
