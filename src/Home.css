@@ -111,7 +111,7 @@ body {
   justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .action-button {
@@ -137,7 +137,7 @@ body {
 
 /* Safety section */
 .safety-section {
-  background: #f7f9fc;
+  /* background: #f7f9fc; */
   padding: 4rem 1rem;
   border-radius: 1rem;
 }
@@ -151,7 +151,7 @@ body {
 }
 
 .section-description {
-  max-width: 700px;
+  max-width: 1050px;
   margin: 0 auto 2rem;
   text-align: left;
   font-size: 1.25rem;
@@ -161,7 +161,7 @@ body {
 .safety-image-container {
   display: flex;
   justify-content: center;
-  margin: 2rem 0 4rem;
+  margin: 2rem 0 10rem;
 }
 
 .safety-image {
@@ -173,7 +173,7 @@ body {
 .protection-image-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .protection-image {
@@ -198,7 +198,6 @@ body {
   background-color: white;
   padding: 1rem;
   border-radius: 0.5rem;
-  min-height: 320px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
@@ -234,7 +233,7 @@ body {
 
 /* Footer */
 .footer-section {
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
