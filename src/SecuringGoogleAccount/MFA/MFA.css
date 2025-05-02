@@ -27,7 +27,6 @@ body, html {
     margin-top: 1rem;
   }
 
-
   .mfa-navigation {
     display: flex;
     justify-content: space-between;
@@ -72,8 +71,9 @@ body, html {
   .mfa-title {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 15px;
-    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    text-align: center;
   }
 
   .mfa-content {

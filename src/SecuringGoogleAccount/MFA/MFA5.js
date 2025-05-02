@@ -8,19 +8,21 @@ const MFA5 = () => {
 
   return (
     <div className="mfa-container">
-      <ProgressBar 
-      currentStep={5}
-      stepLabels={[
-        "Overview",
-        "Access Account",
-        "Security Settings",
-        "Get Started",
-        "Verification Methods",
-        "Complete"
-      ]}
+      <ProgressBar
+        currentStep={5}
+        stepLabels={[
+          "Overview",
+          "Access Account",
+          "Security Settings",
+          "Get Started",
+          "Verification Methods",
+          "Complete",
+        ]}
       />
 
-      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
+      <button className="close-btn" onClick={() => navigate("/guides")}>
+        X
+      </button>
 
       <div className="mfa-content">
         <div className="mfa-steps">
@@ -37,7 +39,10 @@ const MFA5 = () => {
             <h3>Options</h3>
             <div className="instruction-box">
               <p>Google Prompts: Approve sign-ins from your smartphone</p>
-              <p>Authentication App: Use an app like Google Authenticator for codes</p>
+              <p>
+                Authentication App: Use an app like Google Authenticator for
+                codes
+              </p>
               <p>Text Message or Call: Receive code via SMS or voice call</p>
             </div>
           </div>
@@ -48,8 +53,20 @@ const MFA5 = () => {
       </div>
 
       <div className="mfa-navigation">
-        <button className="nav-btn back-btn" onClick={() => navigate("/mfa/mfa4")}> ← Back</button>
-        <button className="nav-btn next-btn" onClick={() => navigate("/mfa/mfa6")}> Next →</button>
+        <button
+          className="nav-btn back-btn"
+          onClick={() => navigate("/mfa/mfa4")}
+        >
+          {" "}
+          ← Back
+        </button>
+        <button
+          className="nav-btn next-btn"
+          onClick={() => navigate("/mfa/mfa6")}
+        >
+          {" "}
+          Next →
+        </button>
       </div>
     </div>
   );

@@ -35,7 +35,7 @@ const MFA2 = () => {
       </div>
 
       <div className="mfa-navigation">
-        <button className="back-btn" onClick={() => navigate("/mfa1")}>← Back</button>
+      <button className="back-btn" onClick={() => navigate("/SecuringGoogleAccount/mfa/mfa1")}>← Back</button>
         <button className="next-btn" onClick={() => navigate("/mfa/mfa3")}>Next →</button>
       </div>
     </div>
