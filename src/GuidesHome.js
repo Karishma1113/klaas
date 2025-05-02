@@ -33,7 +33,7 @@ const LearningGuides = () => {
 
   return (
     <div className="guides-container">
-      <h2 className="page-title">Learning Guide</h2>
+      <h2 className="page-title">Learning Guides</h2>
       <label className="search-label">Search guides</label>
       <div className="search-bar">
         <input type="text" placeholder=" " />

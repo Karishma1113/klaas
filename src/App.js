@@ -7,7 +7,6 @@ import Survey2 from "./Survey2";
 import SurveyResults from "./SurveyResults";
 import Resources from "./Resources";
 import GuidesHome from "./GuidesHome";
-import GuideOverview from "./GuideOverview";
 import MFA1 from "./MFA/MFA1";
 import MFA2 from "./MFA/MFA2";
 import MFA3 from "./MFA/MFA3";
@@ -40,8 +39,7 @@ export default function App() {
           <Route path="/mfa/mfa3" element={<MFA3 />} />
           <Route path="/mfa/mfa4" element={<MFA4 />} />
           <Route path="/mfa/mfa5" element={<MFA5 />} />
-          <Route path="/mfa/mfa6" element={<MFA6 />} />
-          <Route path="/guide/:guideId" element={<GuideOverview />} /> {/* New route */}
+          <Route path="/mfa/mfa6" element={<MFA6 />} /> {/* New route */}
           <Route path="*" element={<Navigate to="/" />} />
           <Route path="/device1" element={<Device1 />} />
           <Route path="/device/device2" element={<Device2 />} />
