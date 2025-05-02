@@ -1,90 +1,93 @@
 .guides-container {
   width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.page-title {
+  color: #4e6590;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-label {
+  margin-left: 5px;
+  font-size: 14px;
 }
 
 .search-bar {
-  width: 100%;
-  max-width: 300px;
-  padding: 8px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #c3c5d2;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin: 10px 0 30px;
+  max-width: 350px;
+}
+
+.search-bar input {
+  border: none;
+  flex: 1;
+  outline: none;
+}
+
+.search-icon {
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 20px;
+  margin-left: 8px;
 }
 
-.guides-title {
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 30px;
+.guide {
+  margin-bottom: 10px;
 }
 
-.guides-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.guides-card {
-  background-color: #f4f6ff;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.guides-header {
+.guide-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.guides-title {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.overview-btn {
-  background-color: #d4eeb1;
-  border: none;
-  padding: 5px 10px;
-  font-size: 14px;
   cursor: pointer;
-  border-radius: 5px;
+  padding: 10px 0;
+  align-items: center;
 }
 
-.overview-btn:hover {
-  background-color: #b0c793;
+.guide-header h3 {
+  margin: 0;
+  font-size: 18px;
 }
 
-.subguides-list {
+.arrow {
+  font-size: 18px;
+}
+
+.guide-details {
+  padding: 10px 0 20px;
+  font-size: 14px;
+  white-space: pre-line;
+}
+
+.subguides {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 15px;
 }
 
-.subguides-item {
+.subguide {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
-  background: #eef1ff;
-  padding: 8px;
-  border-radius: 5px;
 }
 
-.guide-btn {
-  background: white;
-  border: 1px solid black;
-  padding: 5px 10px;
-  font-size: 12px;
+.subguide button {
+  background-color: #f3f5fc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 4px 12px;
+  font-weight: bold;
   cursor: pointer;
-  border-radius: 5px;
 }
 
-.guide-btn:hover {
-  background: #e6e6e6;
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
 }
-
