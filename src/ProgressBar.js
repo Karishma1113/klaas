@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ProgressBar.css";
 
-const ProgressBar = ({ totalSteps = 6, currentStep = 1, stepLabels = [] }) => {
-  const [step] = useState(currentStep);
-
+const ProgressBar = ({ totalSteps, currentStep, stepLabels }) => {
   return (
     <div className="bar-container">
       <div className="wrapper">
@@ -11,8 +9,8 @@ const ProgressBar = ({ totalSteps = 6, currentStep = 1, stepLabels = [] }) => {
           {Array.from({ length: totalSteps }, (_, i) => {
             const index = i + 1;
             let className = "step";
-            if (index < step) className += " done";
-            else if (index === step) className += " current";
+            if (index < currentStep) className += " done";
+            else if (index === currentStep) className += " current";
 
             return (
               <div className={className} key={index}>

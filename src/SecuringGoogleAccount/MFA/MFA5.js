@@ -6,18 +6,26 @@ import "./MFA.css";
 const MFA5 = () => {
   const navigate = useNavigate();
 
+  const stepLabels = [
+    "Overview",
+    "Access Account",
+    "Security Settings",
+    "Get Started",
+    "Verification Methods",
+    "Complete",
+  ];
+
+  const totalSteps = stepLabels.length;
+  const currentStep = 5; 
+
+
   return (
     <div className="mfa-container">
+      {/* Updated ProgressBar with dynamic steps */}
       <ProgressBar
-        currentStep={5}
-        stepLabels={[
-          "Overview",
-          "Access Account",
-          "Security Settings",
-          "Get Started",
-          "Verification Methods",
-          "Complete",
-        ]}
+        currentStep={currentStep}
+        totalSteps={totalSteps}
+        stepLabels={stepLabels}
       />
 
       <button className="close-btn" onClick={() => navigate("/guides")}>

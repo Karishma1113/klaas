@@ -1,25 +1,31 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './Guides.css';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./Guides.css";
 
 const guidesData = [
   {
-    title: 'Securing Google Accounts',
+    title: "Securing Google Accounts",
     description: `Your Google account is connected to many personal details, including emails, saved passwords, and location history. Keeping it secure is essential for protecting your privacy and preventing unauthorized access.
 
-These guides will introduce why securing your Google account matters, how accounts can be accessed without your knowledge, and ways Google tracks your activity and what that means for your privacy.
+    These guides will introduce why securing your Google account matters, how accounts can be accessed without your knowledge, and ways Google tracks your activity and what that means for your privacy.
 
-Understanding these risks will help you take control of your account security as you move through the guides.`,
-    subGuides: ['MFA Setup', 'Device Setup', 'Password Setup', 'Private Browsing', 'Recovery Email'],
+    Understanding these risks will help you take control of your account security as you move through the guides.`,
+    subGuides: [
+      "MFA Setup",
+      "Device Setup",
+      "Password Setup",
+      "Private Browsing",
+      "Recovery Email",
+    ],
   },
   {
-    title: 'Securing Apple Accounts',
+    title: "Securing Apple Accounts",
   },
   {
-    title: 'Tracking Devices',
+    title: "Tracking Devices",
   },
   {
-    title: 'Securing Social Media Accounts',
+    title: "Securing Social Media Accounts",
   },
   {
     title: "Securing Your Children’s Digital Safety",
@@ -28,7 +34,7 @@ Understanding these risks will help you take control of your account security as
 
 // Map subguide titles to their respective paths
 const subGuidePaths = {
-  'MFA Setup': '/SecuringGoogleAccount/mfa/mfa1',
+  "MFA Setup": "/SecuringGoogleAccount/mfa/mfa1",
   // You can add more like:
   // 'Device Setup': '/securinggoogleaccount/device/device1',
   // 'Password Setup': '/securinggoogleaccount/password/password1',
@@ -47,7 +53,7 @@ const LearningGuides = () => {
     if (path) {
       navigate(path);
     } else {
-      alert('Guide not available yet.');
+      alert("Guide not available yet.");
     }
   };
 
@@ -64,7 +70,7 @@ const LearningGuides = () => {
         <div className="guide" key={index}>
           <div className="guide-header" onClick={() => handleToggle(index)}>
             <h3>{guide.title}</h3>
-            <span className="arrow">{openIndex === index ? '▾' : '▸'}</span>
+            <span className="arrow">{openIndex === index ? "▾" : "▸"}</span>
           </div>
           {openIndex === index && guide.description && (
             <div className="guide-details">
