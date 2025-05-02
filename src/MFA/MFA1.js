@@ -9,30 +9,37 @@ const MFA1 = () => {
   return (
     <div className="mfa-container">
       {/* Replace the old progress bar with the new one */}
-      <ProgressBar 
-      currentStep={1}
-      stepLabels={[
-        "Overview",
-        "Access Account",
-        "Security Settings",
-        "Get Started",
-        "Verification Methods",
-        "Complete"
-      ]}
+      <ProgressBar
+        currentStep={1}
+        stepLabels={[
+          "Overview",
+          "Access Account",
+          "Security Settings",
+          "Get Started",
+          "Verification Methods",
+          "Complete",
+        ]}
       />
 
-      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
+      <button className="close-btn" onClick={() => navigate("/guides")}>
+        X
+      </button>
 
-      <h1 className="mfa-title">Setting Up Multi-Factor Authentication (MFA) for Your Google Account</h1>
+      <h1 className="mfa-title">
+        Setting Up Multi-Factor Authentication (MFA) for Your Google Account
+      </h1>
 
-      <p>
-      Multi-Factor Authentication (MFA), or 2-step verification, adds an extra layer of security to your 
-      Google account by requiring a second form of verification in addition to your password. 
+      <p className="mfa-desc">
+        Multi-Factor Authentication (MFA), or 2-step verification, adds an extra
+        layer of security to your Google account by requiring a second form of
+        verification in addition to your password.
       </p>
 
-      <p>
-      This helps protect your account from unauthorized access, even if someone steals or guesses your password.
-      MFA is a security feature that requires users to provide two forms of authentication to verify their identity.
+      <p className="mfa-desc">
+        This helps protect your account from unauthorized access, even if
+        someone steals or guesses your password. MFA is a security feature that
+        requires users to provide two forms of authentication to verify their
+        identity.
       </p>
 
       <h3>Why set up MFA?</h3>
@@ -44,6 +51,9 @@ const MFA1 = () => {
       </ul>
 
       <div className="mfa-navigation">
+        <div style={{ visibility: "hidden" }}>
+          <button className="back-btn">← Back</button>
+        </div>
         <button className="next-btn" onClick={() => navigate("/mfa/mfa2")}>
           Next →
         </button>
