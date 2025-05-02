@@ -11,7 +11,7 @@ const guidesData = [
 
     Understanding these risks will help you take control of your account security as you move through the guides.`,
     subGuides: [
-      "MFA Setup",
+      "Multi-Factor Authentication",
       "Device Setup",
       "Password Setup",
       "Private Browsing",
@@ -20,6 +20,16 @@ const guidesData = [
   },
   {
     title: "Securing Apple Accounts",
+    description: `Apple accounts are used to sign into  Apple services such as the App Store, iCloud, Apple Music, iMessage, FaceTime, and more. They also store sensitive information like payment methods, contact details, and personal data, including photos and documents. Protecting your Apple account is important to prevent unauthorized access and keep your private information secure.
+
+    These guides will explain why securing your Apple account matters and walk you through the steps to do so effectively.`,
+    subGuides: [
+      "Two-Factor Authentication",
+      "Find My iPhone",
+      "Location Sharing",
+      "Stolen/Lost Device Protection",
+      "If Account is Already Compromised",
+    ],
   },
   {
     title: "Tracking Devices",
@@ -34,8 +44,8 @@ const guidesData = [
 
 // Map subguide titles to their respective paths
 const subGuidePaths = {
-  "MFA Setup": "/SecuringGoogleAccount/mfa/mfa1",
-  // You can add more like:
+  "Multi-Factor Authentication": "/SecuringGoogleAccount/mfa/mfa1",
+  // add more like:
   // 'Device Setup': '/securinggoogleaccount/device/device1',
   // 'Password Setup': '/securinggoogleaccount/password/password1',
 };
