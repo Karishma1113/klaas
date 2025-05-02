@@ -24,7 +24,7 @@ const MFA3 = () => {
 
       <div className="mfa-content">
         <div className="mfa-steps">
-          <div className="step">
+          <div className="step-info">
             <h3>Step 1</h3>
             <div className="instruction-box">
               <p>Navigate to your account’s security settings</p>
@@ -37,7 +37,7 @@ const MFA3 = () => {
         </div>
 
         <div className="mfa-steps">
-          <div className="step">
+          <div className="step-info">
             <h3>Step 2</h3>
             <div className="instruction-box">
               <p>Under “Signing into Google,” select “2-Step Verification”</p>

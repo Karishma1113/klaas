@@ -19,6 +19,15 @@ body, html {
     position: relative;
   }
 
+  .mfa-desc {
+    margin-bottom: 1rem;
+  }
+
+  .mfa-subtitle {
+    margin-top: 1rem;
+  }
+
+
   .mfa-navigation {
     display: flex;
     justify-content: space-between;
@@ -42,9 +51,22 @@ body, html {
   .close-btn:hover {
     background: grey;
   }
+
+  .step-info h3 {
+    margin-bottom: 10px; 
+  }
+
+  .step-info p {
+    margin-bottom: 20px; 
+  }
   
-  .mfa-desc {
-    margin-bottom: 1rem;
+  
+  .option-info h3 {
+    margin-bottom: 10px; 
+  }
+  
+  .step-num {
+    margin-bottom: 2rem;
   }
 
   .mfa-title {

@@ -37,12 +37,11 @@ const MFA1 = () => {
 
       <p className="mfa-desc">
         This helps protect your account from unauthorized access, even if
-        someone steals or guesses your password. MFA is a security feature that
-        requires users to provide two forms of authentication to verify their
+        someone steals or guesses your password. MFA is a security feature that requires users to provide two forms of authentication to verify their
         identity.
       </p>
 
-      <h3>Why set up MFA?</h3>
+      <h3 className="mfa-subtitle">Why set up MFA?</h3>
       <ul className="mfa-list">
         <li>○ Prevents unauthorized access</li>
         <li>○ Enhances security for data</li>

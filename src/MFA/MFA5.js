@@ -24,7 +24,7 @@ const MFA5 = () => {
 
       <div className="mfa-content">
         <div className="mfa-steps">
-          <div className="step">
+          <div className="step-info">
             <h3>Step 1</h3>
             <div className="instruction-box">
               <p>Choose a verification method from the provided options</p>
@@ -33,7 +33,7 @@ const MFA5 = () => {
         </div>
 
         <div className="mfa-steps">
-          <div className="step">
+          <div className="option-info">
             <h3>Options</h3>
             <div className="instruction-box">
               <p>Google Prompts: Approve sign-ins from your smartphone</p>
