@@ -70,16 +70,17 @@
 .subguides {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 40px;
-  /* background-color: #d1d6e0; */
+  align-items: center;
+  margin-top: 30px;
 }
 
 .subguide {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  width: 100%;
+  max-width: 600px;
+  padding: 14px;
 }
 
 .subguide button {

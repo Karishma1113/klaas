@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ProgressBar from "../ProgressBarMFA";
+import ProgressBar from '../../ProgressBar';
 import "./MFA.css";
 
 const MFA6 = () => {

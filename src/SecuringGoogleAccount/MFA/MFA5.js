@@ -1,15 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ProgressBar from "../ProgressBarMFA";
+import ProgressBar from '../../ProgressBar';
 import "./MFA.css";
 
-const MFA3 = () => {
+const MFA5 = () => {
   const navigate = useNavigate();
 
   return (
     <div className="mfa-container">
       <ProgressBar 
-      currentStep={3}
+      currentStep={5}
       stepLabels={[
         "Overview",
         "Access Account",
@@ -27,34 +27,32 @@ const MFA3 = () => {
           <div className="step-info">
             <h3>Step 1</h3>
             <div className="instruction-box">
-              <p>Navigate to your account’s security settings</p>
-              <p>Click on the “Security” tab</p>
+              <p>Choose a verification method from the provided options</p>
             </div>
-          </div>
-          <div className="step-image">
-            <img src="/img/security-settings.png" alt="Google Security Settings" />
           </div>
         </div>
 
         <div className="mfa-steps">
-          <div className="step-info">
-            <h3>Step 2</h3>
+          <div className="option-info">
+            <h3>Options</h3>
             <div className="instruction-box">
-              <p>Under “Signing into Google,” select “2-Step Verification”</p>
+              <p>Google Prompts: Approve sign-ins from your smartphone</p>
+              <p>Authentication App: Use an app like Google Authenticator for codes</p>
+              <p>Text Message or Call: Receive code via SMS or voice call</p>
             </div>
           </div>
           <div className="step-image">
-            <img src="/img/2-step-verification.png" alt="Google 2-Step Verification" />
+            <img src="/img/second-steps.png" alt="Second steps" />
           </div>
         </div>
       </div>
 
       <div className="mfa-navigation">
-        <button className="nav-btn back-btn" onClick={() => navigate("/mfa/mfa2")}> ← Back</button>
-        <button className="nav-btn next-btn" onClick={() => navigate("/mfa/mfa4")}> Next →</button>
+        <button className="nav-btn back-btn" onClick={() => navigate("/mfa/mfa4")}> ← Back</button>
+        <button className="nav-btn next-btn" onClick={() => navigate("/mfa/mfa6")}> Next →</button>
       </div>
     </div>
   );
 };
 
-export default MFA3;
+export default MFA5;

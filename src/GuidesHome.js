@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Guides.css';
 
 const guidesData = [
@@ -25,10 +26,29 @@ Understanding these risks will help you take control of your account security as
   },
 ];
 
+// Map subguide titles to their respective paths
+const subGuidePaths = {
+  'MFA Setup': '/SecuringGoogleAccount/mfa/mfa1',
+  // You can add more like:
+  // 'Device Setup': '/securinggoogleaccount/device/device1',
+  // 'Password Setup': '/securinggoogleaccount/password/password1',
+};
+
 const LearningGuides = () => {
   const [openIndex, setOpenIndex] = useState(null);
+  const navigate = useNavigate();
+
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const handleNavigate = (subguideTitle) => {
+    const path = subGuidePaths[subguideTitle];
+    if (path) {
+      navigate(path);
+    } else {
+      alert('Guide not available yet.');
+    }
   };
 
   return (
@@ -52,8 +72,8 @@ const LearningGuides = () => {
               <div className="subguides">
                 {guide.subGuides.map((sub, i) => (
                   <div className="subguide" key={i}>
-                    <span>{sub}</span>
-                    <button>Guide →</button>
+                    <span className="subguide-title">{sub}</span>
+                    <button onClick={() => handleNavigate(sub)}>Guide →</button>
                   </div>
                 ))}
               </div>
