@@ -45,6 +45,7 @@ const guidesData = [
 // Map subguide titles to their respective paths
 const subGuidePaths = {
   "Multi-Factor Authentication": "/SecuringGoogleAccount/mfa/mfa1",
+  "Two-Factor Authentication": "/AppleAccounts/2FactorAuth/TwoFA1",
   // add more like:
   // 'Device Setup': '/securinggoogleaccount/device/device1',
   // 'Password Setup': '/securinggoogleaccount/password/password1',

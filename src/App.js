@@ -20,6 +20,9 @@ import Device4 from "./SecuringGoogleAccount/DeviceSetup/Device4";
 import Device5 from "./SecuringGoogleAccount/DeviceSetup/Device5";
 import Password1 from "./SecuringGoogleAccount/PasswordSetup/Password1";
 import Password2 from "./SecuringGoogleAccount/PasswordSetup/Password2";
+import TwoFA1 from "./AppleAccounts/2FactorAuth/TwoFA1";
+import TwoFA2 from "./AppleAccounts/2FactorAuth/TwoFA2";
+
 
 
 export default function App() {
@@ -48,7 +51,8 @@ export default function App() {
           <Route path="/device/device5" element={<Device5 />} />
           <Route path="/password1" element={<Password1 />} />
           <Route path="password/password2" element={<Password2 />} />
-
+          <Route path="/AppleAccounts/2FactorAuth/TwoFA1" element={<TwoFA1 />} />
+          <Route path="/AppleAccounts/2FactorAuth/TwoFA2" element={<TwoFA2 />} />
         </Routes>
       </div>
     </Router>
