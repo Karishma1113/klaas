@@ -29,7 +29,7 @@ const LocationModule6 = () => {
       </div>
       <div className="twofa-navigation">
         <button className="back-btn" onClick={() => navigate("/KidsPrivacy/LocationModule5")}>← Back</button>
-        <div style={{ visibility: "hidden" }}><button className="next-btn">Next →</button></div>
+        <button className="next-btn" onClick={() => navigate("/guides")}>Done</button>
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ const FamilyModule5 = () => {
       </div>
       <div className="twofa-navigation">
         <button className="back-btn" onClick={() => navigate("/KidsPrivacy/FamilyModule4")}>← Back</button>
-        <button className="next-btn" onClick={() => navigate("/guides")}>Done</button>
+        <button className="next-btn" onClick={() => navigate("/guides")}>Done ✓</button>
       </div>
     </div>
   );
