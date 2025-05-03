@@ -39,7 +39,13 @@ const guidesData = [
   },
   {
     title: "Securing Your Children’s Digital Safety",
-  },
+    description: `This section is designed to help parents and caregivers keep children safe from digital risks. It includes steps to turn off location tracking, adjust privacy settings, and limit who can see a child's online activity.`,
+    subGuides: [
+      "Turn Off Location Tracking",
+      "Snapchat Ghost Mode",
+      "Review Family Sharing Settings"
+    ],
+  }  
 ];
 
 // Map subguide titles to their respective paths
@@ -51,6 +57,10 @@ const subGuidePaths = {
   'Password Setup': '/securinggoogleaccount/password/password1',
   'Secure Browsing': "/securinggoogleaccount/secure-browsing",
   'Google Search Settings': "/securinggoogleaccount/googlesearchsettings/overview",
+  "Turn Off Location Tracking": "/KidsPrivacy/LocationModule1",
+  "Snapchat Ghost Mode": "/KidsPrivacy/SnapModule1",
+  "Review Family Sharing Settings": "/KidsPrivacy/FamilyModule1",
+
 };
 
 const LearningGuides = () => {

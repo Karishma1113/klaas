@@ -34,6 +34,23 @@ import DarkWebReport from "./SecuringGoogleAccount/GoogleSearchSettings/DarkWebR
 import TwoFA1 from "./AppleAccounts/2FactorAuth/TwoFA1";
 import TwoFA2 from "./AppleAccounts/2FactorAuth/TwoFA2";
 import TwoFA3 from "./AppleAccounts/2FactorAuth/TwoFA3";
+import LocationModule1 from "./KidsPrivacy/LocationModule1";
+import LocationModule2 from "./KidsPrivacy/LocationModule2";
+import LocationModule3 from "./KidsPrivacy/LocationModule3";
+import LocationModule4 from "./KidsPrivacy/LocationModule4";
+import LocationModule5 from "./KidsPrivacy/LocationModule5";
+import LocationModule6 from "./KidsPrivacy/LocationModule6";
+import SnapModule1 from "./KidsPrivacy/SnapModule1";
+import SnapModule2 from "./KidsPrivacy/SnapModule2";
+import SnapModule3 from "./KidsPrivacy/SnapModule3";
+import SnapModule4 from "./KidsPrivacy/SnapModule4";
+import SnapModule5 from "./KidsPrivacy/SnapModule5";
+import FamilyModule1 from "./KidsPrivacy/FamilyModule1";
+import FamilyModule2 from "./KidsPrivacy/FamilyModule2";
+import FamilyModule3 from "./KidsPrivacy/FamilyModule3";
+import FamilyModule4 from "./KidsPrivacy/FamilyModule4";
+import FamilyModule5 from "./KidsPrivacy/FamilyModule5";
+
 
 
 
@@ -77,6 +94,25 @@ export default function App() {
           <Route path="/AppleAccounts/2FactorAuth/TwoFA1" element={<TwoFA1 />} />
           <Route path="/AppleAccounts/2FactorAuth/TwoFA2" element={<TwoFA2 />} />
           <Route path="/AppleAccounts/2FactorAuth/TwoFA3" element={<TwoFA3 />} />
+          <Route path="/KidsPrivacy/LocationModule1" element={<LocationModule1 />} />
+          <Route path="/KidsPrivacy/LocationModule2" element={<LocationModule2 />} />
+          <Route path="/KidsPrivacy/LocationModule3" element={<LocationModule3 />} />
+          <Route path="/KidsPrivacy/LocationModule4" element={<LocationModule4 />} />
+          <Route path="/KidsPrivacy/LocationModule5" element={<LocationModule5 />} />
+          <Route path="/KidsPrivacy/LocationModule6" element={<LocationModule6 />} />
+          <Route path="/KidsPrivacy/SnapModule1" element={<SnapModule1 />} />
+          <Route path="/KidsPrivacy/SnapModule2" element={<SnapModule2 />} />
+          <Route path="/KidsPrivacy/SnapModule3" element={<SnapModule3 />} />
+          <Route path="/KidsPrivacy/SnapModule4" element={<SnapModule4 />} />
+          <Route path="/KidsPrivacy/SnapModule5" element={<SnapModule5 />} />
+          <Route path="/KidsPrivacy/FamilyModule1" element={<FamilyModule1 />} />
+          <Route path="/KidsPrivacy/FamilyModule2" element={<FamilyModule2 />} />
+          <Route path="/KidsPrivacy/FamilyModule3" element={<FamilyModule3 />} />
+          <Route path="/KidsPrivacy/FamilyModule4" element={<FamilyModule4 />} />
+          <Route path="/KidsPrivacy/FamilyModule5" element={<FamilyModule5 />} />
+
+
+          
         </Routes>
       </div>
     </Router>
