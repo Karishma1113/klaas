@@ -17,9 +17,20 @@ import Device1 from "./SecuringGoogleAccount/DeviceSetup/Device1";
 import Device2 from "./SecuringGoogleAccount/DeviceSetup/Device2";
 import Device3 from "./SecuringGoogleAccount/DeviceSetup/Device3";
 import Device4 from "./SecuringGoogleAccount/DeviceSetup/Device4";
-import Device5 from "./SecuringGoogleAccount/DeviceSetup/Device5";
 import Password1 from "./SecuringGoogleAccount/PasswordSetup/Password1";
 import Password2 from "./SecuringGoogleAccount/PasswordSetup/Password2";
+import SecureBrowsing from "./SecuringGoogleAccount/SecureBrowsing/SecureBrowsingOverview";
+import Autosave from "./SecuringGoogleAccount/SecureBrowsing/Autosave";
+import Adds from "./SecuringGoogleAccount/SecureBrowsing/Adds";
+import Location from "./SecuringGoogleAccount/SecureBrowsing/Location";
+import Search from "./SecuringGoogleAccount/SecureBrowsing/Search";
+import ThirdPartyApps from "./SecuringGoogleAccount/SecureBrowsing/ThirdPartyApps";
+import ClearHistory from "./SecuringGoogleAccount/SecureBrowsing/ClearBrowseHistory";
+import Complete_1 from "./SecuringGoogleAccount/SecureBrowsing/GuideComplete_1";
+import Overview from "./SecuringGoogleAccount/GoogleSearchSettings/Overview";
+import GoogleScan from "./SecuringGoogleAccount/GoogleSearchSettings/GoogleScan";
+import RemovalRequest from "./SecuringGoogleAccount/GoogleSearchSettings/RemovalRequest";
+import DarkWebReport from "./SecuringGoogleAccount/GoogleSearchSettings/DarkWebReport";
 
 
 export default function App() {
@@ -41,13 +52,25 @@ export default function App() {
           <Route path="/mfa/mfa5" element={<MFA5 />} />
           <Route path="/mfa/mfa6" element={<MFA6 />} />
           <Route path="*" element={<Navigate to="/" />} />
-          <Route path="/device1" element={<Device1 />} />
+          <Route path="/securinggoogleaccount/device/device1" element={<Device1 />} />
           <Route path="/device/device2" element={<Device2 />} />
           <Route path="/device/device3" element={<Device3 />} />
           <Route path="/device/device4" element={<Device4 />} />
-          <Route path="/device/device5" element={<Device5 />} />
-          <Route path="/password1" element={<Password1 />} />
-          <Route path="password/password2" element={<Password2 />} />
+          <Route path="/securinggoogleaccount/password/password1" element={<Password1 />} />
+          <Route path="/password/password2" element={<Password2 />} />
+          <Route path="/securinggoogleaccount/secure-browsing" element={<SecureBrowsing />} />
+          <Route path="/secure-browsing/autosave" element={<Autosave />} />
+          <Route path="/secure-browsing/adds" element={<Adds />} />
+          <Route path="/secure-browsing/location" element={<Location />} />
+          <Route path="/secure-browsing/search" element={<Search />} />
+          <Route path="/secure-browsing/trird-party-apps" element={<ThirdPartyApps />} />
+          <Route path="/secure-browsing/clearing-browsing-history" element={<ClearHistory />} />
+          <Route path="/secure-browsing/complete" element={<Complete_1 />} />
+          <Route path="/securinggoogleaccount/googlesearchsettings/overview" element={<Overview />} />
+          <Route path="/google-search-settings/google-scan" element={<GoogleScan />} />
+          <Route path="/google-search-settings/removal-request" element={<RemovalRequest />} />
+          <Route path="/google-search-settings/dark-web-report" element={<DarkWebReport />} />
+
 
         </Routes>
       </div>

@@ -14,8 +14,8 @@ const guidesData = [
       "Multi-Factor Authentication",
       "Device Setup",
       "Password Setup",
-      "Private Browsing",
-      "Recovery Email",
+      "Secure Browsing",
+      "Google Search Settings",
     ],
   },
   {
@@ -46,8 +46,10 @@ const guidesData = [
 const subGuidePaths = {
   "Multi-Factor Authentication": "/SecuringGoogleAccount/mfa/mfa1",
   // add more like:
-  // 'Device Setup': '/securinggoogleaccount/device/device1',
-  // 'Password Setup': '/securinggoogleaccount/password/password1',
+  'Device Setup': '/securinggoogleaccount/device/device1',
+  'Password Setup': '/securinggoogleaccount/password/password1',
+  'Secure Browsing': "/securinggoogleaccount/secure-browsing",
+  'Google Search Settings': "/securinggoogleaccount/googlesearchsettings/overview",
 };
 
 const LearningGuides = () => {
