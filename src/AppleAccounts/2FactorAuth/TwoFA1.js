@@ -1,25 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ProgressBar from '../../ProgressBar';
+import ProgressBar from "../../ProgressBar";
 import "./TwoFA.css";
 
 const TwoFA1 = () => {
   const navigate = useNavigate();
 
-  const stepLabels = [
-    "Overview",
-    "",
-    "",
-    "",
-    " ",
-    "",
-  ];
+  const stepLabels = ["Overview", "Turning on 2FA", "Signing in on New Device/Browser", "If You Can't Access a Trusted Device", "Manage Trusted Phone Numbers"];
 
   const totalSteps = stepLabels.length;
-  const currentStep = 1; // Current step for this part of the guide 
+  const currentStep = 1; // Current step for this part of the guide
 
   return (
-    <div className="2fa-container">
+    <div className="twofa-container">
       {/* Updated ProgressBar with dynamic steps */}
       <ProgressBar
         currentStep={currentStep}
@@ -31,35 +24,30 @@ const TwoFA1 = () => {
         X
       </button>
 
-      <h1 className="2fa-title">
-        Setting Up Multi-Factor Authentication (MFA) for Your Google Account
+      <h1 className="twofa-title">
+        What is Two-Factor Authentication (2FA) for Apple Accounts?
       </h1>
 
-      <p className="2fa-desc">
-        Multi-Factor Authentication (MFA), or 2-step verification, adds an extra
-        layer of security to your Google account by requiring a second form of
-        verification in addition to your password.
+      <p className="twofa-desc">
+        Two-Factor Authentication (2FA) is a security feature that helps protect
+        your Apple account by requiring two forms of verification when signing
+        in: your password and a six-digit code sent to a trusted device or phone
+        number. This extra step ensures that even if someone knows your
+        password, they can’t access your account without also having access to
+        your trusted device.
       </p>
 
-      <p className="mfa-desc">
-        This helps protect your account from unauthorized access, even if
-        someone steals or guesses your password. MFA is a security feature that requires users to provide two forms of authentication to verify their
-        identity.
+      <p className="twofa-desc">
+        2FA helps keep your data secure by preventing unauthorized access,
+        especially in cases of phishing attacks or stolen passwords.
       </p>
 
-      <h3 className="mfa-subtitle">Why set up MFA?</h3>
-      <ul className="mfa-list">
-        <li>○ Prevents unauthorized access</li>
-        <li>○ Enhances security for data</li>
-        <li>○ Reduces the risk of identity theft</li>
-        <li>○ Protects against phishing attacks</li>
-      </ul>
-
-      <div className="mfa-navigation">
+      <div className="twofa-navigation">
         <div style={{ visibility: "hidden" }}>
           <button className="back-btn">← Back</button>
         </div>
-        <button className="next-btn" onClick={() => navigate("/mfa/mfa2")}>
+        <button className="next-btn" onClick={() => navigate("/AppleAccounts/2FactorAuth/TwoFA2")}
+        >
           Next →
         </button>
       </div>
