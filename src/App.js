@@ -33,6 +33,7 @@ import RemovalRequest from "./SecuringGoogleAccount/GoogleSearchSettings/Removal
 import DarkWebReport from "./SecuringGoogleAccount/GoogleSearchSettings/DarkWebReport";
 import TwoFA1 from "./AppleAccounts/2FactorAuth/TwoFA1";
 import TwoFA2 from "./AppleAccounts/2FactorAuth/TwoFA2";
+import TwoFA3 from "./AppleAccounts/2FactorAuth/TwoFA3";
 
 
 
@@ -75,6 +76,7 @@ export default function App() {
           <Route path="/google-search-settings/dark-web-report" element={<DarkWebReport />} />
           <Route path="/AppleAccounts/2FactorAuth/TwoFA1" element={<TwoFA1 />} />
           <Route path="/AppleAccounts/2FactorAuth/TwoFA2" element={<TwoFA2 />} />
+          <Route path="/AppleAccounts/2FactorAuth/TwoFA3" element={<TwoFA3 />} />
         </Routes>
       </div>
     </Router>

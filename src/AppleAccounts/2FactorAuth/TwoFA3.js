@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ProgressBar from "../../ProgressBar";
 import "./TwoFA.css";
 
-const TwoFA2 = () => {
+const TwoFA3 = () => {
   const navigate = useNavigate();
 
   const stepLabels = [
@@ -15,7 +15,7 @@ const TwoFA2 = () => {
   ];
 
   const totalSteps = stepLabels.length;
-  const currentStep = 2; // Current step for this part of the guide
+  const currentStep = 3; // Current step for this part of the guide
 
   return (
     <div className="twofa-container">
@@ -32,45 +32,41 @@ const TwoFA2 = () => {
 
       <div className="twoFA-content">
         <div className="step-info">
-          <h3>
-            Turning on Two-Factor Authentication is different based on the
-            device you are using.
-          </h3>
-          <p>Note: If you’re already using 2FA, you can’t turn it off. If you enabled it recently by mistake, you have two weeks to disable it. After that, turning it off is not possible and some features will require 2FA to work.</p>
           <p>
-            <strong>On iPhone or iPad:</strong>
+            <strong>Notification Alert:</strong>
           </p>
-          <p>1. Go to Settings &gt; [your name] &gt; Sign-In & Security.</p>
-          <p>2. Tap "Turn On Two-Factor Authentication."</p>
-          <p>3. Tap Continue and follow the onscreen instructions.</p>
+          <p>
+            When you sign in on a new device, Apple sends a notification to your
+            trusted devices (e.g., your iPhone). This shows the approximate
+            location of the sign-in (based on IP address).
+          </p>
           <div className="step-image">
             <img
-              src="/img/"
+              src="/img/google-signin.png"
               alt="Google Sign In"
               className="signin-img"
             />
           </div>
-
           <p>
-            <strong>On Mac:</strong>
+            <strong>Review the Alert:</strong>
           </p>
           <p>
-            1. Open the Apple menu &gt; System Settings &gt; [your name] &gt;
-            Sign-In & Security.
+            If it’s you signing in, tap "Allow even" if the location looks
+            unfamiliar (it may just be network-based). If it’s not you, tap
+            "Don’t Allow" to block the attempt.
           </p>
-          <p>2. Next to "Two-Factor Authentication", click "Turn On."</p>
-          <p>3. Tap Continue and follow the onscreen instructions.</p>
           <div className="step-image">
             <img
-              src="/img/"
+              src="/img/google-signin.png"
               alt="Google Sign In"
               className="signin-img"
             />
           </div>
-
           <p>
-            <strong>On the Web:</strong>
+            <strong>Enter the Verification Code:</strong>
           </p>
+          A 6-digit code appears on your trusted device. Enter this code on the
+          new device/browser.
           <p>
             1. Go to{" "}
             <a
@@ -83,7 +79,6 @@ const TwoFA2 = () => {
             </a>{" "}
             and sign in.
           </p>
-
           <p>2. Answer your security questions, then tap "Continue".</p>
           <p>
             3. Tap "Upgrade Account Security", then follow the onscreen
@@ -91,7 +86,7 @@ const TwoFA2 = () => {
           </p>
           <div className="step-image">
             <img
-              src="/img/"
+              src="/img/google-signin.png"
               alt="Google Sign In"
               className="signin-img"
             />
@@ -106,20 +101,24 @@ const TwoFA2 = () => {
       <div className="twoFA-navigation">
         <button
           className="back-btn"
-          onClick={() => navigate("/AppleAccounts/2FactorAuth/TwoFA1")}
+          onClick={() => navigate("/AppleAccounts/2FactorAuth/TwoFA2")}
         >
           ← Back
         </button>
         <button
           className="next-btn"
-          onClick={() => navigate("/AppleAccounts/2FactorAuth/TwoFA3")}
+          onClick={() => navigate("/AppleAccounts/2FactorAuth/TwoFA4")}
         >
           Next →
         </button>
       </div>
-      <div><p></p><p></p><p></p></div>
+      <div>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
     </div>
   );
 };
 
-export default TwoFA2;
+export default TwoFA3;
