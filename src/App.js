@@ -52,6 +52,8 @@ import FamilyModule2 from "./KidsPrivacy/FamilyModule2";
 import FamilyModule3 from "./KidsPrivacy/FamilyModule3";
 import FamilyModule4 from "./KidsPrivacy/FamilyModule4";
 import FamilyModule5 from "./KidsPrivacy/FamilyModule5";
+import KidsPrivacyIntro from "./KidsPrivacy/KidsPrivacyIntro";
+
 
 
 
@@ -114,6 +116,8 @@ export default function App() {
           <Route path="/KidsPrivacy/FamilyModule3" element={<FamilyModule3 />} />
           <Route path="/KidsPrivacy/FamilyModule4" element={<FamilyModule4 />} />
           <Route path="/KidsPrivacy/FamilyModule5" element={<FamilyModule5 />} />
+          <Route path="/KidsPrivacy/Intro" element={<KidsPrivacyIntro />} />
+
 
 
           

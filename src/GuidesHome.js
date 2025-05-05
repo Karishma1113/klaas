@@ -57,7 +57,8 @@ const subGuidePaths = {
   'Password Setup': '/securinggoogleaccount/password/password1',
   'Secure Browsing': "/securinggoogleaccount/secure-browsing",
   'Google Search Settings': "/securinggoogleaccount/googlesearchsettings/overview",
-  "Turn Off Location Tracking": "/KidsPrivacy/LocationModule1",
+  // "Turn Off Location Tracking": "/KidsPrivacy/LocationModule1",
+  "Turn Off Location Tracking": "/KidsPrivacy/Intro",  // instead of LocationModule1
   "Snapchat Ghost Mode": "/KidsPrivacy/SnapModule1",
   "Review Family Sharing Settings": "/KidsPrivacy/FamilyModule1",
 

@@ -116,6 +116,43 @@ body, html {
     justify-content: space-between;
     margin-top: 50px;
   }
+  .kidsintro-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+  }
+  
+  .intro-image-container {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .intro-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kidsintro-content {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .kidsintro-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .kidsintro-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 25px;
+  }
+
+  
   
   /* Animation */
   @keyframes fadeIn {
