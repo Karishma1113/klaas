@@ -5,7 +5,7 @@ body, html {
     background-color: white;
   }
 
-  .twofa-container {
+  .stolen-device-container {
     display: flex;
     flex-direction: column; /* stack children vertically */
     justify-content: space-between; /* pushes top and bottom content apart */
@@ -19,17 +19,25 @@ body, html {
     position: relative;
   }
 
-  .twofa-desc {
+  .stolen-device-desc {
     margin-bottom: 1rem;
     max-width: 80%;
     margin: 0 auto 1rem auto;
   }
 
-  .twofa-subtitle {
+  .stolen-device-list {
+    list-style: none;
+    margin-bottom: 1rem;
+    max-width: 80%;
+    margin: 0 auto 1rem auto;
+  }
+  
+
+  .stolen-device-subtitle {
     margin-top: 1rem;
   }
 
-  .twofa-navigation {
+  .stolen-device-navigation {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
@@ -37,7 +45,7 @@ body, html {
     padding-bottom: 40px;
   }  
   
-  .close-btn {
+  .stolen-device-btn {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -49,7 +57,7 @@ body, html {
     border-radius: 5px;
   }
 
-  .close-btn:hover {
+  .stolen-device-btn:hover {
     background: grey;
   }
 
@@ -70,7 +78,7 @@ body, html {
     margin-bottom: 2rem;
   }
 
-  .twofa-title {
+  .stolen-device-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -78,16 +86,16 @@ body, html {
     text-align: center;
   }
 
-  .twofa-content {
+  .stolen-device-content {
     margin-top: 30px;
   }
   
-  .twofa-list {
+  .stolen-device-list {
     list-style: none;
     padding: 0;
   }
   
-  .twofa-list li {
+  .stolen-device-list li {
     font-size: 16px;
     margin: 8px 0;
   }

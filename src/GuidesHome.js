@@ -52,6 +52,7 @@ const guidesData = [
 const subGuidePaths = {
   "Multi-Factor Authentication": "/SecuringGoogleAccount/mfa/mfa1",
   "Two-Factor Authentication": "/AppleAccounts/2FactorAuth/TwoFA1",
+  "Stolen/Lost Device Protection": "/AppleAccounts/StolenDeviceProtection/StolenDevice1",
   // add more like:
   'Device Setup': '/securinggoogleaccount/device/device1',
   'Password Setup': '/securinggoogleaccount/password/password1',
