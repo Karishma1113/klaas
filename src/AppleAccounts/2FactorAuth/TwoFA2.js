@@ -46,7 +46,7 @@ const TwoFA2 = () => {
           <div className="step-image">
             <img
               src="/img/"
-              alt="Google Sign In"
+              alt="insert image"
               className="signin-img"
             />
           </div>
@@ -63,7 +63,7 @@ const TwoFA2 = () => {
           <div className="step-image">
             <img
               src="/img/"
-              alt="Google Sign In"
+              alt="insert image"
               className="signin-img"
             />
           </div>
@@ -92,7 +92,7 @@ const TwoFA2 = () => {
           <div className="step-image">
             <img
               src="/img/"
-              alt="Google Sign In"
+              alt="insert image"
               className="signin-img"
             />
           </div>

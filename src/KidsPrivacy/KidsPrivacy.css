@@ -89,7 +89,7 @@ body, html {
   
   .next-btn:hover,
   .back-btn:hover {
-    background: #b0c793;
+    background:rgba(157, 160, 184, 0.917);
   }
   
   /* Image styling */

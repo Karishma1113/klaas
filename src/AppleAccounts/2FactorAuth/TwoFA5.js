@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ProgressBar from "../../ProgressBar";
 import "./TwoFA.css";
 
-const TwoFA4 = () => {
+const TwoFA5 = () => {
   const navigate = useNavigate();
 
   const stepLabels = [
@@ -15,7 +15,7 @@ const TwoFA4 = () => {
   ];
 
   const totalSteps = stepLabels.length;
-  const currentStep = 4; // Current step for this part of the guide
+  const currentStep = 5; // Current step for this part of the guide
 
   return (
     <div className="twofa-container">
@@ -32,37 +32,46 @@ const TwoFA4 = () => {
 
       <div className="twoFA-content">
         <div className="step-info">
-          <h3>
-            Here’s what you can do if you can’t access a trusted device to
-            receive your verification code...
-          </h3>
           <p>
-            <strong>Option 1: Use a trusted phone number </strong>
+            <strong>On iPhone or iPad:</strong>
           </p>
           <p>
-            A trusted phone number is anumber that can receive verification
-            codes by text or call.
+            Go to "Settings" &gt; [your name] &gt; "Sign-In & Security" &gt;
+            "Two-Factor Authentication."
           </p>
-          <p>1. On the sign-in screen, tap “Didn’t Get a Code?”</p>
-          <p>2. Choose to send a code to your trusted phone number.</p>
-          <p>3. You’ll receive a text like: @icloud.com #123456 %apple.com.</p>
+          <p>Tap "Edit" next to "Trusted Phone Numbers."</p>
           <div className="step-image">
             <img src="/img/" alt="insert image" className="signin-img" />
           </div>
 
           <p>
-            <strong>Option 2: Use another trusted device</strong>
+            <strong>On Mac:</strong>
           </p>
           <p>
-            A trusted device is a device you’ve already signed into with
-            two-factor authentication. Examples: iPhone, iPad, Mac, Apple Watch,
-            or Apple Vision Pro. These devices can display verification codes
-            when you sign in on a new device.
+            1. Open the Apple menu &gt; "System Settings" &gt; [your name] &gt;
+            "Sign-In & Security."
+          </p>
+          <p>2. Edit under "Trusted Phone Numbers."</p>
+          <div className="step-image">
+            <img src="/img/" alt="insert image" className="signin-img" />
+          </div>
+
+          <p>
+            <strong>On the Web:</strong>
           </p>
           <p>
-            1. On your other device, go to "Settings" &gt; [your name] &gt;
-            "Sign-In & Security" &gt; "Get Verification Code."
+            1. Go to{" "}
+            <a
+              href="https://account.apple.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "blue", textDecoration: "underline" }}
+            >
+              account.apple.com
+            </a>{" "}
           </p>
+          <p>2. Go to "Sign-In and Security" &gt; "Account Security."</p>
+          <p>3. Manage your trusted numbers from there.</p>
           <div className="step-image">
             <img src="/img/" alt="insert image" className="signin-img" />
           </div>
@@ -72,16 +81,11 @@ const TwoFA4 = () => {
       <div className="twoFA-navigation">
         <button
           className="back-btn"
-          onClick={() => navigate("/AppleAccounts/2FactorAuth/TwoFA3")}
+          onClick={() => navigate("/AppleAccounts/2FactorAuth/TwoFA4")}
         >
           ← Back
         </button>
-        <button
-          className="next-btn"
-          onClick={() => navigate("/AppleAccounts/2FactorAuth/TwoFA5")}
-        >
-          Next →
-        </button>
+    
       </div>
       <div>
         <p></p>
@@ -92,4 +96,4 @@ const TwoFA4 = () => {
   );
 };
 
-export default TwoFA4;
+export default TwoFA5;

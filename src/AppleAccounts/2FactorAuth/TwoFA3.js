@@ -42,8 +42,8 @@ const TwoFA3 = () => {
           </p>
           <div className="step-image">
             <img
-              src="/img/google-signin.png"
-              alt="Google Sign In"
+              src="/img/"
+              alt="insert image"
               className="signin-img"
             />
           </div>
@@ -57,8 +57,8 @@ const TwoFA3 = () => {
           </p>
           <div className="step-image">
             <img
-              src="/img/google-signin.png"
-              alt="Google Sign In"
+              src="/img/"
+              alt="insert image"
               className="signin-img"
             />
           </div>
@@ -86,8 +86,8 @@ const TwoFA3 = () => {
           </p>
           <div className="step-image">
             <img
-              src="/img/google-signin.png"
-              alt="Google Sign In"
+              src="/img/"
+              alt="insert image"
               className="signin-img"
             />
           </div>

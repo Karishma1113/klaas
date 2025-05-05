@@ -34,6 +34,8 @@ import DarkWebReport from "./SecuringGoogleAccount/GoogleSearchSettings/DarkWebR
 import TwoFA1 from "./AppleAccounts/2FactorAuth/TwoFA1";
 import TwoFA2 from "./AppleAccounts/2FactorAuth/TwoFA2";
 import TwoFA3 from "./AppleAccounts/2FactorAuth/TwoFA3";
+import TwoFA4 from "./AppleAccounts/2FactorAuth/TwoFA4";
+import TwoFA5 from "./AppleAccounts/2FactorAuth/TwoFA5";
 import LocationModule1 from "./KidsPrivacy/LocationModule1";
 import LocationModule2 from "./KidsPrivacy/LocationModule2";
 import LocationModule3 from "./KidsPrivacy/LocationModule3";
@@ -94,6 +96,8 @@ export default function App() {
           <Route path="/AppleAccounts/2FactorAuth/TwoFA1" element={<TwoFA1 />} />
           <Route path="/AppleAccounts/2FactorAuth/TwoFA2" element={<TwoFA2 />} />
           <Route path="/AppleAccounts/2FactorAuth/TwoFA3" element={<TwoFA3 />} />
+          <Route path="/AppleAccounts/2FactorAuth/TwoFA4" element={<TwoFA4 />} />
+          <Route path="/AppleAccounts/2FactorAuth/TwoFA5" element={<TwoFA5 />} />
           <Route path="/KidsPrivacy/LocationModule1" element={<LocationModule1 />} />
           <Route path="/KidsPrivacy/LocationModule2" element={<LocationModule2 />} />
           <Route path="/KidsPrivacy/LocationModule3" element={<LocationModule3 />} />
