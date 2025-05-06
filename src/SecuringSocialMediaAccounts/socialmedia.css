@@ -1,0 +1,138 @@
+/* Container */
+.module {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Top navigation */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tab {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  background: #e5e5e5;
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.tab.active {
+  background: #a48bff;
+  color: white;
+  font-weight: bold;
+}
+
+/* Leave button */
+.leave-btn {
+  background: #ff70b0;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Header and logo */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.logo {
+  height: 32px;
+  width: 32px;
+}
+
+/* Step content */
+h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Image styling */
+.step-img {
+  display: block;
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Step-by-step flow */
+.steps-container {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.step-block {
+  text-align: center;
+  max-width: 700px;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #bbb;
+}
+
+/* Navigation control */
+.step-controls,
+.nav-next {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.next-btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  background: #e5e5ff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.next-btn:hover {
+  background: #cccaff;
+}

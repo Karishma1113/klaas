@@ -20,24 +20,29 @@ const guidesData = [
   },
   {
     title: "Securing Apple Accounts",
+    subGuides: [],
   },
   {
     title: "Tracking Devices",
+    subGuides: [],
   },
   {
     title: "Securing Social Media Accounts",
+    description: `Social media accounts store private messages, photos, and personal connections. If hacked, they can be used to impersonate you or spread harmful content. These guides will help you lock down your profiles.`,
+    subGuides: ["Instagram"], // ✅ You want this label
   },
   {
     title: "Securing Your Children’s Digital Safety",
+    subGuides: [],
   },
 ];
 
-// Map subguide titles to their respective paths
+// ✅ Match route to the plain Instagram title
 const subGuidePaths = {
   "MFA Setup": "/SecuringGoogleAccount/mfa/mfa1",
-  // You can add more like:
-  // 'Device Setup': '/securinggoogleaccount/device/device1',
-  // 'Password Setup': '/securinggoogleaccount/password/password1',
+  "Device Setup": "/device1",
+  "Password Setup": "/password1",
+  "Instagram": "/instagram/step1", // ✅ Routes to step 1
 };
 
 const LearningGuides = () => {
@@ -72,17 +77,20 @@ const LearningGuides = () => {
             <h3>{guide.title}</h3>
             <span className="arrow">{openIndex === index ? "▾" : "▸"}</span>
           </div>
-          {openIndex === index && guide.description && (
+
+          {openIndex === index && (
             <div className="guide-details">
-              <p>{guide.description}</p>
-              <div className="subguides">
-                {guide.subGuides.map((sub, i) => (
-                  <div className="subguide" key={i}>
-                    <span className="subguide-title">{sub}</span>
-                    <button onClick={() => handleNavigate(sub)}>Guide →</button>
-                  </div>
-                ))}
-              </div>
+              {guide.description && <p>{guide.description}</p>}
+              {guide.subGuides?.length > 0 && (
+                <div className="subguides">
+                  {guide.subGuides.map((sub, i) => (
+                    <div className="subguide" key={i}>
+                      <span className="subguide-title">{sub}</span>
+                      <button onClick={() => handleNavigate(sub)}>Guide →</button>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           )}
           <hr />
