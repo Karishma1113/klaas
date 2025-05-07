@@ -1,21 +1,35 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ProgressBar from '../../ProgressBar';
 import "./DeviceSetup.css";
 
 const Device1 = () => {
   const navigate = useNavigate();
 
-  return (
-    <div className="device-container">
-      <div className="device-tabs">
-        <button className="tab active">1. Overview</button>
-        <button className="tab">2. Settings App</button>
-        <button className="tab">3. Account Activity</button>
-        <button className="tab">4. Recovery Info</button>
-        <button className="tab">5. Connected Apps</button>
-      </div>
+  const stepLabels = [
+    "Overview",
+    "Settings",
+    "Account Activity",
+    "Recovery Information",
+  ];
 
-      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
+  const totalSteps = stepLabels.length;
+  const currentStep = 1;
+
+
+  return (
+    <div className="secure-container">
+      {/* Updated ProgressBar with dynamic steps */}
+      <ProgressBar
+        currentStep={currentStep}
+        totalSteps={totalSteps}
+        stepLabels={stepLabels}
+      />
+
+
+      <button className="close-btn" onClick={() => navigate("/guides")}>
+        X
+      </button>
 
       <h1 className="device-title">Google Device Setup</h1>
       <p>
@@ -39,7 +53,7 @@ const Device1 = () => {
         <li>○ Keeps emails, contacts, and app preferences updated across devices</li>
         <li>○ Helps you regain access if you lose your password or device</li>
       </ul>
-      
+
 
       <div className="device-navigation">
         <button className="next-btn" onClick={() => navigate("/device/device2")}>Next →</button>

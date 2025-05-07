@@ -11,16 +11,25 @@ const guidesData = [
 
     Understanding these risks will help you take control of your account security as you move through the guides.`,
     subGuides: [
-      "MFA Setup",
+      "Multi-Factor Authentication",
       "Device Setup",
       "Password Setup",
-      "Private Browsing",
-      "Recovery Email",
+      "Secure Browsing",
+      "Google Search Settings",
     ],
   },
   {
     title: "Securing Apple Accounts",
-    subGuides: [],
+    description: `Apple accounts are used to sign into Apple services such as the App Store, iCloud, Apple Music, iMessage, FaceTime, and more. They also store sensitive information like payment methods, contact details, and personal data, including photos and documents. Protecting your Apple account is important to prevent unauthorized access and keep your private information secure.
+
+    These guides will explain why securing your Apple account matters and walk you through the steps to do so effectively.`,
+    subGuides: [
+      "Two-Factor Authentication",
+      "Find My iPhone",
+      "Location Sharing",
+      "Stolen/Lost Device Protection",
+      "If Account is Already Compromised",
+    ],
   },
   {
     title: "Tracking Devices",
@@ -29,20 +38,40 @@ const guidesData = [
   {
     title: "Securing Social Media Accounts",
     description: `Social media accounts store private messages, photos, and personal connections. If hacked, they can be used to impersonate you or spread harmful content. These guides will help you lock down your profiles.`,
-    subGuides: ["Instagram"], // ✅ You want this label
+    subGuides: ["Instagram", "Facebook", "Snapchat"],
   },
   {
     title: "Securing Your Children’s Digital Safety",
-    subGuides: [],
-  },
+    description: `This section is designed to help parents and caregivers keep children safe from digital risks. It includes steps to turn off location tracking, adjust privacy settings, and limit who can see a child's online activity.`,
+    subGuides: [
+      "Turn Off Location Tracking",
+      "Snapchat Ghost Mode",
+      "Review Family Sharing Settings"
+    ],
+  }
 ];
 
-// ✅ Match route to the plain Instagram title
 const subGuidePaths = {
-  "MFA Setup": "/SecuringGoogleAccount/mfa/mfa1",
-  "Device Setup": "/device1",
-  "Password Setup": "/password1",
-  "Instagram": "/instagram/step1", // ✅ Routes to step 1
+  // Google
+  "Multi-Factor Authentication": "/SecuringGoogleAccount/mfa/mfa1",
+  "Device Setup": "/securinggoogleaccount/device/device1",
+  "Password Setup": "/securinggoogleaccount/password/password1",
+  "Secure Browsing": "/securinggoogleaccount/secure-browsing",
+  "Google Search Settings": "/securinggoogleaccount/googlesearchsettings/overview",
+
+  // Apple
+  "Two-Factor Authentication": "/AppleAccounts/2FactorAuth/TwoFA1",
+  "Stolen/Lost Device Protection": "/AppleAccounts/StolenDeviceProtection/StolenDevice1",
+
+  // Social Media
+  "Instagram": "/instagram/step1",
+  "Facebook": "/facebook/step1",
+  "Snapchat": "/snapchat/step1",
+
+  // Kids Privacy
+  "Turn Off Location Tracking": "/KidsPrivacy/Intro",
+  "Snapchat Ghost Mode": "/KidsPrivacy/SnapModule1",
+  "Review Family Sharing Settings": "/KidsPrivacy/FamilyModule1",
 };
 
 const LearningGuides = () => {

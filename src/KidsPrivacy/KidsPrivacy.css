@@ -1,0 +1,168 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+    font-family: sans-serif;
+  }
+  
+  /* Main container */
+  .guide-container {
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  /* Titles */
+  .guide-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Description */
+  .guide-desc {
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.2s ease;
+  }
+  
+  .close-btn:hover {
+    background: #b0c793;
+  }
+  
+  /* Step content */
+  .step-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .step-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .next-btn,
+  .back-btn {
+    background-color: rgba(200, 210, 255, 0.7);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .next-btn {
+    float: right;
+  }
+  
+  .back-btn {
+    float: left;
+  }
+  
+  .next-btn:hover,
+  .back-btn:hover {
+    background:rgba(157, 160, 184, 0.917);
+  }
+  
+  /* Image styling */
+  .step-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    width: 100%;
+  }
+  
+  .step-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navigation buttons container */
+  .twofa-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .kidsintro-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+  }
+  
+  .intro-image-container {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .intro-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kidsintro-content {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .kidsintro-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .kidsintro-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 25px;
+  }
+
+  
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

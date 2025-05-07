@@ -20,23 +20,78 @@ import Device1 from "./SecuringGoogleAccount/DeviceSetup/Device1";
 import Device2 from "./SecuringGoogleAccount/DeviceSetup/Device2";
 import Device3 from "./SecuringGoogleAccount/DeviceSetup/Device3";
 import Device4 from "./SecuringGoogleAccount/DeviceSetup/Device4";
-import Device5 from "./SecuringGoogleAccount/DeviceSetup/Device5";
 import Password1 from "./SecuringGoogleAccount/PasswordSetup/Password1";
 import Password2 from "./SecuringGoogleAccount/PasswordSetup/Password2";
+import SecureBrowsing from "./SecuringGoogleAccount/SecureBrowsing/SecureBrowsingOverview";
+import Autosave from "./SecuringGoogleAccount/SecureBrowsing/Autosave";
+import Adds from "./SecuringGoogleAccount/SecureBrowsing/Adds";
+import Location from "./SecuringGoogleAccount/SecureBrowsing/Location";
+import Search from "./SecuringGoogleAccount/SecureBrowsing/Search";
+import ThirdPartyApps from "./SecuringGoogleAccount/SecureBrowsing/ThirdPartyApps";
+import ClearHistory from "./SecuringGoogleAccount/SecureBrowsing/ClearBrowseHistory";
+import Complete_1 from "./SecuringGoogleAccount/SecureBrowsing/GuideComplete_1";
+import Overview from "./SecuringGoogleAccount/GoogleSearchSettings/Overview";
+import GoogleScan from "./SecuringGoogleAccount/GoogleSearchSettings/GoogleScan";
+import RemovalRequest from "./SecuringGoogleAccount/GoogleSearchSettings/RemovalRequest";
+import DarkWebReport from "./SecuringGoogleAccount/GoogleSearchSettings/DarkWebReport";
 
-// Instagram Module (Steps)
+// Apple Modules
+import TwoFA1 from "./AppleAccounts/2FactorAuth/TwoFA1";
+import TwoFA2 from "./AppleAccounts/2FactorAuth/TwoFA2";
+import TwoFA3 from "./AppleAccounts/2FactorAuth/TwoFA3";
+import TwoFA4 from "./AppleAccounts/2FactorAuth/TwoFA4";
+import TwoFA5 from "./AppleAccounts/2FactorAuth/TwoFA5";
+import StolenDevice1 from "./AppleAccounts/StolenDeviceProtection/StolenDevice1";
+
+// Kids Privacy
+import LocationModule1 from "./KidsPrivacy/LocationModule1";
+import LocationModule2 from "./KidsPrivacy/LocationModule2";
+import LocationModule3 from "./KidsPrivacy/LocationModule3";
+import LocationModule4 from "./KidsPrivacy/LocationModule4";
+import LocationModule5 from "./KidsPrivacy/LocationModule5";
+import LocationModule6 from "./KidsPrivacy/LocationModule6";
+import SnapModule1 from "./KidsPrivacy/SnapModule1";
+import SnapModule2 from "./KidsPrivacy/SnapModule2";
+import SnapModule3 from "./KidsPrivacy/SnapModule3";
+import SnapModule4 from "./KidsPrivacy/SnapModule4";
+import SnapModule5 from "./KidsPrivacy/SnapModule5";
+import FamilyModule1 from "./KidsPrivacy/FamilyModule1";
+import FamilyModule2 from "./KidsPrivacy/FamilyModule2";
+import FamilyModule3 from "./KidsPrivacy/FamilyModule3";
+import FamilyModule4 from "./KidsPrivacy/FamilyModule4";
+import FamilyModule5 from "./KidsPrivacy/FamilyModule5";
+import KidsPrivacyIntro from "./KidsPrivacy/KidsPrivacyIntro";
+
+// Instagram Steps
 import Instagram1 from "./SecuringSocialMediaAccounts/instagram1";
 import Instagram2 from "./SecuringSocialMediaAccounts/instagram2";
 import Instagram3 from "./SecuringSocialMediaAccounts/instagram3";
 
+// Facebook Steps
+import Facebook1 from "./SecuringSocialMediaAccounts/Facebook/Facebook1";
+import Facebook2 from "./SecuringSocialMediaAccounts/Facebook/Facebook2";
+import Facebook3 from "./SecuringSocialMediaAccounts/Facebook/Facebook3";
+import Facebook4 from "./SecuringSocialMediaAccounts/Facebook/Facebook4";
+
+// Snapchat Steps
+import Snapchat1 from "./SecuringSocialMediaAccounts/Snapchat/snapchat1";
+import Snapchat2 from "./SecuringSocialMediaAccounts/Snapchat/snapchat2";
+import Snapchat3 from "./SecuringSocialMediaAccounts/Snapchat/snapchat3";
+
 function AppContent() {
   const location = useLocation();
 
-  // Hide navbar on these routes (if needed)
   const hideNavbarRoutes = [
     "/instagram/step1",
     "/instagram/step2",
     "/instagram/step3",
+    "/facebook/step1",
+    "/facebook/step2",
+    "/facebook/step3",
+    "/facebook/step4",
+    "/snapchat/step1",
+    "/snapchat/step2",
+    "/snapchat/step3",
   ];
 
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
@@ -52,7 +107,7 @@ function AppContent() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/guides" element={<GuidesHome />} />
 
-        {/* Google Guides */}
+        {/* Google Account */}
         <Route path="/SecuringGoogleAccount/mfa/mfa1" element={<MFA1 />} />
         <Route path="/mfa/mfa2" element={<MFA2 />} />
         <Route path="/mfa/mfa3" element={<MFA3 />} />
@@ -63,14 +118,63 @@ function AppContent() {
         <Route path="/device/device2" element={<Device2 />} />
         <Route path="/device/device3" element={<Device3 />} />
         <Route path="/device/device4" element={<Device4 />} />
-        <Route path="/device/device5" element={<Device5 />} />
         <Route path="/password1" element={<Password1 />} />
         <Route path="/password/password2" element={<Password2 />} />
+        <Route path="/securinggoogleaccount/secure-browsing" element={<SecureBrowsing />} />
+        <Route path="/secure-browsing/autosave" element={<Autosave />} />
+        <Route path="/secure-browsing/adds" element={<Adds />} />
+        <Route path="/secure-browsing/location" element={<Location />} />
+        <Route path="/secure-browsing/search" element={<Search />} />
+        <Route path="/secure-browsing/trird-party-apps" element={<ThirdPartyApps />} />
+        <Route path="/secure-browsing/clearing-browsing-history" element={<ClearHistory />} />
+        <Route path="/secure-browsing/complete" element={<Complete_1 />} />
+        <Route path="/securinggoogleaccount/googlesearchsettings/overview" element={<Overview />} />
+        <Route path="/google-search-settings/google-scan" element={<GoogleScan />} />
+        <Route path="/google-search-settings/removal-request" element={<RemovalRequest />} />
+        <Route path="/google-search-settings/dark-web-report" element={<DarkWebReport />} />
 
-        {/* Instagram Module Steps */}
+        {/* Apple */}
+        <Route path="/AppleAccounts/2FactorAuth/TwoFA1" element={<TwoFA1 />} />
+        <Route path="/AppleAccounts/2FactorAuth/TwoFA2" element={<TwoFA2 />} />
+        <Route path="/AppleAccounts/2FactorAuth/TwoFA3" element={<TwoFA3 />} />
+        <Route path="/AppleAccounts/2FactorAuth/TwoFA4" element={<TwoFA4 />} />
+        <Route path="/AppleAccounts/2FactorAuth/TwoFA5" element={<TwoFA5 />} />
+        <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice1" element={<StolenDevice1 />} />
+
+        {/* Kids Privacy */}
+        <Route path="/KidsPrivacy/LocationModule1" element={<LocationModule1 />} />
+        <Route path="/KidsPrivacy/LocationModule2" element={<LocationModule2 />} />
+        <Route path="/KidsPrivacy/LocationModule3" element={<LocationModule3 />} />
+        <Route path="/KidsPrivacy/LocationModule4" element={<LocationModule4 />} />
+        <Route path="/KidsPrivacy/LocationModule5" element={<LocationModule5 />} />
+        <Route path="/KidsPrivacy/LocationModule6" element={<LocationModule6 />} />
+        <Route path="/KidsPrivacy/SnapModule1" element={<SnapModule1 />} />
+        <Route path="/KidsPrivacy/SnapModule2" element={<SnapModule2 />} />
+        <Route path="/KidsPrivacy/SnapModule3" element={<SnapModule3 />} />
+        <Route path="/KidsPrivacy/SnapModule4" element={<SnapModule4 />} />
+        <Route path="/KidsPrivacy/SnapModule5" element={<SnapModule5 />} />
+        <Route path="/KidsPrivacy/FamilyModule1" element={<FamilyModule1 />} />
+        <Route path="/KidsPrivacy/FamilyModule2" element={<FamilyModule2 />} />
+        <Route path="/KidsPrivacy/FamilyModule3" element={<FamilyModule3 />} />
+        <Route path="/KidsPrivacy/FamilyModule4" element={<FamilyModule4 />} />
+        <Route path="/KidsPrivacy/FamilyModule5" element={<FamilyModule5 />} />
+        <Route path="/KidsPrivacy/Intro" element={<KidsPrivacyIntro />} />
+
+        {/* Instagram */}
         <Route path="/instagram/step1" element={<Instagram1 />} />
         <Route path="/instagram/step2" element={<Instagram2 />} />
         <Route path="/instagram/step3" element={<Instagram3 />} />
+
+        {/* Facebook */}
+        <Route path="/facebook/step1" element={<Facebook1 />} />
+        <Route path="/facebook/step2" element={<Facebook2 />} />
+        <Route path="/facebook/step3" element={<Facebook3 />} />
+        <Route path="/facebook/step4" element={<Facebook4 />} />
+
+        {/* Snapchat */}
+        <Route path="/snapchat/step1" element={<Snapchat1 />} />
+        <Route path="/snapchat/step2" element={<Snapchat2 />} />
+        <Route path="/snapchat/step3" element={<Snapchat3 />} />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

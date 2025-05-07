@@ -1,22 +1,35 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ProgressBar from '../../ProgressBar';
 import "./DeviceSetup.css";
 
 const Device2 = () => {
   const navigate = useNavigate();
 
+  const stepLabels = [
+    "Overview",
+    "Settings",
+    "Account Activity",
+    "Recovery Information",
+  ];
+
+  const totalSteps = stepLabels.length;
+  const currentStep = 2;
+
+
   return (
-    <div className="device-container">
-      <div className="device-tabs">
-        <button className="tab">1. Overview</button>
-        <button className="tab active">2. Settings App</button>
-        <button className="tab">3. Account Activity</button>
-        <button className="tab">4. Recovery Info</button>
-        <button className="tab">5. Connected Apps</button>
-      </div>
+    <div className="secure-container">
+      {/* Updated ProgressBar with dynamic steps */}
+      <ProgressBar
+        currentStep={currentStep}
+        totalSteps={totalSteps}
+        stepLabels={stepLabels}
+      />
 
-      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
 
+      <button className="close-btn" onClick={() => navigate("/guides")}>
+        X
+      </button>
       <h3>Step 1</h3>
       <p>On your device, locate and open the Settings app, then navigate to Google Settings.</p>
       <ul className="device-list">
