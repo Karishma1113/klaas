@@ -26,7 +26,7 @@ import Location from "./SecuringGoogleAccount/SecureBrowsing/Location";
 import Search from "./SecuringGoogleAccount/SecureBrowsing/Search";
 import ThirdPartyApps from "./SecuringGoogleAccount/SecureBrowsing/ThirdPartyApps";
 import ClearHistory from "./SecuringGoogleAccount/SecureBrowsing/ClearBrowseHistory";
-import Complete_1 from "./SecuringGoogleAccount/SecureBrowsing/GuideComplete_1";
+import Complete1 from "./SecuringGoogleAccount/SecureBrowsing/GuideComplete1";
 import Overview from "./SecuringGoogleAccount/GoogleSearchSettings/Overview";
 import GoogleScan from "./SecuringGoogleAccount/GoogleSearchSettings/GoogleScan";
 import RemovalRequest from "./SecuringGoogleAccount/GoogleSearchSettings/RemovalRequest";
@@ -91,7 +91,7 @@ export default function App() {
           <Route path="/secure-browsing/search" element={<Search />} />
           <Route path="/secure-browsing/trird-party-apps" element={<ThirdPartyApps />} />
           <Route path="/secure-browsing/clearing-browsing-history" element={<ClearHistory />} />
-          <Route path="/secure-browsing/complete" element={<Complete_1 />} />
+          <Route path="/secure-browsing/complete" element={<Complete1 />} />
           <Route path="/securinggoogleaccount/googlesearchsettings/overview" element={<Overview />} />
           <Route path="/google-search-settings/google-scan" element={<GoogleScan />} />
           <Route path="/google-search-settings/removal-request" element={<RemovalRequest />} />

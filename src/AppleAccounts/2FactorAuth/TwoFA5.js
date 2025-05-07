@@ -41,7 +41,7 @@ const TwoFA5 = () => {
           </p>
           <p>Tap "Edit" next to "Trusted Phone Numbers."</p>
           <div className="step-image">
-            <img src="/img/" alt="insert image" className="signin-img" />
+            <img src="/img/" alt="insert later" className="signin-img" />
           </div>
 
           <p>
@@ -53,7 +53,7 @@ const TwoFA5 = () => {
           </p>
           <p>2. Edit under "Trusted Phone Numbers."</p>
           <div className="step-image">
-            <img src="/img/" alt="insert image" className="signin-img" />
+            <img src="/img/" alt="insert later" className="signin-img" />
           </div>
 
           <p>
@@ -73,7 +73,7 @@ const TwoFA5 = () => {
           <p>2. Go to "Sign-In and Security" &gt; "Account Security."</p>
           <p>3. Manage your trusted numbers from there.</p>
           <div className="step-image">
-            <img src="/img/" alt="insert image" className="signin-img" />
+            <img src="/img/" alt="insert later" className="signin-img" />
           </div>
         </div>
       </div>
