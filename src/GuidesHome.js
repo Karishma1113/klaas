@@ -43,26 +43,27 @@ const guidesData = [
     subGuides: [
       "Turn Off Location Tracking",
       "Snapchat Ghost Mode",
-      "Review Family Sharing Settings"
+      "Review Family Sharing Settings",
     ],
-  }  
+  },
 ];
 
 // Map subguide titles to their respective paths
 const subGuidePaths = {
   "Multi-Factor Authentication": "/SecuringGoogleAccount/mfa/mfa1",
   "Two-Factor Authentication": "/AppleAccounts/2FactorAuth/TwoFA1",
-  "Stolen/Lost Device Protection": "/AppleAccounts/StolenDeviceProtection/StolenDevice1",
+  "Stolen/Lost Device Protection":
+    "/AppleAccounts/StolenDeviceProtection/StolenDevice1",
   // add more like:
-  'Device Setup': '/securinggoogleaccount/device/device1',
-  'Password Setup': '/securinggoogleaccount/password/password1',
-  'Secure Browsing': "/securinggoogleaccount/secure-browsing",
-  'Google Search Settings': "/securinggoogleaccount/googlesearchsettings/overview",
+  "Device Setup": "/securinggoogleaccount/device/device1",
+  "Password Setup": "/securinggoogleaccount/password/password1",
+  "Secure Browsing": "/securinggoogleaccount/secure-browsing",
+  "Google Search Settings":
+    "/securinggoogleaccount/googlesearchsettings/overview",
   // "Turn Off Location Tracking": "/KidsPrivacy/LocationModule1",
-  "Turn Off Location Tracking": "/KidsPrivacy/Intro",  // instead of LocationModule1
+  "Turn Off Location Tracking": "/KidsPrivacy/Intro", // instead of LocationModule1
   "Snapchat Ghost Mode": "/KidsPrivacy/SnapModule1",
   "Review Family Sharing Settings": "/KidsPrivacy/FamilyModule1",
-
 };
 
 const LearningGuides = () => {
@@ -85,6 +86,12 @@ const LearningGuides = () => {
   return (
     <div className="guides-container">
       <h2 className="page-title">Learning Guides</h2>
+      <p className="page-description">
+        This page contains step-by-step guides to help you secure your digital
+        life. Each section covers a different platform or topic and breaks them into smaller steps, with visuals to support the process.
+        steps. Click on a topic to expand it, then choose a guide to get
+        started.
+      </p>
       <label className="search-label">Search guides</label>
       <div className="search-bar">
         <input type="text" placeholder=" " />

@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Survey1 from "./Survey1";
@@ -62,6 +63,7 @@ import KidsPrivacyIntro from "./KidsPrivacy/KidsPrivacyIntro";
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Navbar />
         <Routes>
