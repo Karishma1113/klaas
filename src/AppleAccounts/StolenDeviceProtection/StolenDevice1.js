@@ -59,7 +59,7 @@ const StolenDevice1 = () => {
         </div>
         <button
           className="next-btn"
-          onClick={() => navigate("/AppleAccounts/2FactorAuth/StolenDevice2")}
+          onClick={() => navigate("/AppleAccounts/StolenDeviceProtection/StolenDevice2")}
         >
           Next →
         </button>

@@ -38,6 +38,9 @@ import TwoFA3 from "./AppleAccounts/2FactorAuth/TwoFA3";
 import TwoFA4 from "./AppleAccounts/2FactorAuth/TwoFA4";
 import TwoFA5 from "./AppleAccounts/2FactorAuth/TwoFA5";
 import StolenDevice1 from "./AppleAccounts/StolenDeviceProtection/StolenDevice1";
+import StolenDevice2 from "./AppleAccounts/StolenDeviceProtection/StolenDevice2";
+import StolenDevice3 from "./AppleAccounts/StolenDeviceProtection/StolenDevice3";
+import StolenDevice4 from "./AppleAccounts/StolenDeviceProtection/StolenDevice4";
 import LocationModule1 from "./KidsPrivacy/LocationModule1";
 import LocationModule2 from "./KidsPrivacy/LocationModule2";
 import LocationModule3 from "./KidsPrivacy/LocationModule3";
@@ -55,9 +58,6 @@ import FamilyModule3 from "./KidsPrivacy/FamilyModule3";
 import FamilyModule4 from "./KidsPrivacy/FamilyModule4";
 import FamilyModule5 from "./KidsPrivacy/FamilyModule5";
 import KidsPrivacyIntro from "./KidsPrivacy/KidsPrivacyIntro";
-
-
-
 
 
 export default function App() {
@@ -104,6 +104,9 @@ export default function App() {
           <Route path="/AppleAccounts/2FactorAuth/TwoFA4" element={<TwoFA4 />} />
           <Route path="/AppleAccounts/2FactorAuth/TwoFA5" element={<TwoFA5 />} />
           <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice1" element={<StolenDevice1 />} />
+          <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice2" element={<StolenDevice2 />} />
+          <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice3" element={<StolenDevice3 />} />
+          <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice4" element={<StolenDevice4 />} />
           <Route path="/KidsPrivacy/LocationModule1" element={<LocationModule1 />} />
           <Route path="/KidsPrivacy/LocationModule2" element={<LocationModule2 />} />
           <Route path="/KidsPrivacy/LocationModule3" element={<LocationModule3 />} />
