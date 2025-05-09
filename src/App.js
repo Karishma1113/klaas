@@ -41,6 +41,7 @@ import StolenDevice1 from "./AppleAccounts/StolenDeviceProtection/StolenDevice1"
 import StolenDevice2 from "./AppleAccounts/StolenDeviceProtection/StolenDevice2";
 import StolenDevice3 from "./AppleAccounts/StolenDeviceProtection/StolenDevice3";
 import StolenDevice4 from "./AppleAccounts/StolenDeviceProtection/StolenDevice4";
+import ChangePassword1 from "./AppleAccounts/ChangePassword/ChangePassword1";
 import LocationModule1 from "./KidsPrivacy/LocationModule1";
 import LocationModule2 from "./KidsPrivacy/LocationModule2";
 import LocationModule3 from "./KidsPrivacy/LocationModule3";
@@ -107,6 +108,7 @@ export default function App() {
           <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice2" element={<StolenDevice2 />} />
           <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice3" element={<StolenDevice3 />} />
           <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice4" element={<StolenDevice4 />} />
+          <Route path="/AppleAccounts/ChangePassword/ChangePassword1" element={<ChangePassword1 />} />
           <Route path="/KidsPrivacy/LocationModule1" element={<LocationModule1 />} />
           <Route path="/KidsPrivacy/LocationModule2" element={<LocationModule2 />} />
           <Route path="/KidsPrivacy/LocationModule3" element={<LocationModule3 />} />

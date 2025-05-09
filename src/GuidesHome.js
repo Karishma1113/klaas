@@ -25,8 +25,8 @@ const guidesData = [
     These guides will explain why securing your Apple account matters and walk you through the steps to do so effectively.`,
     subGuides: [
       "Two-Factor Authentication",
-      "Find My iPhone",
-      "Location Sharing",
+      "Change Password",
+      "Find My iPhone + Location Sharing",
       "Stolen/Lost Device Protection",
       "If Account is Already Compromised",
     ],
