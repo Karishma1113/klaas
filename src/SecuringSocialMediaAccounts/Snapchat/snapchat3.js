@@ -1,12 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import ProgressBar from "../../ProgressBar";
-
 import "../socialmedia.css";
 
 export default function Snapchat3() {
-  const navigate = useNavigate();
-
   return (
     <div className="module">
       <ProgressBar
@@ -18,7 +14,7 @@ export default function Snapchat3() {
       <div className="header">
         <h2>Securing Your Snapchat Account</h2>
         <img
-         src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/512px-Snapchat_logo.svg.png"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/512px-Snapchat_logo.svg.png"
           alt="Snapchat logo"
           className="logo"
         />
@@ -37,20 +33,18 @@ export default function Snapchat3() {
       <img src="/img/snap1.png" alt="Snapchat profile screen" className="step-img" />
       <img src="/img/snap4.png" alt="Snapchat location settings menu" className="step-img" />
 
-      <p>
-        Here, you’ll have a few options:
-      </p>
+      <p>Here, you’ll have a few options:</p>
 
       <ul>
         <li>
-          <strong>Ghost Mode:</strong> Toggle Ghost Mode on to prevent others from seeing your location on Snap Map. This will hide your location from everyone.
+          <strong>Ghost Mode:</strong> Toggle Ghost Mode on to prevent others from seeing your location on Snap Map.
         </li>
         <li>
-          <strong>My Friends / Custom:</strong> You can also choose to share your location only with your friends or specific people using the Custom option.
+          <strong>My Friends / Custom:</strong> Limit who can see your location.
         </li>
       </ul>
 
-      <p><em>Note: If you want to completely disable location tracking, you can also turn off Snapchat's location permission from your phone's settings.</em></p>
+      <p><em>Note: You can also disable Snapchat's location access from your phone's settings completely.</em></p>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ProgressBar from '../../ProgressBar';
 //import "./MFA.css";
 
-const Complete_1 = () => {
+const Complete1 = () => {
     const navigate = useNavigate();
 
     const stepLabels = [
@@ -53,4 +53,4 @@ const Complete_1 = () => {
     );
 };
 
-export default Complete_1;
+export default Complete1;

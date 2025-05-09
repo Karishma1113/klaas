@@ -47,7 +47,7 @@ const TwoFA4 = () => {
           <p>2. Choose to send a code to your trusted phone number.</p>
           <p>3. You’ll receive a text like: @icloud.com #123456 %apple.com.</p>
           <div className="step-image">
-            <img src="/img/" alt="insert image" className="signin-img" />
+            <img src="/img/" alt="insert later" className="signin-img" />
           </div>
 
           <p>
@@ -64,7 +64,7 @@ const TwoFA4 = () => {
             "Sign-In & Security" &gt; "Get Verification Code."
           </p>
           <div className="step-image">
-            <img src="/img/" alt="insert image" className="signin-img" />
+            <img src="/img/" alt="insert later" className="signin-img" />
           </div>
         </div>
       </div>

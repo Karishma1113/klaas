@@ -5,44 +5,34 @@ import "./Guides.css";
 const guidesData = [
   {
     title: "Securing Google Accounts",
-    description: `Your Google account is connected to many personal details, including emails, saved passwords, and location history. Keeping it secure is essential for protecting your privacy and preventing unauthorized access.
-
-    These guides will introduce why securing your Google account matters, how accounts can be accessed without your knowledge, and ways Google tracks your activity and what that means for your privacy.
-
-    Understanding these risks will help you take control of your account security as you move through the guides.`,
     subGuides: [
       "Multi-Factor Authentication",
       "Device Setup",
       "Password Setup",
       "Secure Browsing",
-      "Google Search Settings",
+      "Google Search Settings"
     ],
   },
   {
     title: "Securing Apple Accounts",
-    description: `Apple accounts are used to sign into Apple services such as the App Store, iCloud, Apple Music, iMessage, FaceTime, and more. They also store sensitive information like payment methods, contact details, and personal data, including photos and documents. Protecting your Apple account is important to prevent unauthorized access and keep your private information secure.
-
-    These guides will explain why securing your Apple account matters and walk you through the steps to do so effectively.`,
     subGuides: [
       "Two-Factor Authentication",
       "Find My iPhone",
       "Location Sharing",
       "Stolen/Lost Device Protection",
-      "If Account is Already Compromised",
+      "If Account is Already Compromised"
     ],
   },
   {
-    title: "Tracking Devices",
-    subGuides: [],
-  },
-  {
     title: "Securing Social Media Accounts",
-    description: `Social media accounts store private messages, photos, and personal connections. If hacked, they can be used to impersonate you or spread harmful content. These guides will help you lock down your profiles.`,
     subGuides: ["Instagram", "Facebook", "Snapchat"],
   },
   {
+    title: "Tracking Devices",
+    subGuides: ["Android", "Apple", "GPS Trackers"],
+  },
+  {
     title: "Securing Your Children’s Digital Safety",
-    description: `This section is designed to help parents and caregivers keep children safe from digital risks. It includes steps to turn off location tracking, adjust privacy settings, and limit who can see a child's online activity.`,
     subGuides: [
       "Turn Off Location Tracking",
       "Snapchat Ghost Mode",
@@ -68,13 +58,18 @@ const subGuidePaths = {
   "Facebook": "/facebook/step1",
   "Snapchat": "/snapchat/step1",
 
+  // Tracking
+  "Android": "/tracking/step1a",
+  "Apple": "/tracking/step2a",
+  "GPS Trackers": "/tracking/step3a",
+
   // Kids Privacy
   "Turn Off Location Tracking": "/KidsPrivacy/Intro",
   "Snapchat Ghost Mode": "/KidsPrivacy/SnapModule1",
   "Review Family Sharing Settings": "/KidsPrivacy/FamilyModule1",
 };
 
-const LearningGuides = () => {
+const GuidesHome = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const navigate = useNavigate();
 
@@ -82,8 +77,8 @@ const LearningGuides = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const handleNavigate = (subguideTitle) => {
-    const path = subGuidePaths[subguideTitle];
+  const handleNavigate = (subTitle) => {
+    const path = subGuidePaths[subTitle];
     if (path) {
       navigate(path);
     } else {
@@ -94,32 +89,20 @@ const LearningGuides = () => {
   return (
     <div className="guides-container">
       <h2 className="page-title">Learning Guides</h2>
-      <label className="search-label">Search guides</label>
-      <div className="search-bar">
-        <input type="text" placeholder=" " />
-        <span className="search-icon">🔍</span>
-      </div>
-
       {guidesData.map((guide, index) => (
         <div className="guide" key={index}>
           <div className="guide-header" onClick={() => handleToggle(index)}>
             <h3>{guide.title}</h3>
             <span className="arrow">{openIndex === index ? "▾" : "▸"}</span>
           </div>
-
           {openIndex === index && (
             <div className="guide-details">
-              {guide.description && <p>{guide.description}</p>}
-              {guide.subGuides?.length > 0 && (
-                <div className="subguides">
-                  {guide.subGuides.map((sub, i) => (
-                    <div className="subguide" key={i}>
-                      <span className="subguide-title">{sub}</span>
-                      <button onClick={() => handleNavigate(sub)}>Guide →</button>
-                    </div>
-                  ))}
+              {guide.subGuides.map((sub, i) => (
+                <div className="subguide" key={i}>
+                  <span className="subguide-title">{sub}</span>
+                  <button onClick={() => handleNavigate(sub)}>Guide →</button>
                 </div>
-              )}
+              ))}
             </div>
           )}
           <hr />
@@ -129,4 +112,4 @@ const LearningGuides = () => {
   );
 };
 
-export default LearningGuides;
+export default GuidesHome;

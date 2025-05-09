@@ -29,7 +29,7 @@ import Location from "./SecuringGoogleAccount/SecureBrowsing/Location";
 import Search from "./SecuringGoogleAccount/SecureBrowsing/Search";
 import ThirdPartyApps from "./SecuringGoogleAccount/SecureBrowsing/ThirdPartyApps";
 import ClearHistory from "./SecuringGoogleAccount/SecureBrowsing/ClearBrowseHistory";
-import Complete_1 from "./SecuringGoogleAccount/SecureBrowsing/GuideComplete_1";
+import Complete1 from "./SecuringGoogleAccount/SecureBrowsing/GuideComplete1";
 import Overview from "./SecuringGoogleAccount/GoogleSearchSettings/Overview";
 import GoogleScan from "./SecuringGoogleAccount/GoogleSearchSettings/GoogleScan";
 import RemovalRequest from "./SecuringGoogleAccount/GoogleSearchSettings/RemovalRequest";
@@ -62,36 +62,36 @@ import FamilyModule4 from "./KidsPrivacy/FamilyModule4";
 import FamilyModule5 from "./KidsPrivacy/FamilyModule5";
 import KidsPrivacyIntro from "./KidsPrivacy/KidsPrivacyIntro";
 
-// Instagram Steps
+// Social Media Accounts
 import Instagram1 from "./SecuringSocialMediaAccounts/instagram1";
 import Instagram2 from "./SecuringSocialMediaAccounts/instagram2";
 import Instagram3 from "./SecuringSocialMediaAccounts/instagram3";
-
-// Facebook Steps
 import Facebook1 from "./SecuringSocialMediaAccounts/Facebook/Facebook1";
 import Facebook2 from "./SecuringSocialMediaAccounts/Facebook/Facebook2";
 import Facebook3 from "./SecuringSocialMediaAccounts/Facebook/Facebook3";
 import Facebook4 from "./SecuringSocialMediaAccounts/Facebook/Facebook4";
-
-// Snapchat Steps
 import Snapchat1 from "./SecuringSocialMediaAccounts/Snapchat/snapchat1";
 import Snapchat2 from "./SecuringSocialMediaAccounts/Snapchat/snapchat2";
 import Snapchat3 from "./SecuringSocialMediaAccounts/Snapchat/snapchat3";
+
+// Tracking Device Modules
+import Tracking1A from "./TrackingDevices/tracking1a";
+import Tracking1B from "./TrackingDevices/tracking1b";
+import Tracking2A from "./TrackingDevices/tracking2a";
+import Tracking2B from "./TrackingDevices/tracking2b";
+import Tracking3A from "./TrackingDevices/tracking3a";
+import Tracking3B from "./TrackingDevices/tracking3b";
 
 function AppContent() {
   const location = useLocation();
 
   const hideNavbarRoutes = [
-    "/instagram/step1",
-    "/instagram/step2",
-    "/instagram/step3",
-    "/facebook/step1",
-    "/facebook/step2",
-    "/facebook/step3",
-    "/facebook/step4",
-    "/snapchat/step1",
-    "/snapchat/step2",
-    "/snapchat/step3",
+    "/instagram/step1", "/instagram/step2", "/instagram/step3",
+    "/facebook/step1", "/facebook/step2", "/facebook/step3", "/facebook/step4",
+    "/snapchat/step1", "/snapchat/step2", "/snapchat/step3",
+    "/tracking/step1a", "/tracking/step1b",
+    "/tracking/step2a", "/tracking/step2b",
+    "/tracking/step3a", "/tracking/step3b"
   ];
 
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
@@ -127,7 +127,7 @@ function AppContent() {
         <Route path="/secure-browsing/search" element={<Search />} />
         <Route path="/secure-browsing/trird-party-apps" element={<ThirdPartyApps />} />
         <Route path="/secure-browsing/clearing-browsing-history" element={<ClearHistory />} />
-        <Route path="/secure-browsing/complete" element={<Complete_1 />} />
+        <Route path="/secure-browsing/complete" element={<Complete1 />} />
         <Route path="/securinggoogleaccount/googlesearchsettings/overview" element={<Overview />} />
         <Route path="/google-search-settings/google-scan" element={<GoogleScan />} />
         <Route path="/google-search-settings/removal-request" element={<RemovalRequest />} />
@@ -160,21 +160,25 @@ function AppContent() {
         <Route path="/KidsPrivacy/FamilyModule5" element={<FamilyModule5 />} />
         <Route path="/KidsPrivacy/Intro" element={<KidsPrivacyIntro />} />
 
-        {/* Instagram */}
+        {/* Social Media */}
         <Route path="/instagram/step1" element={<Instagram1 />} />
         <Route path="/instagram/step2" element={<Instagram2 />} />
         <Route path="/instagram/step3" element={<Instagram3 />} />
-
-        {/* Facebook */}
         <Route path="/facebook/step1" element={<Facebook1 />} />
         <Route path="/facebook/step2" element={<Facebook2 />} />
         <Route path="/facebook/step3" element={<Facebook3 />} />
         <Route path="/facebook/step4" element={<Facebook4 />} />
-
-        {/* Snapchat */}
         <Route path="/snapchat/step1" element={<Snapchat1 />} />
         <Route path="/snapchat/step2" element={<Snapchat2 />} />
         <Route path="/snapchat/step3" element={<Snapchat3 />} />
+
+        {/* Tracking Devices */}
+        <Route path="/tracking/step1a" element={<Tracking1A />} />
+        <Route path="/tracking/step1b" element={<Tracking1B />} />
+        <Route path="/tracking/step2a" element={<Tracking2A />} />
+        <Route path="/tracking/step2b" element={<Tracking2B />} />
+        <Route path="/tracking/step3a" element={<Tracking3A />} />
+        <Route path="/tracking/step3b" element={<Tracking3B />} />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
@@ -189,3 +193,4 @@ export default function App() {
     </Router>
   );
 }
+
