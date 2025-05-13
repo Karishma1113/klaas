@@ -45,7 +45,7 @@ const Password2 = () => {
       </p>
 
       <div className="password-navigation">
-        <button className="back-btn" onClick={() => navigate("/password1")}>← Back</button>
+        <button className="back-btn" onClick={() => navigate("/securinggoogleaccount/password/password1")}>← Back</button>
       </div>
     </div>
   );

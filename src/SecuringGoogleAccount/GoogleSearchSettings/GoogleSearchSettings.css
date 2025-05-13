@@ -131,3 +131,9 @@ html {
     height: auto;
     object-fit: contain;
 }
+
+.step-image-scan img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
