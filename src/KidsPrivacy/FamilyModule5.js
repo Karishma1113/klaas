@@ -22,7 +22,7 @@ const FamilyModule5 = () => {
         <h3>Step 5 – You’re All Set</h3>
         <p>Location settings for your child have been reviewed. You can return to your Family Sharing dashboard.</p>
         <div className="step-image">
-          <img src="/img/family5-success.png" alt="Success Confirmation" />
+          {/* <img src="/img/family5.png" alt="Success Confirmation" /> */}
         </div>
       </div>
       <div className="twofa-navigation">

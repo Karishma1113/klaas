@@ -22,7 +22,8 @@ const SnapModule2 = () => {
         <h3>Step 2 – Go to Snap Map Settings</h3>
         <p>Scroll down in Settings and tap <strong>See My Location</strong>.</p>
         <div className="step-image">
-          <img src="/img/snap2-location.png" alt="Snap Map Settings" />
+          <img src="/img/snap2.png" alt="Snap Map Settings" />
+          {/* <img src="/img/snap3.png" alt="Snap Map Settings" /> */}
         </div>
       </div>
       <div className="twofa-navigation">

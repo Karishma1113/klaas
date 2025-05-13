@@ -6,6 +6,7 @@ import "./KidsPrivacy.css";
 const LocationModule5 = () => {
   const navigate = useNavigate();
   const stepLabels = [
+    // "Intro",
     "Open Settings",
     "Tap Apple ID",
     "Turn Off Share My Location",
@@ -24,7 +25,8 @@ const LocationModule5 = () => {
         <h3>Step 5 – Adjust App Permissions</h3>
         <p>Scroll through the list of apps. Tap each one (like <strong>Snapchat</strong> or <strong>Instagram</strong>) and set location access to <strong>“Never”</strong> or <strong>“While Using”</strong>.</p>
         <div className="step-image">
-          <img src="/img/step5-app-permissions.png" alt="App Location Access" />
+          {/* <img src="/img/location5.png" alt="App Location Access" /> */}
+          <img src="/img/location6.png" alt="App Location Access" />
         </div>
       </div>
       <div className="twofa-navigation">

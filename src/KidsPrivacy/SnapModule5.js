@@ -22,7 +22,7 @@ const SnapModule5 = () => {
         <h3>Step 5 – You’re All Set</h3>
         <p>Your location is now hidden from others on Snap Map. You can return here anytime to adjust this setting.</p>
         <div className="step-image">
-          <img src="/img/snap5-success.png" alt="Ghost Mode Success" />
+          <img src="/img/snap6.png" alt="Ghost Mode Success" />
         </div>
       </div>
       <div className="twofa-navigation">
