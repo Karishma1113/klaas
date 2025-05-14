@@ -1,4 +1,4 @@
-# NOVAA: Navigating Online Vulnerability & Achieving Autonomy
+# NOVAA: Reclaim Your Digital Presence
 
 **Novaa** is a trauma-informed web platform designed to help domestic violence survivors protect their digital privacy. It provides visual, step-by-step privacy guides that walk users through securing devices, accounts, and personal information — without requiring advanced tech knowledge.
 
