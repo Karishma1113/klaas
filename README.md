@@ -90,7 +90,7 @@ anjali.schatzer@gmail.com
 
 ---
 
-## ⚖️ License
+## License
 
 This project is open source 
 
