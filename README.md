@@ -6,13 +6,13 @@ This project was created by the KLAAS team for the University of Washington iSch
 
 ---
 
-## 🌐 Live Site
+## Live Site
 
-🔗 [https://novaa-1f5eb.web.app](https://novaa-1f5eb.web.app)
+ [https://novaa-1f5eb.web.app](https://novaa-1f5eb.web.app)
 
 ---
 
-## 📁 Tech Stack
+## Tech Stack
 
 - **Frontend**: React.js
 - **Hosting & Auth**: Firebase Hosting + Firebase Authentication
@@ -23,7 +23,7 @@ This project was created by the KLAAS team for the University of Washington iSch
 
 ---
 
-## 🚀 How to Run the Project Locally
+## How to Run the Project Locally
 
 ### Prerequisites
 
