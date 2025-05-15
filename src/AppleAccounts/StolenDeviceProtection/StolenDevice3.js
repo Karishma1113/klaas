@@ -46,7 +46,7 @@ const StolenDevice3 = () => {
         </div>
       </div>
 
-      <div className="twoFA-navigation">
+      <div className="stolen-device-navigation">
         <button
           className="back-btn"
           onClick={() =>

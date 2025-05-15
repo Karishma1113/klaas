@@ -54,6 +54,8 @@ const subGuidePaths = {
   "Two-Factor Authentication": "/AppleAccounts/2FactorAuth/TwoFA1",
   "Stolen/Lost Device Protection":
     "/AppleAccounts/StolenDeviceProtection/StolenDevice1",
+    "Change Password":
+    "/AppleAccounts/ChangePassword/ChangePassword1",
   // add more like:
   "Device Setup": "/securinggoogleaccount/device/device1",
   "Password Setup": "/securinggoogleaccount/password/password1",
