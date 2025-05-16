@@ -1,22 +1,22 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import ProgressBar from "../../ProgressBar";
-import "./ChangePassword.css";
+import "./FindMy.css";
 
-const ChangePassword3 = () => {
+const FindMy3 = () => {
   const navigate = useNavigate();
 
   const stepLabels = [
     "Overview",
-    "Choose Device or Platform",
-    "Change Child’s Account Password",
+    "Managing Find My iPhone",
+    "Manage Location Sharing in Apps",
   ];
 
   const totalSteps = stepLabels.length;
   const currentStep = 3;
 
   return (
-    <div className="change-pass-container">
+    <div className="find-my-container">
       {/* Updated ProgressBar with dynamic steps */}
       <ProgressBar
         currentStep={currentStep}
@@ -28,53 +28,52 @@ const ChangePassword3 = () => {
         X
       </button>
 
-      <div className="change-pass-content">
+      <div className="find-my-content">
         <div className="step-info">
-          <h3>Change Child’s Account Password (Family Sharing)</h3>
+          <h3>How to Manage Location Sharing in Apps</h3>
           <p></p>
-          <p>
-            Available if you're using iOS/iPadOS/visionOS with two-factor
-            authentication.
-          </p>
 
-          <p>1. Open "Settings" on your iPhone, iPad, or Apple Vision Pro.</p>
+          <p>1. Open the "Settings" app.</p>
           <div className="step-image">
             <img src="/img/" alt="insert later" className="signin-img" />
           </div>
-          <p>2. Tap "Family."</p>
+          <p>2. Tap "Privacy & Security."</p>
           <div className="step-image">
             <img src="/img/" alt="insert later" className="signin-img" />
           </div>
-          <p>3. Tap your child’s account.</p>
+          <p>3. Tap "Location Services."</p>
           <div className="step-image">
             <img src="/img/" alt="insert later" className="signin-img" />
           </div>
-          <p>4. Tap "Apple Account & Password".</p>
+          <p>4. Tap on the app whose location access you want to manage.</p>
           <div className="step-image">
             <img src="/img/" alt="insert later" className="signin-img" />
           </div>
-          <p>5. Tap "Change [Child’s Name] Password".</p><div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
-          <p>6. Enter your device passcode.</p>
-          <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
-          <p>
-            7. Follow the onscreen instructions to complete the password change.
-          </p>
-          <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
+          <p>5. Choose a location access option based on your preference:</p>
 
+<ul>
+    <li>Never – Blocks location access completely.</li> <p></p>
+
+<li>Ask Next Time or When I Share – The app will ask you each time.</li>
+<p></p>
+<li>While Using the App – Only gives access when the app is open and visible.</li> <p></p>
+
+<li>Always – Allows background tracking (only available for apps that really need it).</li></ul>
+<div className="step-image">
+            <img src="/img/" alt="insert later" className="signin-img" />
+          </div>
+          <p>6. (Optional) Disable "Precise Location" if you don’t want the app to know your exact location (it will still know your general area).</p>
+          <div className="step-image">
+            <img src="/img/" alt="insert later" className="signin-img" />
+          </div>
         </div>
       </div>
 
-      <div className="change-pass-navigation">
+      <div className="find-my-navigation">
         <button
           className="back-btn"
           onClick={() =>
-            navigate("/AppleAccounts/ChangePassword/ChangePassword2")
+            navigate("/AppleAccounts/FindMyandLocation/FindMy2")
           }
         >
           ← Back
@@ -89,4 +88,4 @@ const ChangePassword3 = () => {
   );
 };
 
-export default ChangePassword3;
+export default FindMy3;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Guides.css";
 
@@ -28,7 +28,7 @@ const guidesData = [
       "Change Password",
       "Find My iPhone + Location Sharing",
       "Stolen/Lost Device Protection",
-      "If Account is Already Compromised",
+      // "If Account is Already Compromised",
     ],
   },
   {
@@ -56,6 +56,7 @@ const subGuidePaths = {
     "/AppleAccounts/StolenDeviceProtection/StolenDevice1",
     "Change Password":
     "/AppleAccounts/ChangePassword/ChangePassword1",
+    "Find My iPhone + Location Sharing": "/AppleAccounts/FindMyandLocation/FindMy1",
   // add more like:
   "Device Setup": "/securinggoogleaccount/device/device1",
   "Password Setup": "/securinggoogleaccount/password/password1",
@@ -72,8 +73,19 @@ const LearningGuides = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const navigate = useNavigate();
 
+  // Load from sessionStorage on mount
+  useEffect(() => {
+    const savedIndex = sessionStorage.getItem("openGuideIndex");
+    if (savedIndex !== null) {
+      setOpenIndex(parseInt(savedIndex));
+    }
+  }, []);
+
+  // Save to sessionStorage when user toggles a guide
   const handleToggle = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
+    const newIndex = openIndex === index ? null : index;
+    setOpenIndex(newIndex);
+    sessionStorage.setItem("openGuideIndex", newIndex !== null ? newIndex : "");
   };
 
   const handleNavigate = (subguideTitle) => {
@@ -90,9 +102,9 @@ const LearningGuides = () => {
       <h2 className="page-title">Learning Guides</h2>
       <p className="page-description">
         This page contains step-by-step guides to help you secure your digital
-        life. Each section covers a different platform or topic and breaks them into smaller steps, with visuals to support the process.
-        steps. Click on a topic to expand it, then choose a guide to get
-        started.
+        life. Each section covers a different platform or topic and breaks them
+        into smaller steps, with visuals to support the process. Click on a topic
+        to expand it, then choose a guide to get started.
       </p>
       <label className="search-label">Search guides</label>
       <div className="search-bar">

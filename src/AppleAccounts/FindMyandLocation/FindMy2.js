@@ -1,22 +1,22 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import ProgressBar from "../../ProgressBar";
-import "./ChangePassword.css";
+import "./FindMy.css";
 
-const ChangePassword3 = () => {
+const FindMy2 = () => {
   const navigate = useNavigate();
 
   const stepLabels = [
     "Overview",
-    "Choose Device or Platform",
-    "Change Child’s Account Password",
+    "Managing Find My iPhone",
+    "Manage Location Sharing in Apps",
   ];
 
   const totalSteps = stepLabels.length;
-  const currentStep = 3;
+  const currentStep = 2;
 
   return (
-    <div className="change-pass-container">
+    <div className="find-my-container">
       {/* Updated ProgressBar with dynamic steps */}
       <ProgressBar
         currentStep={currentStep}
@@ -28,56 +28,51 @@ const ChangePassword3 = () => {
         X
       </button>
 
-      <div className="change-pass-content">
+      <div className="find-my-content">
         <div className="step-info">
-          <h3>Change Child’s Account Password (Family Sharing)</h3>
+          <h3>How to Manage Find My iPhone</h3>
           <p></p>
-          <p>
-            Available if you're using iOS/iPadOS/visionOS with two-factor
-            authentication.
-          </p>
 
-          <p>1. Open "Settings" on your iPhone, iPad, or Apple Vision Pro.</p>
+          <p>1. Open "Settings" app.</p>
           <div className="step-image">
             <img src="/img/" alt="insert later" className="signin-img" />
           </div>
-          <p>2. Tap "Family."</p>
+          <p>2. Tap your name at the top.</p>
           <div className="step-image">
             <img src="/img/" alt="insert later" className="signin-img" />
           </div>
-          <p>3. Tap your child’s account.</p>
+          <p>3. Go to "Find My."</p>
           <div className="step-image">
             <img src="/img/" alt="insert later" className="signin-img" />
           </div>
-          <p>4. Tap "Apple Account & Password".</p>
+          <p>4. Tap “Find My iPhone."</p>
           <div className="step-image">
             <img src="/img/" alt="insert later" className="signin-img" />
           </div>
-          <p>5. Tap "Change [Child’s Name] Password".</p><div className="step-image">
+          <p>5. Toggle "Find My iPhone" to "Off."</p><div className="step-image">
             <img src="/img/" alt="insert later" className="signin-img" />
           </div>
-          <p>6. Enter your device passcode.</p>
+          <p>6. Enter your Apple ID password to confirm.</p>
           <div className="step-image">
             <img src="/img/" alt="insert later" className="signin-img" />
           </div>
-          <p>
-            7. Follow the onscreen instructions to complete the password change.
-          </p>
-          <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
-
         </div>
       </div>
 
-      <div className="change-pass-navigation">
+      <div className="find-my-navigation">
         <button
           className="back-btn"
           onClick={() =>
-            navigate("/AppleAccounts/ChangePassword/ChangePassword2")
+            navigate("/AppleAccounts/FindMyandLocation/FindMy1")
           }
         >
           ← Back
+        </button>
+         <button
+          className="next-btn"
+          onClick={() => navigate("/AppleAccounts/FindMyandLocation/FindMy3")}
+        >
+          Next →
         </button>
       </div>
       <div>
@@ -89,4 +84,4 @@ const ChangePassword3 = () => {
   );
 };
 
-export default ChangePassword3;
+export default FindMy2;

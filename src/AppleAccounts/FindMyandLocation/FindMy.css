@@ -5,7 +5,7 @@ body, html {
     background-color: white;
   }
 
-  .change-pass-container {
+  .find-my-container {
     display: flex;
     flex-direction: column; /* stack children vertically */
     justify-content: space-between; /* pushes top and bottom content apart */
@@ -19,24 +19,24 @@ body, html {
     position: relative;
   }
 
-  .change-pass-desc {
+  .find-my-desc {
     margin-bottom: 1rem;
     max-width: 80%;
     margin: 0 auto 1rem auto;
   }
 
-  .change-pass-list {
+  .find-my-list {
     list-style: none;
     margin-bottom: 1rem;
     max-width: 80%;
     margin: 0 auto 1rem auto;
   }
   
-  .change-pass-subtitle {
+  .find-my-subtitle {
     margin-top: 1rem;
   }
 
-  .change-pass-navigation {
+  .find-my-navigation {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
@@ -44,7 +44,7 @@ body, html {
     padding-bottom: 40px;
   }  
   
-  .change-pass-btn {
+  .find-my-btn {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -56,7 +56,7 @@ body, html {
     border-radius: 5px;
   }
 
-  .change-pass-btn:hover {
+  .find-my-btn:hover {
     background: grey;
   }
 
@@ -77,23 +77,24 @@ body, html {
     margin-bottom: 2rem;
   }
 
-  .change-pass-title {
+  .find-my-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 30px;
+    margin-top: 15px;
     text-align: center;
   }
 
-  .change-pass-content {
+  .find-my-content {
     margin-top: 30px;
   }
   
-  .change-pass-list {
+  .find-my-list {
     list-style: none;
     padding: 0;
   }
   
-  .change-pass-list li {
+  .find-my-list li {
     font-size: 16px;
     margin: 8px 0;
   }
@@ -135,47 +136,3 @@ body, html {
     height: auto;
     object-fit: contain;
   }
-
-  /* Dropdown container */
-.dropdown-section {
-  border-bottom: 1px solid #ccc; /* Light gray line between sections */
-  margin: 0;
-  padding: 15px 0;
-}
-
-
-/* Header layout with title + arrow */
-.dropdown-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  font-size: 20px;
-  padding: 5px 0;
-}
-
-/* Device name styling */
-.device-name {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-/* Arrow icon */
-.dropdown-arrow {
-  font-size: 24px;
-}
-
-/* Content inside dropdown */
-.dropdown-content ul {
-  list-style: none;
-  padding-left: 20px;
-  margin-top: 10px;
-}
-
-.dropdown-content li {
-  font-size: 17px;
-  font-weight: normal;
-  margin-bottom: 8px;
-}
-
-
