@@ -22,7 +22,8 @@ const FamilyModule4 = () => {
         <h3>Step 4 – Review Location Settings</h3>
         <p>Tap <strong>Location Sharing</strong> and decide if you'd like to enable or disable it for your child.</p>
         <div className="step-image">
-          <img src="/img/family4-location.png" alt="Manage Location Sharing" />
+          <img src="/img/family4.png" alt="Manage Location Sharing" />
+          {/* check if image correct */}
         </div>
       </div>
       <div className="twofa-navigation">

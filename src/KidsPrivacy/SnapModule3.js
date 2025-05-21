@@ -22,7 +22,7 @@ const SnapModule3 = () => {
         <h3>Step 3 – Turn on Ghost Mode</h3>
         <p>Toggle the <strong>Ghost Mode</strong> switch to the ON position.</p>
         <div className="step-image">
-          <img src="/img/snap3-ghostmode.png" alt="Enable Ghost Mode" />
+          <img src="/img/snap3.png" alt="Enable Ghost Mode" />
         </div>
       </div>
       <div className="twofa-navigation">

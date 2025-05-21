@@ -22,7 +22,7 @@ const SnapModule1 = () => {
         <h3>Step 1 – Open Snapchat</h3>
         <p>Tap your profile icon in the top-left corner. Then tap the gear icon ⚙️ in the top-right to open <strong>Settings</strong>.</p>
         <div className="step-image">
-          <img src="/img/snap1-settings.png" alt="Snapchat Settings" />
+          <img src="/img/snap1.png" alt="Snapchat Settings" />
         </div>
       </div>
       <div className="twofa-navigation">

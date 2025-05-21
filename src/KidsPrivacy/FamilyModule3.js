@@ -22,7 +22,8 @@ const FamilyModule3 = () => {
         <h3>Step 3 – Choose Your Child</h3>
         <p>From the Family list, tap your child’s name to view their account options.</p>
         <div className="step-image">
-          <img src="/img/family3-child-profile.png" alt="Child's Profile" />
+          <img src="/img/family3.png" alt="Child's Profile" />
+          {/* checkk image if correct */}
         </div>
       </div>
       <div className="twofa-navigation">

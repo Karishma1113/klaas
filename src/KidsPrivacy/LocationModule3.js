@@ -6,6 +6,7 @@ import "./KidsPrivacy.css";
 const LocationModule3 = () => {
   const navigate = useNavigate();
   const stepLabels = [
+    // "Intro",
     "Open Settings",
     "Tap Apple ID",
     "Turn Off Share My Location",
@@ -24,7 +25,7 @@ const LocationModule3 = () => {
         <h3>Step 3 – Disable Location Sharing</h3>
         <p>Tap <strong>Find My</strong> → Toggle OFF <strong>Share My Location</strong>.</p>
         <div className="step-image">
-          <img src="/img/step3-share-location.png" alt="Toggle Share My Location Off" />
+          <img src="/img/location3.png" alt="Toggle Share My Location Off" />
         </div>
       </div>
       <div className="twofa-navigation">

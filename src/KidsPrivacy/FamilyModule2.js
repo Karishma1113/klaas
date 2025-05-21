@@ -22,7 +22,7 @@ const FamilyModule2 = () => {
         <h3>Step 2 – Access Family Settings</h3>
         <p>Tap your name or Apple ID at the top, then choose <strong>Family Sharing</strong>.</p>
         <div className="step-image">
-          <img src="/img/family2-family-sharing.png" alt="Family Sharing Settings" />
+          <img src="/img/family2.png" alt="Family Sharing Settings" />
         </div>
       </div>
       <div className="twofa-navigation">

@@ -36,7 +36,7 @@ const Password1 = () => {
         from unauthorized access. A secure password helps prevent hacking, identity theft, and data breaches.
       </p>
 
-      <div className="step-image">
+      <div className="step-image-psw">
         <img src="/img/password1.png" alt="Settings navigation" />
       </div>
 

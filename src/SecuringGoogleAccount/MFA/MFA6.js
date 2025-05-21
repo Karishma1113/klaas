@@ -16,7 +16,7 @@ const MFA6 = () => {
   ];
 
   const totalSteps = stepLabels.length;
-  const currentStep = 6; 
+  const currentStep = 6;
 
 
   return (
@@ -29,7 +29,7 @@ const MFA6 = () => {
       />
 
 
-<button className="close-btn" onClick={() => navigate("/guides")}>
+      <button className="close-btn" onClick={() => navigate("/guides")}>
         X
       </button>
 
@@ -47,7 +47,16 @@ const MFA6 = () => {
           <div className="step-info">
             <h3>Need Help?</h3>
             <div className="instruction-box">
-              <p>For detailed guidance, visit <a href="https://support.google.com/accounts/answer/10956730" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline" }}>Google's 2-Step Verification Help Page</a></p>
+              <p>For detailed guidance, visit{" "}
+                <a
+                  href="https://support.google.com/accounts/answer/10956730"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "blue", textDecoration: "underline" }}
+                >
+                  Google's 2-Step Verification Help Page
+                </a>
+              </p>
             </div>
           </div>
         </div>

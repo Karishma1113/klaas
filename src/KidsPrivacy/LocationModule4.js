@@ -6,6 +6,7 @@ import "./KidsPrivacy.css";
 const LocationModule4 = () => {
   const navigate = useNavigate();
   const stepLabels = [
+    // "Intro",
     "Open Settings",
     "Tap Apple ID",
     "Turn Off Share My Location",
@@ -24,7 +25,7 @@ const LocationModule4 = () => {
         <h3>Step 4 – Open Location Settings</h3>
         <p>Go back to <strong>Settings</strong> → Tap <strong>Privacy & Security</strong> → Tap <strong>Location Services</strong>.</p>
         <div className="step-image">
-          <img src="/img/step4-location-services.png" alt="Open Location Services" />
+          <img src="/img/location4.png" alt="Open Location Services" />
         </div>
       </div>
       <div className="twofa-navigation">

@@ -6,6 +6,7 @@ import "./KidsPrivacy.css";
 const LocationModule6 = () => {
   const navigate = useNavigate();
   const stepLabels = [
+    // "Intro",
     "Open Settings",
     "Tap Apple ID",
     "Turn Off Share My Location",
@@ -24,12 +25,12 @@ const LocationModule6 = () => {
         <h3>✅ All Done!</h3>
         <p>Your child’s location is no longer shared through their iPhone or apps. You can update these settings anytime if needed.</p>
         <div className="step-image">
-          <img src="/img/step6-complete.png" alt="Success" />
+          {/* <img src="/img/step6-complete.png" alt="Success" /> */}
         </div>
       </div>
       <div className="twofa-navigation">
         <button className="back-btn" onClick={() => navigate("/KidsPrivacy/LocationModule5")}>← Back</button>
-        <button className="next-btn" onClick={() => navigate("/guides")}>Done</button>
+        <button className="next-btn" onClick={() => navigate("/guides")}>Done ✓</button>
       </div>
     </div>
   );

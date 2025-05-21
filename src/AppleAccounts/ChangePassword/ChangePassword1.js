@@ -8,9 +8,8 @@ const ChangePassword1 = () => {
 
   const stepLabels = [
     "Overview",
-    "Required Settings",
-    "Turn Stolen Device Protection On or Off",
-    "[Optional] Always Require Extra Security ",
+    "Choose Device or Platform",
+    "Change Child’s Account Password",
   ];
 
   const totalSteps = stepLabels.length;
@@ -30,36 +29,47 @@ const ChangePassword1 = () => {
       </button>
 
       <h1 className="change-pass-title">
-        What is Apple's Stolen Device Protection?
+        Changing Your Apple Account Password{" "}
       </h1>
 
       <p className="change-pass-desc">
-        Stolen Device Protection is a security feature designed to stop someone
-        who steals your iPhone and knows your passcode from making important
-        changes to your account or device. When enabled, certain actions and
-        settings require extra verification if your iPhone is not in a familiar
-        location, like your home or workplace.
+        Keeping your Apple Account secure is essential for protecting your
+        personal data, purchases, iCloud information, and more. Whether you're
+        using an iPhone, Mac, or browser, Apple makes it easy to update your
+        password in just a few steps. This guide walks you through how to change
+        your password on different devices, including for your child’s account
+        if you're using Family Sharing.
+      </p>
+      <p className="change-pass-desc">
+        Apple Family Sharing is a service that allows up to five family members
+        to share Apple subscriptions, purchases, and more, without sharing each
+        other's Apple IDs. This includes access to services like iCloud+, Apple
+        Music, Apple TV+, and Apple Arcade, as well as shared access to App
+        Store, iTunes, and Apple Books purchases. Family members can also share
+        iCloud storage, photo albums, and calendars.{" "}
       </p>
 
-      <p className="change-pass-desc">In this module, you'll learn how to:</p>
+      <h2 className="change-pass-title">Tips for Creating a Strong Password</h2>
+      <p className="change-pass-desc">To keep your account safe, follow these best practices:</p>
       <ul className="change-pass-list">
+        <li>○ Use a strong password with eight or more characters.</li>
+        <li>○ Include both uppercase and lowercase letters.</li>
+        <li>○ Use at least one number.</li>
+        <li>○ Avoid common words, personal details, or reused passwords.</li>
         <li>
-          ○ Check if you meet the requirements to use Stolen Device Protection
-        </li>
-        <li>○ Turn the feature on or off</li>
-        <li>
-          ○ Enable optional settings for added protection, even at familiar
-          locations
+          ○ Consider using a password manager to store and generate secure
+          passwords.
         </li>
       </ul>
-
       <div className="change-pass-navigation">
         <div style={{ visibility: "hidden" }}>
           <button className="back-btn">← Back</button>
         </div>
         <button
           className="next-btn"
-          onClick={() => navigate("/AppleAccounts/ChangePassword/ChangePassword2")}
+          onClick={() =>
+            navigate("/AppleAccounts/ChangePassword/ChangePassword2")
+          }
         >
           Next →
         </button>

@@ -22,7 +22,7 @@ const FamilyModule1 = () => {
         <h3>Step 1 – Open Settings App</h3>
         <p>Tap the <strong>Settings</strong> app on your device.</p>
         <div className="step-image">
-          <img src="/img/family1-settings.png" alt="iPhone Settings" />
+          <img src="/img/location1.png" alt="iPhone Settings" />
         </div>
       </div>
       <div className="twofa-navigation">

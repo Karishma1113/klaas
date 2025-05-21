@@ -41,8 +41,8 @@ const GoogleScan = () => {
                 <p>Click <b>“Get Started.”</b></p>
             </div>
 
-            <div className="step-image">
-                <img src="/img/google-get-started.png" alt="Get Started" className="signin-img" />
+            <div className="step-image-scan">
+                <img src="/img/google-get-started.png" alt="Get Started" />
             </div>
 
             <div className="step-info">

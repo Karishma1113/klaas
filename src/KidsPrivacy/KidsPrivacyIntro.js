@@ -1,20 +1,35 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ProgressBar from "../ProgressBar";
 import "./KidsPrivacy.css";
 
 const KidsPrivacyIntro = () => {
   const navigate = useNavigate();
 
+  const stepLabels = [
+    // "Intro",
+    "Open Settings",
+    "Tap Apple ID",
+    "Turn Off Share My Location",
+    "Open Location Services",
+    "Disable Location for Apps",
+    "Success!"
+  ];
+
   return (
     <div className="kidsintro-container">
+      {/* Progress bar with Intro as Step 0 */}
+      {/* <ProgressBar currentStep={0} totalSteps={stepLabels.length} stepLabels={stepLabels} /> */}
+
+      {/* Close button */}
       <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
 
-      {/* Image at top */}
+      {/* Intro image */}
       <div className="intro-image-container">
         <img src="/img/kids-safety-intro.png" alt="Child using tablet with stuffed animals" className="intro-image" />
       </div>
 
-      {/* Text underneath */}
+      {/* Intro content */}
       <div className="kidsintro-content">
         <h1 className="kidsintro-title">Securing Kids’ Devices & Talking About Online Safety</h1>
 
@@ -39,6 +54,12 @@ const KidsPrivacyIntro = () => {
           <li>📍 <strong>iPad/iPhone Location Settings</strong><br />Others with shared accounts or Family Sharing can view the child’s location.</li>
           <li>📍 <strong>Gaming & Social Media</strong><br />Chat features and friends lists may allow others to message or follow your child.</li>
         </ul>
+      </div>
+
+      {/* Navigation */}
+      <div className="twofa-navigation">
+        <div></div> {/* placeholder for back button space */}
+        <button className="next-btn" onClick={() => navigate("/KidsPrivacy/LocationModule1")}>Next →</button>
       </div>
     </div>
   );

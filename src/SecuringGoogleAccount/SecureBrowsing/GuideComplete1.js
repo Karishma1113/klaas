@@ -40,7 +40,16 @@ const Complete1 = () => {
                     <div className="step">
                         <h3>Need Help?</h3>
                         <div className="instruction-box">
-                            <p>For detailed guidance, visit <a href="https://myaccount.google.com/privacycheckup" target="_blank" rel="noopener noreferrer">Privacy Checkup</a></p>
+                            <p>For detailed guidance, visit{" "}
+                                <a
+                                    href="https://myaccount.google.com/privacycheckup"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{ color: "blue", textDecoration: "underline" }}
+                                >
+                                    Privacy Checkup
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>

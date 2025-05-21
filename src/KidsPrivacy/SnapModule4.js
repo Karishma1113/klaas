@@ -22,7 +22,7 @@ const SnapModule4 = () => {
         <h3>Step 4 – Set Ghost Mode Duration</h3>
         <p>Choose how long Ghost Mode stays on. You can select <strong>3 hours</strong>, <strong>24 hours</strong>, or <strong>Until Turned Off</strong>.</p>
         <div className="step-image">
-          <img src="/img/snap4-timer.png" alt="Ghost Mode Timer" />
+          <img src="/img/snap4.png" alt="Ghost Mode Timer" />
         </div>
       </div>
       <div className="twofa-navigation">
