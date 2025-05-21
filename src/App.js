@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "react-router-dom";
-import ScrollToTop from "./ScrollToTop";
+
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Survey1 from "./Survey1";
@@ -9,7 +9,7 @@ import SurveyResults from "./SurveyResults";
 import Resources from "./Resources";
 import GuidesHome from "./GuidesHome";
 
-// Google Modules
+// Google Account Guides
 import MFA1 from "./SecuringGoogleAccount/MFA/MFA1";
 import MFA2 from "./SecuringGoogleAccount/MFA/MFA2";
 import MFA3 from "./SecuringGoogleAccount/MFA/MFA3";
@@ -66,7 +66,7 @@ import FamilyModule4 from "./KidsPrivacy/FamilyModule4";
 import FamilyModule5 from "./KidsPrivacy/FamilyModule5";
 import KidsPrivacyIntro from "./KidsPrivacy/KidsPrivacyIntro";
 
-// Social Media
+// Social Media Accounts
 import Instagram1 from "./SecuringSocialMediaAccounts/instagram1";
 import Instagram2 from "./SecuringSocialMediaAccounts/instagram2";
 import Instagram3 from "./SecuringSocialMediaAccounts/instagram3";
@@ -78,7 +78,7 @@ import Snapchat1 from "./SecuringSocialMediaAccounts/Snapchat/snapchat1";
 import Snapchat2 from "./SecuringSocialMediaAccounts/Snapchat/snapchat2";
 import Snapchat3 from "./SecuringSocialMediaAccounts/Snapchat/snapchat3";
 
-// Tracking Devices
+// Tracking Device Modules
 import Tracking1A from "./TrackingDevices/tracking1a";
 import Tracking1B from "./TrackingDevices/tracking1b";
 import Tracking2A from "./TrackingDevices/tracking2a";
@@ -102,7 +102,6 @@ function AppContent() {
 
   return (
     <>
-      <ScrollToTop />
       {!shouldHideNavbar && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
@@ -112,18 +111,78 @@ function AppContent() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/guides" element={<GuidesHome />} />
 
-        {/* Add all your route definitions here (as in your last version) */}
-
-        {/* Google, Apple, KidsPrivacy, Social Media, Tracking (already included above) */}
-
+        {/* Google Account */}
         <Route path="/SecuringGoogleAccount/mfa/mfa1" element={<MFA1 />} />
         <Route path="/mfa/mfa2" element={<MFA2 />} />
         <Route path="/mfa/mfa3" element={<MFA3 />} />
         <Route path="/mfa/mfa4" element={<MFA4 />} />
         <Route path="/mfa/mfa5" element={<MFA5 />} />
         <Route path="/mfa/mfa6" element={<MFA6 />} />
+        <Route path="/device1" element={<Device1 />} />
+        <Route path="/device/device2" element={<Device2 />} />
+        <Route path="/device/device3" element={<Device3 />} />
+        <Route path="/device/device4" element={<Device4 />} />
+        <Route path="/password1" element={<Password1 />} />
+        <Route path="/password/password2" element={<Password2 />} />
+        <Route path="/securinggoogleaccount/secure-browsing" element={<SecureBrowsing />} />
+        <Route path="/secure-browsing/autosave" element={<Autosave />} />
+        <Route path="/secure-browsing/adds" element={<Adds />} />
+        <Route path="/secure-browsing/location" element={<Location />} />
+        <Route path="/secure-browsing/search" element={<Search />} />
+        <Route path="/secure-browsing/trird-party-apps" element={<ThirdPartyApps />} />
+        <Route path="/secure-browsing/clearing-browsing-history" element={<ClearHistory />} />
+        <Route path="/secure-browsing/complete" element={<Complete1 />} />
+        <Route path="/securinggoogleaccount/googlesearchsettings/overview" element={<Overview />} />
+        <Route path="/google-search-settings/google-scan" element={<GoogleScan />} />
+        <Route path="/google-search-settings/removal-request" element={<RemovalRequest />} />
+        <Route path="/google-search-settings/dark-web-report" element={<DarkWebReport />} />
 
-        {/* ... (continue with all the routes you had before) ... */}
+        {/* Apple */}
+        <Route path="/AppleAccounts/2FactorAuth/TwoFA1" element={<TwoFA1 />} />
+        <Route path="/AppleAccounts/2FactorAuth/TwoFA2" element={<TwoFA2 />} />
+        <Route path="/AppleAccounts/2FactorAuth/TwoFA3" element={<TwoFA3 />} />
+        <Route path="/AppleAccounts/2FactorAuth/TwoFA4" element={<TwoFA4 />} />
+        <Route path="/AppleAccounts/2FactorAuth/TwoFA5" element={<TwoFA5 />} />
+        <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice1" element={<StolenDevice1 />} />
+
+        {/* Kids Privacy */}
+        <Route path="/KidsPrivacy/LocationModule1" element={<LocationModule1 />} />
+        <Route path="/KidsPrivacy/LocationModule2" element={<LocationModule2 />} />
+        <Route path="/KidsPrivacy/LocationModule3" element={<LocationModule3 />} />
+        <Route path="/KidsPrivacy/LocationModule4" element={<LocationModule4 />} />
+        <Route path="/KidsPrivacy/LocationModule5" element={<LocationModule5 />} />
+        <Route path="/KidsPrivacy/LocationModule6" element={<LocationModule6 />} />
+        <Route path="/KidsPrivacy/SnapModule1" element={<SnapModule1 />} />
+        <Route path="/KidsPrivacy/SnapModule2" element={<SnapModule2 />} />
+        <Route path="/KidsPrivacy/SnapModule3" element={<SnapModule3 />} />
+        <Route path="/KidsPrivacy/SnapModule4" element={<SnapModule4 />} />
+        <Route path="/KidsPrivacy/SnapModule5" element={<SnapModule5 />} />
+        <Route path="/KidsPrivacy/FamilyModule1" element={<FamilyModule1 />} />
+        <Route path="/KidsPrivacy/FamilyModule2" element={<FamilyModule2 />} />
+        <Route path="/KidsPrivacy/FamilyModule3" element={<FamilyModule3 />} />
+        <Route path="/KidsPrivacy/FamilyModule4" element={<FamilyModule4 />} />
+        <Route path="/KidsPrivacy/FamilyModule5" element={<FamilyModule5 />} />
+        <Route path="/KidsPrivacy/Intro" element={<KidsPrivacyIntro />} />
+
+        {/* Social Media */}
+        <Route path="/instagram/step1" element={<Instagram1 />} />
+        <Route path="/instagram/step2" element={<Instagram2 />} />
+        <Route path="/instagram/step3" element={<Instagram3 />} />
+        <Route path="/facebook/step1" element={<Facebook1 />} />
+        <Route path="/facebook/step2" element={<Facebook2 />} />
+        <Route path="/facebook/step3" element={<Facebook3 />} />
+        <Route path="/facebook/step4" element={<Facebook4 />} />
+        <Route path="/snapchat/step1" element={<Snapchat1 />} />
+        <Route path="/snapchat/step2" element={<Snapchat2 />} />
+        <Route path="/snapchat/step3" element={<Snapchat3 />} />
+
+        {/* Tracking Devices */}
+        <Route path="/tracking/step1a" element={<Tracking1A />} />
+        <Route path="/tracking/step1b" element={<Tracking1B />} />
+        <Route path="/tracking/step2a" element={<Tracking2A />} />
+        <Route path="/tracking/step2b" element={<Tracking2B />} />
+        <Route path="/tracking/step3a" element={<Tracking3A />} />
+        <Route path="/tracking/step3b" element={<Tracking3B />} />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
