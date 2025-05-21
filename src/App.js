@@ -118,11 +118,11 @@ function AppContent() {
         <Route path="/mfa/mfa4" element={<MFA4 />} />
         <Route path="/mfa/mfa5" element={<MFA5 />} />
         <Route path="/mfa/mfa6" element={<MFA6 />} />
-        <Route path="/device1" element={<Device1 />} />
+        <Route path="/securinggoogleaccount/device/device1" element={<Device1 />} />
         <Route path="/device/device2" element={<Device2 />} />
         <Route path="/device/device3" element={<Device3 />} />
         <Route path="/device/device4" element={<Device4 />} />
-        <Route path="/password1" element={<Password1 />} />
+        <Route path="/securinggoogleaccount/password/password1" element={<Password1 />} />
         <Route path="/password/password2" element={<Password2 />} />
         <Route path="/securinggoogleaccount/secure-browsing" element={<SecureBrowsing />} />
         <Route path="/secure-browsing/autosave" element={<Autosave />} />
