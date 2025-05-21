@@ -1,9 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import ProgressBar from "../../ProgressBar";
-import "./StolenDevice.css";
+import "./ChangePassword.css";
 
-const StolenDevice1 = () => {
+const ChangePassword1 = () => {
   const navigate = useNavigate();
 
   const stepLabels = [
@@ -17,7 +17,7 @@ const StolenDevice1 = () => {
   const currentStep = 1; // Current step for this part of the guide
 
   return (
-    <div className="stolen-device-container">
+    <div className="change-pass-container">
       {/* Updated ProgressBar with dynamic steps */}
       <ProgressBar
         currentStep={currentStep}
@@ -29,11 +29,11 @@ const StolenDevice1 = () => {
         X
       </button>
 
-      <h1 className="stolen-device-title">
+      <h1 className="change-pass-title">
         What is Apple's Stolen Device Protection?
       </h1>
 
-      <p className="stolen-device-desc">
+      <p className="change-pass-desc">
         Stolen Device Protection is a security feature designed to stop someone
         who steals your iPhone and knows your passcode from making important
         changes to your account or device. When enabled, certain actions and
@@ -41,8 +41,8 @@ const StolenDevice1 = () => {
         location, like your home or workplace.
       </p>
 
-      <p className="stolen-device-desc">In this module, you'll learn how to:</p>
-      <ul className="stolen-device-list">
+      <p className="change-pass-desc">In this module, you'll learn how to:</p>
+      <ul className="change-pass-list">
         <li>
           ○ Check if you meet the requirements to use Stolen Device Protection
         </li>
@@ -53,13 +53,13 @@ const StolenDevice1 = () => {
         </li>
       </ul>
 
-      <div className="stolen-device-navigation">
+      <div className="change-pass-navigation">
         <div style={{ visibility: "hidden" }}>
           <button className="back-btn">← Back</button>
         </div>
         <button
           className="next-btn"
-          onClick={() => navigate("/AppleAccounts/StolenDeviceProtection/StolenDevice2")}
+          onClick={() => navigate("/AppleAccounts/ChangePassword/ChangePassword2")}
         >
           Next →
         </button>
@@ -68,4 +68,4 @@ const StolenDevice1 = () => {
   );
 };
 
-export default StolenDevice1;
+export default ChangePassword1;

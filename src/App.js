@@ -42,6 +42,10 @@ import TwoFA3 from "./AppleAccounts/2FactorAuth/TwoFA3";
 import TwoFA4 from "./AppleAccounts/2FactorAuth/TwoFA4";
 import TwoFA5 from "./AppleAccounts/2FactorAuth/TwoFA5";
 import StolenDevice1 from "./AppleAccounts/StolenDeviceProtection/StolenDevice1";
+import StolenDevice2 from "./AppleAccounts/StolenDeviceProtection/StolenDevice2";
+import StolenDevice3 from "./AppleAccounts/StolenDeviceProtection/StolenDevice3";
+import StolenDevice4 from "./AppleAccounts/StolenDeviceProtection/StolenDevice4";
+import ChangePassword1 from "./AppleAccounts/ChangePassword/ChangePassword1";
 
 // Kids Privacy
 import LocationModule1 from "./KidsPrivacy/LocationModule1";

@@ -17,8 +17,8 @@ const guidesData = [
     title: "Securing Apple Accounts",
     subGuides: [
       "Two-Factor Authentication",
-      "Find My iPhone",
-      "Location Sharing",
+      "Change Password",
+      "Find My iPhone + Location Sharing",
       "Stolen/Lost Device Protection",
       "If Account is Already Compromised"
     ],
@@ -36,8 +36,9 @@ const guidesData = [
     subGuides: [
       "Turn Off Location Tracking",
       "Snapchat Ghost Mode",
-      "Review Family Sharing Settings"
+      "Review Family Sharing Settings",
     ],
+  },
   }
 ];
 
