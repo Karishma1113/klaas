@@ -6,20 +6,17 @@ function NovaaWebsite() {
       {/* Hero Section */}
       <section className="container hero-section">
         <div className="hero-content">
-          <h1 className="hero-title">reclaim your digital presence</h1>
-          <h2 className="hero-subtitle">
-            with <span className="highlight">novaa</span> — navigating online
-            vulnerability and achieving autonomy
+          <h1 className="hero-title serif-intro">Reclaim Your Digital Presence</h1>
+          <h2 className="hero-subtitle serif-intro">
+            With <span className="highlight">Novaa</span> — Navigating Online Vulnerability and Achieving Autonomy
           </h2>
         </div>
         <div className="hero-image-container">
-          <div className="hero-image-wrapper">
-            <img
-              src="/img/home2.png"
-              alt="Person with digital elements illustration"
-              className="hero-image"
-            />
-          </div>
+          <img
+            src="/img/home2.png"
+            alt="Person with digital elements illustration"
+            className="hero-image"
+          />
         </div>
       </section>
 
