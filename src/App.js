@@ -8,6 +8,7 @@ import Survey2 from "./Survey2";
 import SurveyResults from "./SurveyResults";
 import Resources from "./Resources";
 import GuidesHome from "./GuidesHome";
+import ScrollToTop from "./ScrollToTop";
 
 // Google Account Guides
 import MFA1 from "./SecuringGoogleAccount/MFA/MFA1";
@@ -46,6 +47,11 @@ import StolenDevice2 from "./AppleAccounts/StolenDeviceProtection/StolenDevice2"
 import StolenDevice3 from "./AppleAccounts/StolenDeviceProtection/StolenDevice3";
 import StolenDevice4 from "./AppleAccounts/StolenDeviceProtection/StolenDevice4";
 import ChangePassword1 from "./AppleAccounts/ChangePassword/ChangePassword1";
+import ChangePassword2 from "./AppleAccounts/ChangePassword/ChangePassword2";
+import ChangePassword3 from "./AppleAccounts/ChangePassword/ChangePassword3";
+import FindMy1 from "./AppleAccounts/FindMyandLocation/FindMy1";
+import FindMy2 from "./AppleAccounts/FindMyandLocation/FindMy2";
+import FindMy3 from "./AppleAccounts/FindMyandLocation/FindMy3";
 
 // Kids Privacy
 import LocationModule1 from "./KidsPrivacy/LocationModule1";
@@ -144,6 +150,15 @@ function AppContent() {
         <Route path="/AppleAccounts/2FactorAuth/TwoFA4" element={<TwoFA4 />} />
         <Route path="/AppleAccounts/2FactorAuth/TwoFA5" element={<TwoFA5 />} />
         <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice1" element={<StolenDevice1 />} />
+        <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice2" element={<StolenDevice2 />} />
+        <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice3" element={<StolenDevice3 />} />
+        <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice4" element={<StolenDevice4 />} />
+        <Route path="/AppleAccounts/ChangePassword/ChangePassword1" element={<ChangePassword1 />} />
+        <Route path="/AppleAccounts/ChangePassword/ChangePassword2" element={<ChangePassword2 />} />
+        <Route path="/AppleAccounts/ChangePassword/ChangePassword3" element={<ChangePassword3 />} />
+        <Route path="/AppleAccounts/FindMyandLocation/FindMy1" element={<FindMy1 />} />
+        <Route path="/AppleAccounts/FindMyandLocation/FindMy2" element={<FindMy2 />} />
+        <Route path="/AppleAccounts/FindMyandLocation/FindMy3" element={<FindMy3 />} />
 
         {/* Kids Privacy */}
         <Route path="/KidsPrivacy/LocationModule1" element={<LocationModule1 />} />
@@ -193,6 +208,7 @@ function AppContent() {
 export default function App() {
   return (
     <Router>
+       <ScrollToTop />
       <AppContent />
     </Router>
   );

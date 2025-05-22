@@ -37,12 +37,18 @@ const StolenDevice4 = () => {
           <p>
             <p>1. Open the "Settings app"</p>
             <p>2. Tap "Face ID & Passcode" (or "Touch ID & Passcode")</p>
+             <div className="step-image">
+            <img src="/img/apple-faceid.jpg" alt="Apple Face ID & Passcode button" className="stolen-dev-img" />
+          </div>
             <p>3. Enter your device passcode</p>
             <p>4. Scroll down and tap "Stolen Device Protection"</p>
+             <div className="step-image">
+            <img src="/img/stolen-dev.jpg" alt="Stolen Device Protection button" className="stolen-dev-img" />
+          </div>
             <p>5. Under "Require Security Delay", choose "Always"</p>
           </p>
-          <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+           <div className="step-image">
+            <img src="/img/stolen-dev-extra.jpg" alt="Stolen Device Protection extra security options" className="stolen-dev-img" />
           </div>
         </div>
       </div>

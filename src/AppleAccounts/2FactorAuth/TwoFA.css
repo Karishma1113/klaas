@@ -116,16 +116,46 @@ body, html {
     background: rgba(157, 160, 184, 0.917);
   }
 
-  .step-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    overflow: hidden;
-  }
-  
-  .step-image img {
-    max-width: 70%;
-    height: auto;
-    object-fit: contain;
-  }
+  .dropdown-section {
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+.device-name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.dropdown-arrow {
+  font-size: 24px;
+}
+
+.dropdown-content p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.step-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.step-image img {
+  max-width: 70%;
+  height: auto;
+  object-fit: contain;
+}

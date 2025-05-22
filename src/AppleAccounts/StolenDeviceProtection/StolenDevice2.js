@@ -38,14 +38,12 @@ const StolenDevice2 = () => {
           <p></p>
           <p>
           <p>1. Two-Factor Authentication for your Apple ID</p>
-          <p>2. A device passcode</p>
+          <p>2. A device passcode.</p>
           <p> 3. Face ID or Touch ID</p>
-          <p>4. Location Services with "Significant Locations" enabled</p>
+  
           <p>5. Find My iPhone (cannot be turned off while this feature is on)</p>
           </p>
-          <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
+  
         </div>
       </div>
 

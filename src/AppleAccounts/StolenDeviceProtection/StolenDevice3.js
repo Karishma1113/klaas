@@ -31,17 +31,24 @@ const StolenDevice3 = () => {
 
       <div className="stolen-device-content">
         <div className="step-info">
-          <strong>Turn Stolen Device Protection on or off:</strong>
+          <strong>Manage Stolen Device Protection</strong>
           <p></p>
           <p>
-            <p>1. Open the "Settings app"</p>
-            <p>2. Tap "Face ID & Passcode" (or "Touch ID & Passcode")</p>
-            <p>3. Enter your device passcode</p>
-            <p>4. Scroll down and tap "Stolen Device Protection"</p>
-            <p>5. Toggle the switch on or off</p>
+            <p>1. Open the "Settings app."</p>
+            
+            <p>2. Tap "Face ID & Passcode" (or "Touch ID & Passcode").</p>
+            <div className="step-image">
+            <img src="/img/apple-faceid.jpg" alt="Face ID & Passcode button in settings" className="stolen-dev-img" />
+          </div>
+            <p>3. Enter your device passcode.</p>
+            <p>4. Scroll down and tap "Stolen Device Protection."</p>
+            <div className="step-image">
+            <img src="/img/stolen-dev.jpg" alt="Stolen Device Protection button" className="stolen-dev-img" />
+          </div>
+            <p>5. Toggle the switch on if it is off.</p>
           </p>
           <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+            <img src="/img/stolen-dev-toggle.jpg" alt="Stolen Device Protection button" className="stolen-dev-img" />
           </div>
         </div>
       </div>

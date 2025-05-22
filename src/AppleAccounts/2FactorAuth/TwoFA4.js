@@ -40,7 +40,7 @@ const TwoFA4 = () => {
             <strong>Option 1: Use a trusted phone number </strong>
           </p>
           <p>
-            A trusted phone number is anumber that can receive verification
+            A trusted phone number is a number that can receive verification
             codes by text or call.
           </p>
           <p>1. On the sign-in screen, tap “Didn’t Get a Code?”</p>

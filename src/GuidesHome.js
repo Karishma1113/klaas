@@ -5,6 +5,11 @@ import "./Guides.css";
 const guidesData = [
   {
     title: "Securing Google Accounts",
+    description: `Your Google account is connected to many personal details, including emails, saved passwords, and location history. Keeping it secure is essential for protecting your privacy and preventing unauthorized access.
+
+These guides will introduce why securing your Google account matters, how accounts can be accessed without your knowledge, and ways Google tracks your activity and what that means for your privacy.
+
+Understanding these risks will help you take control of your account security as you move through the guides.`,
     subGuides: [
       "Multi-Factor Authentication",
       "Device Setup",
@@ -15,16 +20,19 @@ const guidesData = [
   },
   {
     title: "Securing Apple Accounts",
+    description: `Apple accounts are used to sign into Apple services such as the App Store, iCloud, Apple Music, iMessage, FaceTime, and more. They also store sensitive information like payment methods, contact details, and personal data, including photos and documents. Protecting your Apple account is important to prevent unauthorized access and keep your private information secure.
+
+These guides will explain why securing your Apple account matters and walk you through the steps to do so effectively.`,
     subGuides: [
       "Two-Factor Authentication",
       "Change Password",
       "Find My iPhone + Location Sharing",
       "Stolen/Lost Device Protection",
-      // "If Account is Already Compromised"
     ],
   },
   {
     title: "Securing Social Media Accounts",
+    description: `Social media accounts store private messages, photos, and personal connections. If hacked, they can be used to impersonate you or spread harmful content. These guides will help you lock down your profiles.`,
     subGuides: ["Instagram", "Facebook", "Snapchat"],
   },
   {
@@ -33,6 +41,7 @@ const guidesData = [
   },
   {
     title: "Securing Your Children’s Digital Safety",
+    description: `This section is designed to help parents and caregivers keep children safe from digital risks. It includes steps to turn off location tracking, adjust privacy settings, and limit who can see a child's online activity.`,
     subGuides: [
       "Turn Off Location Tracking",
       "Snapchat Ghost Mode",
@@ -44,13 +53,6 @@ const guidesData = [
 const subGuidePaths = {
   // Google
   "Multi-Factor Authentication": "/SecuringGoogleAccount/mfa/mfa1",
-  "Two-Factor Authentication": "/AppleAccounts/2FactorAuth/TwoFA1",
-  "Stolen/Lost Device Protection":
-    "/AppleAccounts/StolenDeviceProtection/StolenDevice1",
-    "Change Password":
-    "/AppleAccounts/ChangePassword/ChangePassword1",
-    "Find My iPhone + Location Sharing": "/AppleAccounts/FindMyandLocation/FindMy1",
-  // add more like:
   "Device Setup": "/securinggoogleaccount/device/device1",
   "Password Setup": "/securinggoogleaccount/password/password1",
   "Secure Browsing": "/securinggoogleaccount/secure-browsing",
@@ -59,7 +61,7 @@ const subGuidePaths = {
   // Apple
   "Two-Factor Authentication": "/AppleAccounts/2FactorAuth/TwoFA1",
   "Change Password": "/AppleAccounts/ChangePassword/ChangePassword1",
-  "Find My iPhone + Location Sharing": "/AppleAccounts/StolenDeviceProtection/StolenDevice2",
+  "Find My iPhone + Location Sharing": "/AppleAccounts/FindMyandLocation/FindMy1",
   "Stolen/Lost Device Protection": "/AppleAccounts/StolenDeviceProtection/StolenDevice1",
   "If Account is Already Compromised": "/AppleAccounts/StolenDeviceProtection/StolenDevice4",
 
@@ -111,24 +113,30 @@ const GuidesHome = () => {
         <span className="search-icon">🔍</span>
       </div>
 
-      {guidesData.map((guide, index) => (
-        <div className="guide" key={index}>
-          <div className="guide-header" onClick={() => handleToggle(index)}>
-            <h3>{guide.title}</h3>
-            <span className="arrow">{openIndex === index ? "▾" : "▸"}</span>
+   {guidesData.map((guide, index) => (
+  <div className="guide" key={index}>
+    <div className="guide-header" onClick={() => handleToggle(index)}>
+      <h3>{guide.title}</h3>
+      <span className="arrow">{openIndex === index ? "▾" : "▸"}</span>
+    </div>
+    {openIndex === index && (
+      <div className="guide-details">
+        {guide.description && <p>{guide.description}</p>}
+        {guide.subGuides?.length > 0 && (
+          <div className="subguides">
+            {guide.subGuides.map((sub, i) => (
+              <div className="subguide" key={i}>
+                <span className="subguide-title">{sub}</span>
+                <button onClick={() => handleNavigate(sub)}>Guide →</button>
+              </div>
+            ))}
           </div>
-          {openIndex === index && (
-            <div className="guide-details">
-              {guide.subGuides.map((sub, i) => (
-                <div className="subguide" key={i}>
-                  <span className="subguide-title">{sub}</span>
-                  <button onClick={() => handleNavigate(sub)}>Guide →</button>
-                </div>
-              ))}
-            </div>
-          )}
-          <hr />
-        </div>
+        )}
+      </div>
+    )}
+    <hr /> {/* ← this is now always rendered between guides */}
+  </div>
+        
       ))}
     </div>
   );

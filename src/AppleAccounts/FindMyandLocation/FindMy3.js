@@ -34,22 +34,19 @@ const FindMy3 = () => {
           <p></p>
 
           <p>1. Open the "Settings" app.</p>
-          <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
+      
           <p>2. Tap "Privacy & Security."</p>
-          <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+        <div className="step-image">
+            <img src="/img/apple-privacy.jpg" alt="Apple Privacy & Security" className="find-my-img" />
           </div>
           <p>3. Tap "Location Services."</p>
-          <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+         <div className="step-image">
+            <img src="/img/apple-location.jpg" alt="Apple Location Services screen" className="find-my-img" />
           </div>
           <p>4. Tap on the app whose location access you want to manage.</p>
-          <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
+          
           <p>5. Choose a location access option based on your preference:</p>
+    
 
 <ul>
     <li>Never – Blocks location access completely.</li> <p></p>
@@ -60,11 +57,7 @@ const FindMy3 = () => {
 
 <li>Always – Allows background tracking (only available for apps that really need it).</li></ul>
 <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
-          <p>6. (Optional) Disable "Precise Location" if you don’t want the app to know your exact location (it will still know your general area).</p>
-          <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+            <img src="/img/apple-app-location.jpg" alt="Apple App Location Preferences" className="find-my-img" />
           </div>
         </div>
       </div>
