@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const handleLeaveSite = () => {
     window.open("https://weather.com/", "_blank"); 
-    window.location.href = "https://en.wikipedia.org/wiki/Main_Page"; 
+    window.location.href = "https://en.wikipedia.org/wiki/Inside_Out_2"; 
   };
   
   

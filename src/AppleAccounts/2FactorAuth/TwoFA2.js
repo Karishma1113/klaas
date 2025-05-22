@@ -78,7 +78,7 @@ const TwoFA2 = () => {
       <ProgressBar currentStep={currentStep} totalSteps={totalSteps} stepLabels={stepLabels} />
 
       <button className="close-btn" onClick={() => navigate("/guides")}>
-        X
+        Close Guide
       </button>
 
       <div className="twoFA-content">

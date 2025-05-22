@@ -102,7 +102,7 @@ const ChangePassword2 = () => {
       />
 
       <button className="close-btn" onClick={() => navigate("/guides")}>
-        X
+        Close Guide
       </button>
 
       <div className="change-pass-content">

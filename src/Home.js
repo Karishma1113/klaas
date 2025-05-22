@@ -8,7 +8,7 @@ function NovaaWebsite() {
         <div className="hero-content">
           <h1 className="hero-title serif-intro">Reclaim Your Digital Presence</h1>
           <h2 className="hero-subtitle serif-intro">
-            With <span className="highlight">Novaa</span> — Navigating Online Vulnerability and Achieving Autonomy
+            With <span className="highlight">novaa</span> — Navigating Online Vulnerability and Achieving Autonomy
           </h2>
         </div>
         <div className="hero-image-container">
@@ -36,48 +36,52 @@ function NovaaWebsite() {
           areas of concern, created to help you feel informed and in control.
         </p>
         <div className="action-buttons">
-          <a href="/resources" className="action-button">
-            Explore resources <span className="arrow">→</span>
-          </a>
+
           <a href="/guides" className="action-button">
-            Explore lessons & guides <span className="arrow">→</span>
+            Secure Your Digital Presence
           </a>
         </div>
       </section>
 
       {/* Digital Safety Section */}
       <section className="container safety-section">
-        <div className="digital-safety-highlight">
-          <h2 className="section-title">
-            The Importance of Digital Safety and Your Online Presence
-          </h2>
-          <p className="section-description">
-            It's easy to overlook just how quickly our personal information can
-            spread, sometimes without us even realizing it. A casual post, a
-            shared location, or a forgotten account can open doors for others to
-            see more of your life than you intended or would like. That loss of
-            control can feel overwhelming, even frightening.
-          </p>
+       <div className="digital-safety-highlight">
+  <h2 className="section-title">
+    The Importance of Digital Safety and Your Online Presence
+  </h2>
 
-          <p className="section-description">
-            We understand how important it is to feel safe and secure,
-            especially online. Our simple, step-by-step guides make it easy to 
-            stay safer online—no tech experience needed.
-          </p>
+  <div className="digital-safety-wrapper">
+    <div className="digital-safety-text">
+      <p className="section-description">
+        It's easy to overlook just how quickly our personal information can
+        spread, sometimes without us even realizing it. A casual post, a
+        shared location, or a forgotten account can open doors for others to
+        see more of your life than you intended or would like. That loss of
+        control can feel overwhelming, even frightening.
+      </p>
 
-          <p className="section-description">
-            {" "}
-            Whether you’re just starting or seeking peace of mind, these tools 
-            help you feel safer and more confident online.
-          </p>
-          <div className="safety-image-container">
-            <img
-              src="/img/home-digital-safety2.png"
-              alt="Person with digital security elements"
-              className="safety-image"
-            />
-          </div>
-        </div>
+      <p className="section-description">
+        We understand how important it is to feel safe and secure,
+        especially online. Our simple, step-by-step guides make it easy to 
+        stay safer online—no tech experience needed.
+      </p>
+
+      <p className="section-description">
+        Whether you’re just starting or seeking peace of mind, these tools 
+        help you feel safer and more confident online.
+      </p>
+    </div>
+
+    <div className="safety-image-container">
+      <img
+        src="/img/home-digital-safety2.png"
+        alt="Person with digital security elements"
+        className="safety-image"
+      />
+    </div>
+  </div>
+</div>
+
 
         <h2 className="section-heading secondary">
           Understanding Digital Harm and How to Protect Yourself
