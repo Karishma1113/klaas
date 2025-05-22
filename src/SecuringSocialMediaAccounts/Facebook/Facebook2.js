@@ -10,6 +10,10 @@ export default function Facebook2() {
     navigate("/facebook/step3");
   };
 
+  const handleBack = () => {
+    navigate("/facebook/step1"); // Replace with appropriate back route
+  };
+
   return (
     <div className="module">
       <ProgressBar
@@ -17,7 +21,7 @@ export default function Facebook2() {
         currentStep={2}
         stepLabels={[
           "Change Password",
-          "2FA",
+          "Two-Factor Authentication",
           "Login Activity",
           "App Access"
         ]}
@@ -41,6 +45,7 @@ export default function Facebook2() {
         src="/img/facebook1.png"
         alt="Facebook menu icon"
         className="step-img"
+        style={{ maxWidth: "300px", height: "auto" }} // Adjusted image size
       />
 
       <p>
@@ -50,6 +55,7 @@ export default function Facebook2() {
         src="/img/facebook2.png"
         alt="Facebook settings screen"
         className="step-img"
+        style={{ maxWidth: "300px", height: "auto" }} // Adjusted image size
       />
 
       <p>
@@ -59,6 +65,7 @@ export default function Facebook2() {
         src="/img/facebook3.png"
         alt="Facebook account center password screen"
         className="step-img"
+        style={{ maxWidth: "300px", height: "auto" }} // Adjusted image size
       />
 
       <p>
@@ -66,8 +73,10 @@ export default function Facebook2() {
       </p>
 
       <div className="step-controls">
+        <button className="back-btn" onClick={handleBack}>← Back</button>
         <button className="next-btn" onClick={handleNext}>Next →</button>
       </div>
     </div>
   );
 }
+

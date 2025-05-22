@@ -17,10 +17,10 @@ export default function Facebook1() {
         currentStep={1}
         stepLabels={[
           "Change Password",
-          "2FA",
+          "Two-Factor Authentication",
           "Login Activity",
           "App Access"
-        ]}
+        }
       />
 
       <div className="header">
@@ -42,27 +42,28 @@ export default function Facebook1() {
         src="/img/facebook1.png"
         alt="Facebook menu icon"
         className="step-img"
+        style={{ maxWidth: "300px", height: "auto" }} // Adjusted image size
       />
 
       <p>
-      Scroll down and go to the <strong>Account Center</strong>.  Click on <strong>Password and Security</strong>.
+        Scroll down and go to the <strong>Account Center</strong>. Click on <strong>Password and Security</strong>.
       </p>
       <img
         src="/img/facebook2.png"
         alt="Facebook settings screen"
         className="step-img"
+        style={{ maxWidth: "300px", height: "auto" }} // Adjusted image size
       />
 
       <p>
-      Click on <strong>Change Password</strong> and enter your current password. Then choose a new, stronger password.
+        Click on <strong>Change Password</strong> and enter your current password. Then choose a new, stronger password.
       </p>
       <img
         src="/img/facebook3.png"
         alt="Facebook account center password screen"
         className="step-img"
+        style={{ maxWidth: "300px", height: "auto" }} // Adjusted image size
       />
-
-      
 
       <div className="step-controls">
         <button className="next-btn" onClick={handleNext}>Next →</button>

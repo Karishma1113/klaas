@@ -15,7 +15,7 @@ export default function Snapchat3() {
       <ProgressBar
         totalSteps={3}
         currentStep={3}
-        stepLabels={["Change Password", "2FA", "Location Settings"]}
+        stepLabels={["Change Password", "Two-Factor Authentication", "Location Settings"]}
       />
 
       <div className="header">
@@ -27,31 +27,44 @@ export default function Snapchat3() {
         />
       </div>
 
-      <h3>Step 3: Turn Off Location for Snapchat in the App</h3>
+      <div className="content">
+        <h3>Step 3: Turn Off Location for Snapchat in the App</h3>
 
-      <p>
-        1. Open the Snapchat app and tap your profile icon (Bitmoji or ghost icon) in the top-left corner.
-        <br />
-        2. Tap the gear icon in the top-right corner to go to <strong>Settings</strong>.
-        <br />
-        3. Scroll down to the <strong>Privacy Controls</strong> section and tap <strong>See My Location</strong>.
-      </p>
+        <p>
+          1. Open the Snapchat app and tap your profile icon (Bitmoji or ghost icon) in the top-left corner.
+          <br />
+          2. Tap the gear icon in the top-right corner to go to <strong>Settings</strong>.
+          <br />
+          3. Scroll down to the <strong>Privacy Controls</strong> section and tap <strong>See My Location</strong>.
+        </p>
 
-      <img src="/img/snap1.png" alt="Snapchat profile screen" className="step-img" />
-      <img src="/img/snap4.png" alt="Snapchat location settings menu" className="step-img" />
+        <img
+          src="/img/snap1.png"
+          alt="Snapchat profile screen"
+          className="step-img"
+          style={{ maxWidth: "300px", height: "auto" }} // Adjusted image size
+        />
 
-      <p>Here, you’ll have a few options:</p>
+        <img
+          src="/img/snap4.png"
+          alt="Snapchat location settings menu"
+          className="step-img"
+          style={{ maxWidth: "300px", height: "auto" }} // Adjusted image size
+        />
 
-      <ul>
-        <li>
-          <strong>Ghost Mode:</strong> Toggle Ghost Mode on to prevent others from seeing your location on Snap Map.
-        </li>
-        <li>
-          <strong>My Friends / Custom:</strong> Limit who can see your location.
-        </li>
-      </ul>
+        <p>Here, you’ll have a few options:</p>
 
-      <p><em>Note: You can also disable Snapchat's location access from your phone's settings completely.</em></p>
+        <ul>
+          <li>
+            <strong>Ghost Mode:</strong> Toggle Ghost Mode on to prevent others from seeing your location on Snap Map.
+          </li>
+          <li>
+            <strong>My Friends / Custom:</strong> Limit who can see your location.
+          </li>
+        </ul>
+
+        <p><em>Note: You can also disable Snapchat's location access from your phone's settings completely.</em></p>
+      </div>
 
       <div className="step-controls">
         <p><strong>You’ve completed the Snapchat security guide!</strong></p>

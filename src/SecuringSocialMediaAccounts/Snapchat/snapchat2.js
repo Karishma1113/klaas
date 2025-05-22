@@ -1,7 +1,6 @@
-import React from "react";
+ import React from "react";
 import { useNavigate } from "react-router-dom";
 import ProgressBar from "../../ProgressBar";
-
 import "../socialmedia.css";
 
 export default function Snapchat2() {
@@ -16,31 +15,41 @@ export default function Snapchat2() {
       <ProgressBar
         totalSteps={3}
         currentStep={2}
-        stepLabels={["Change Password", "2FA", "Location Settings"]}
+        stepLabels={["Change Password", "Two-Factor Authentication", "Location Settings"]}
       />
 
       <div className="header">
         <h2>Securing Your Snapchat Account</h2>
         <img
-       src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/512px-Snapchat_logo.svg.png"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/512px-Snapchat_logo.svg.png"
           alt="Snapchat logo"
           className="logo"
         />
       </div>
 
-      <h3>Step 2: Enable Two-Factor Authentication (2FA)</h3>
-      <p>
-     1. Open Snapchat and tap your profile icon (Bitmoji or ghost) in the top-left corner.
+      <div className="content">
+        <h3>Step 2: Enable Two-Factor Authentication (2FA)</h3>
+        <p>
+          Open Snapchat and tap your profile icon (Bitmoji or ghost) in the top-left corner. In <strong>Settings</strong>, scroll down to the My Account section and tap Two Factor Authentication.
+        </p>
 
+        <img
+          src="/img/snap1.png"
+          alt="Snapchat settings showing login verification"
+          className="step-img"
+          style={{ maxWidth: "300px", height: "auto" }} // Adjusted image size
+        />
 
-        In <strong>Settings</strong>, Scroll down to the My Account section and tap Two Factor Authentication
-      </p>.
-      <img src="/img/snap1.png" alt="Snapchat settings showing login verification" className="step-img" />
-    
-      <img src="/img/snap2.png" alt="Snapchat 2FA method selection" className="step-img" />
+        <img
+          src="/img/snap2.png"
+          alt="Snapchat 2FA method selection"
+          className="step-img"
+          style={{ maxWidth: "300px", height: "auto" }} // Adjusted image size
+        />
 
-      <p>
-        Tap <strong>Continue</strong>. Choose between:
+        <p>
+          Tap <strong>Continue</strong>. Choose between:
+        </p>
         <ul>
           <li>
             <strong>SMS (Text Message)</strong>: Snapchat will send a code to your phone each time you log in.
@@ -49,14 +58,21 @@ export default function Snapchat2() {
             <strong>Authentication App</strong>: Use apps like Google Authenticator to generate a login code.
           </li>
         </ul>
-        Enter the code you receive and tap <strong>Continue</strong> to finish setup.
-      </p>
-      
+        <p>
+          Enter the code you receive and tap <strong>Continue</strong> to finish setup.
+        </p>
 
-      <p>
-        Snapchat will prompt you to save backup codes. Store them in a secure location in case you lose access to your phone.
-      </p>
-      <img src="/img/snap3.png" alt="Snapchat 2FA method selection" className="step-img" />
+        <img
+          src="/img/snap3.png"
+          alt="Snapchat 2FA method selection"
+          className="step-img"
+          style={{ maxWidth: "300px", height: "auto" }} // Adjusted image size
+        />
+
+        <p>
+          Snapchat will prompt you to save backup codes. Store them in a secure location in case you lose access to your phone.
+        </p>
+      </div>
 
       <div className="step-controls">
         <button className="next-btn" onClick={handleNext}>Next →</button>
