@@ -26,7 +26,7 @@ const Password1 = () => {
 
 
       <button className="close-btn" onClick={() => navigate("/guides")}>
-        X
+        Close Guide
       </button>
 
 

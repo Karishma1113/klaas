@@ -26,7 +26,7 @@ const Password2 = () => {
 
 
       <button className="close-btn" onClick={() => navigate("/guides")}>
-        X
+        Close Guide
       </button>
       <h1 className="password-title">Tips and Best Practices</h1>
       <p>

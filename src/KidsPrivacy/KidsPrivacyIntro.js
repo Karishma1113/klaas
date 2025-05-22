@@ -22,7 +22,7 @@ const KidsPrivacyIntro = () => {
       {/* <ProgressBar currentStep={0} totalSteps={stepLabels.length} stepLabels={stepLabels} /> */}
 
       {/* Close button */}
-      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
+      <button className="close-btn" onClick={() => navigate("/guides")}>Close Guide</button>
 
       {/* Intro image */}
       <div className="intro-image-container">

@@ -28,7 +28,7 @@ const Device4 = () => {
 
 
       <button className="close-btn" onClick={() => navigate("/guides")}>
-        X
+        Close Guide
       </button>
       <h3>Step 3</h3>
       <p>Update recovery information by adding or verifying recovery methods.</p>

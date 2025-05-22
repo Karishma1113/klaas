@@ -28,7 +28,7 @@ const DarkWebReport = () => {
 
 
             <button className="close-btn" onClick={() => navigate("/guides")}>
-                X
+                Close Guide
             </button>
 
             <div className="step-info">

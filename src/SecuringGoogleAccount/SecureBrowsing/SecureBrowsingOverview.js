@@ -32,7 +32,7 @@ const SecureBrowsing = () => {
 
 
             <button className="close-btn" onClick={() => navigate("/guides")}>
-                X
+                Close Guide
             </button>
 
             <h1 className="mfa-title">

@@ -16,7 +16,7 @@ const FamilyModule1 = () => {
   return (
     <div className="twofa-container">
       <ProgressBar currentStep={1} totalSteps={stepLabels.length} stepLabels={stepLabels} />
-      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
+      <button className="close-btn" onClick={() => navigate("/guides")}>Close Guide</button>
       <h1 className="twofa-title">Open Settings</h1>
       <div className="step-info">
         <h3>Step 1 – Open Settings App</h3>
