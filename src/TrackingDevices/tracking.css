@@ -60,27 +60,31 @@
   }
   
   .next-btn {
-    background-color: rgba(200, 210, 255, 0.7);
+    background-color: #6d83a8;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
     float: right;
+    color: white;
+    font-weight: bold;
   }
 
   .back-btn {
-    background-color: rgba(200, 210, 255, 0.7);
+    background-color: #6d83a8;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
     float: left;
+    color: white;
+    font-weight: bold;
   }
 
   .next-btn:hover, .back-btn:hover {
-    background: rgba(157, 160, 184, 0.917);
+    background: #24354d;
   }
   
   .arrow {

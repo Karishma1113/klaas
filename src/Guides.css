@@ -108,7 +108,7 @@
 }
 
 .subguide button {
-  background-color: #4e6590;
+  background-color: #60779e;;
   color: white;
   font-weight: bold;
   padding: 10px 20px; /* increased padding for a larger button */
@@ -121,7 +121,7 @@
 }
 
 .subguide button:hover {
-  background-color: #acb7cb; 
+  background-color: #24354d; 
   transform: scale(1.05);  
 }
 

@@ -153,7 +153,7 @@ body {
 }
 
 .action-button:hover {
-  background-color: #777b86;
+  background-color: #24354d;
     color: white;
   transform: translateY(-2px);
 }
@@ -317,10 +317,11 @@ body {
   border-radius: 0.75rem;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+ transition: background-color 0.3s ease;
 }
 
 .footer-button:hover {
-  background-color: #4e6590;
-  transform: translateY(-2px);
+  background-color: #24354d;
+  color: white;
+transform: translateY(-2px);
 }
