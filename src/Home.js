@@ -61,19 +61,14 @@ function NovaaWebsite() {
 
           <p className="section-description">
             We understand how important it is to feel safe and secure,
-            especially online. That's why we've created simple, step-by-step
-            tools and lessons designed to support you. You don’t need experience
-            with technology as we created guides for real life and for real
-            people to learn from.
+            especially online. Our simple, step-by-step guides make it easy to 
+            stay safer online—no tech experience needed.
           </p>
 
           <p className="section-description">
             {" "}
-            Whether you're taking your first steps or looking for peace of mind,
-            these resources are here to help you feel more in control. By
-            learning how to protect your privacy, you’re not just securing your
-            information. You’re reclaiming your sense of safety, confidence, and
-            freedom.
+            Whether you’re just starting or seeking peace of mind, these tools 
+            help you feel safer and more confident online.
           </p>
           <div className="safety-image-container">
             <img
@@ -159,7 +154,15 @@ function NovaaWebsite() {
         <p className="footer-text">
           You are not alone. You deserve safety, privacy, and support.
         </p>
-        <button className="footer-button">Learn more</button>
+        <a
+          href="https://www.joyfulheartfoundation.org/blog/digital-abuse-signs-and-help"
+          className="footer-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn more
+        </a>
+
       </section>
     </div>
   );
