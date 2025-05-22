@@ -42,10 +42,6 @@ import TwoFA3 from "./AppleAccounts/2FactorAuth/TwoFA3";
 import TwoFA4 from "./AppleAccounts/2FactorAuth/TwoFA4";
 import TwoFA5 from "./AppleAccounts/2FactorAuth/TwoFA5";
 import StolenDevice1 from "./AppleAccounts/StolenDeviceProtection/StolenDevice1";
-import StolenDevice2 from "./AppleAccounts/StolenDeviceProtection/StolenDevice2";
-import StolenDevice3 from "./AppleAccounts/StolenDeviceProtection/StolenDevice3";
-import StolenDevice4 from "./AppleAccounts/StolenDeviceProtection/StolenDevice4";
-import ChangePassword1 from "./AppleAccounts/ChangePassword/ChangePassword1";
 
 // Kids Privacy
 import LocationModule1 from "./KidsPrivacy/LocationModule1";
@@ -118,11 +114,11 @@ function AppContent() {
         <Route path="/mfa/mfa4" element={<MFA4 />} />
         <Route path="/mfa/mfa5" element={<MFA5 />} />
         <Route path="/mfa/mfa6" element={<MFA6 />} />
-        <Route path="/securinggoogleaccount/device/device1" element={<Device1 />} />
+        <Route path="/device1" element={<Device1 />} />
         <Route path="/device/device2" element={<Device2 />} />
         <Route path="/device/device3" element={<Device3 />} />
         <Route path="/device/device4" element={<Device4 />} />
-        <Route path="/securinggoogleaccount/password/password1" element={<Password1 />} />
+        <Route path="/password1" element={<Password1 />} />
         <Route path="/password/password2" element={<Password2 />} />
         <Route path="/securinggoogleaccount/secure-browsing" element={<SecureBrowsing />} />
         <Route path="/secure-browsing/autosave" element={<Autosave />} />
