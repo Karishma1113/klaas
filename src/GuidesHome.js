@@ -83,6 +83,7 @@ const subGuidePaths = {
 
 const GuidesHome = () => {
   const [openIndex, setOpenIndex] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
 
   const handleToggle = (index) => {
@@ -98,45 +99,71 @@ const GuidesHome = () => {
     }
   };
 
+  const filteredGuides = guidesData
+    .map((guide) => {
+      const lowerQuery = searchQuery.toLowerCase();
+      const matchedSubGuides = guide.subGuides.filter((sub) =>
+        sub.toLowerCase().includes(lowerQuery)
+      );
+
+      const matchesGuide =
+        guide.title.toLowerCase().includes(lowerQuery) ||
+        guide.description?.toLowerCase().includes(lowerQuery);
+
+      if (matchesGuide || matchedSubGuides.length > 0) {
+        return {
+          ...guide,
+          subGuides: matchedSubGuides.length > 0 ? matchedSubGuides : guide.subGuides,
+        };
+      }
+      return null;
+    })
+    .filter(Boolean);
+
   return (
     <div className="guides-container">
       <h2 className="page-title">Learning Guides</h2>
       <p className="page-description">
-        This page contains step-by-step guides to help you secure your digital
-        life. Each section covers a different platform or topic and breaks them
-        into smaller steps, with visuals to support the process. Click on a topic
-        to expand it, then choose a guide to get started.
+        This page contains step-by-step guides to help you secure your digital life.
+        Each section covers a different platform or topic and breaks them into
+        smaller steps, with visuals to support the process. Click on a topic to
+        expand it, then choose a guide to get started.
       </p>
+
       <label className="search-label">Search guides</label>
       <div className="search-bar">
-        <input type="text" placeholder=" " />
+        <input
+          type="text"
+          placeholder="Search guides..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
         <span className="search-icon">🔍</span>
       </div>
 
-   {guidesData.map((guide, index) => (
-  <div className="guide" key={index}>
-    <div className="guide-header" onClick={() => handleToggle(index)}>
-      <h3>{guide.title}</h3>
-      <span className="arrow">{openIndex === index ? "▾" : "▸"}</span>
-    </div>
-    {openIndex === index && (
-      <div className="guide-details">
-        {guide.description && <p>{guide.description}</p>}
-        {guide.subGuides?.length > 0 && (
-          <div className="subguides">
-            {guide.subGuides.map((sub, i) => (
-              <div className="subguide" key={i}>
-                <span className="subguide-title">{sub}</span>
-                <button onClick={() => handleNavigate(sub)}>Guide →</button>
-              </div>
-            ))}
+      {filteredGuides.map((guide, index) => (
+        <div className="guide" key={index}>
+          <div className="guide-header" onClick={() => handleToggle(index)}>
+            <h3>{guide.title}</h3>
+            <span className="arrow">{openIndex === index ? "▾" : "▸"}</span>
           </div>
-        )}
-      </div>
-    )}
-    <hr /> {/* ← this is now always rendered between guides */}
-  </div>
-        
+          {openIndex === index && (
+            <div className="guide-details">
+              {guide.description && <p>{guide.description}</p>}
+              {guide.subGuides?.length > 0 && (
+                <div className="subguides">
+                  {guide.subGuides.map((sub, i) => (
+                    <div className="subguide" key={i}>
+                      <span className="subguide-title">{sub}</span>
+                      <button onClick={() => handleNavigate(sub)}>Guide →</button>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+          <hr />
+        </div>
       ))}
     </div>
   );
