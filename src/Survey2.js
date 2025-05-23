@@ -5,89 +5,38 @@ import "./Survey.css";
 const Survey2 = () => {
   const navigate = useNavigate();
 
-  const handleSubmit = () => {
-    navigate("/surveyresults");
+  const handleNext = () => {
+    navigate("/survey3");
   };
 
   return (
     <div className="survey-container">
-      <h2 className="survey-title">Survey</h2>
-      <p className="survey-subtitle">Answer the following</p>
+      <h1 className="survey-title">Learning Guide Questionnaire</h1>
 
-      <div className="survey-section">
+      <div className="survey-progress-bar">
+        {Array.from({ length: 8 }, (_, index) => (
+          <div
+            key={index}
+            className={`progress-step ${index === 0 ? "active" : ""}`}
+          />
+        ))}
+      </div>
+
+      <div className="survey-card">
         <p className="survey-question">
-          What form of IT technology do you want to secure the most?
+          What’s your current living situation?
         </p>
         <div className="survey-options">
-          <label>
-            <input type="checkbox" /> Accounts
-          </label>
-          <label>
-            <input type="checkbox" /> Devices
-          </label>
+          <label><input type="checkbox" /> Living alone</label>
+          <label><input type="checkbox" /> Living with family</label>
+          <label><input type="checkbox" /> Living with roommates</label>
+          <label><input type="checkbox" /> Living in a dormitory</label>
         </div>
       </div>
 
-      <div className="survey-section">
-        <p className="survey-question">What kind of software application do you use?</p>
-        <div className="yes-no-options">
-          <label>
-            <input type="radio" name="softwareApplication" value="Android" /> Android
-          </label>
-          <label>
-            <input type="radio" name="softwareApplication" value="IOS" /> IOS
-          </label>
-        </div>
+      <div className="survey-navigation">
+        <button className="next-button" onClick={handleNext}>Next →</button>
       </div>
-
-      <div className="survey-section">
-        <p className="survey-question">How many personal devices do you have?</p>
-        <div className="yes-no-options">
-          <label>
-            <input type="radio" name="personalDevices" value="1" /> 1
-          </label>
-          <label>
-            <input type="radio" name="personalDevices" value="2" /> 2
-          </label>
-          <label>
-            <input type="radio" name="personalDevices" value=">2" /> More than 2
-          </label>
-        </div>
-      </div>
-
-      <div className="survey-section">
-        <p className="survey-question">Does anyone else have access to your personal devices?</p>
-        <div className="yes-no-options">
-          <label>
-            <input type="radio" name="devicesAccess" value="yes" /> Yes
-          </label>
-          <label>
-            <input type="radio" name="devicesAccess" value="no" /> No
-          </label>
-        </div>
-      </div>
-
-      <div className="survey-section">
-        <p className="survey-question">
-          What steps have you taken to improve your online security and digital safety?
-        </p>
-        <div className="survey-options">
-          <label>
-            <input type="checkbox" /> Use strong passwords
-          </label>
-          <label>
-            <input type="checkbox" /> Enable two-factor authentication
-          </label>
-          <label>
-            <input type="checkbox" /> Set up a backup email for account recovery
-          </label>
-          <label>
-            <input type="checkbox" /> I do not take security measures
-          </label>
-        </div>
-      </div>
-
-      <button className="continue-button" onClick={handleSubmit}>Submit →</button>
     </div>
   );
 };

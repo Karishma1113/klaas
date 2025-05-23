@@ -7,37 +7,69 @@
   font-family: Arial, sans-serif;
 }
 
-.survey-title {
+.survey1-title {
   text-align: center;
   font-size: 32px;
   font-weight: bold;
+  margin-top: 20px;
+  color: #4e6590;
 }
 
-.survey-subtitle {
+.survey-title {
   text-align: center;
-  font-size: 16px;
-  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #4e6590;
+  margin-top: 30px;
+}
+
+.survey1-subtitle {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+/* Progress bar container */
+.survey-progress-bar {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+/* Progress steps */
+.progress-step {
+  width: 100px;
+  height: 20px;
+  border-radius: 0px;
+  border: 1px solid black;
+  background-color: white;
+  margin: 0 0px;
+}
+
+.progress-step.active {
+  background-color: #60779e;
 }
 
 .survey-section {
-  background-color: white;
+  background-color: transparent;
   padding: 15px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  border-radius: 0;
+  border: none;
   margin-bottom: 15px;
 }
 
 .survey-question {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 25px;
   margin-bottom: 10px;
   text-align: left;
 }
 
 .survey-options label {
   display: block;
-  margin: 5px 0;
-  font-size: 14px;
+  margin: 10px 0;
+  font-size: 18px;
   text-align: left;
 }
 
@@ -59,15 +91,58 @@
 .continue-button {
   display: block;
   margin: auto;
-  background-color: #d9edc2;
-  color: black;
-  padding: 8px 15px;
-  border: 1px solid #b5d19a;
+  background-color: #60779e;
+  color: white;
+  padding: 15px 25px;
+  border: 1px solid black;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 24px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .continue-button:hover {
-  background-color: #cbe3b5;
+  background-color: #24354d; 
+  transform: scale(1.05);
+}
+
+.survey-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 100%;
+}
+
+/* Next button */
+.next-button {
+  background-color: #60779e;
+  color: white;
+  padding: 8px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.next-button:hover {
+  background-color: #24354d; 
+  transform: scale(1.05);
+}
+
+/* Back button */
+.back-button {
+  background-color: #60779e;
+  color: white;
+  padding: 8px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #24354d; 
+  transform: scale(1.05);
 }

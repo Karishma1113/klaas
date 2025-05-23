@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import Survey1 from "./Survey1";
 import Survey2 from "./Survey2";
+import Survey3 from "./Survey3";
 import SurveyResults from "./SurveyResults";
 import Resources from "./Resources";
 import GuidesHome from "./GuidesHome";
@@ -113,6 +114,7 @@ function AppContent() {
         <Route path="/" element={<Home />} />
         <Route path="/survey1" element={<Survey1 />} />
         <Route path="/survey2" element={<Survey2 />} />
+        <Route path="/survey3" element={<Survey3 />} />
         <Route path="/surveyresults" element={<SurveyResults />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/guides" element={<GuidesHome />} />
