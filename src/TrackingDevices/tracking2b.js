@@ -10,8 +10,8 @@ export default function Tracking2B() {
     navigate("/tracking/step2a");
   };
 
-  const handleNext = () => {
-    navigate("/tracking/step3a");
+  const handleDone = () => {
+    navigate("/guides");
   };
 
   return (
@@ -90,17 +90,16 @@ export default function Tracking2B() {
       <p>
         However sometimes you might not hear the sound right away. In that case if you have an iPhone of a version 11 or higher, you can use a Find Nearby Apple feature. Follow these steps:
       </p>
-    
+
       <img src="/img/track6.png" alt="Apple Airtag - Typical appearance" className="step-img" />
       <img src="/img/track7.png" alt="Find Nearby screen" className="step-img" />
       <img src="/img/track10.png" alt="Additional appearance of Apple tag" className="step-img" />
 
       <div className="step-controls">
         <button className="back-btn" onClick={handleBack}>← Back</button>
-        <button className="next-btn" onClick={handleNext}>Next →</button>
+        <button className="next-btn" onClick={handleDone}>Done</button>
         <p>Most likely appearance of the tag:</p>
       </div>
     </div>
   );
 }
-

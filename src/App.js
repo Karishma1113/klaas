@@ -6,6 +6,12 @@ import Home from "./Home";
 import Survey1 from "./Survey1";
 import Survey2 from "./Survey2";
 import Survey3 from "./Survey3";
+import Survey4 from "./Survey4";
+import Survey5 from "./Survey5";
+import Survey6 from "./Survey6";
+import Survey7 from "./Survey7";
+import Survey8 from "./Survey8";
+import Survey9 from "./Survey9";
 import SurveyResults from "./SurveyResults";
 import Resources from "./Resources";
 import GuidesHome from "./GuidesHome";
@@ -85,7 +91,7 @@ import Snapchat1 from "./SecuringSocialMediaAccounts/Snapchat/snapchat1";
 import Snapchat2 from "./SecuringSocialMediaAccounts/Snapchat/snapchat2";
 import Snapchat3 from "./SecuringSocialMediaAccounts/Snapchat/snapchat3";
 
-// Tracking Device Modules
+// Tracking Devices
 import Tracking1A from "./TrackingDevices/tracking1a";
 import Tracking1B from "./TrackingDevices/tracking1b";
 import Tracking2A from "./TrackingDevices/tracking2a";
@@ -95,14 +101,11 @@ import Tracking3B from "./TrackingDevices/tracking3b";
 
 function AppContent() {
   const location = useLocation();
-
   const hideNavbarRoutes = [
     "/instagram/step1", "/instagram/step2", "/instagram/step3",
     "/facebook/step1", "/facebook/step2", "/facebook/step3", "/facebook/step4",
     "/snapchat/step1", "/snapchat/step2", "/snapchat/step3",
-    "/tracking/step1a", "/tracking/step1b",
-    "/tracking/step2a", "/tracking/step2b",
-    "/tracking/step3a", "/tracking/step3b"
+    "/tracking/step1a", "/tracking/step1b", "/tracking/step2a", "/tracking/step2b", "/tracking/step3a", "/tracking/step3b"
   ];
 
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
@@ -115,9 +118,35 @@ function AppContent() {
         <Route path="/survey1" element={<Survey1 />} />
         <Route path="/survey2" element={<Survey2 />} />
         <Route path="/survey3" element={<Survey3 />} />
+        <Route path="/survey4" element={<Survey4 />} />
+        <Route path="/survey5" element={<Survey5 />} />
+        <Route path="/survey6" element={<Survey6 />} />
+        <Route path="/survey7" element={<Survey7 />} />
+        <Route path="/survey8" element={<Survey8 />} />
+        <Route path="/survey9" element={<Survey9 />} />
         <Route path="/surveyresults" element={<SurveyResults />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/guides" element={<GuidesHome />} />
+
+        {/* Social Media */}
+        <Route path="/instagram/step1" element={<Instagram1 />} />
+        <Route path="/instagram/step2" element={<Instagram2 />} />
+        <Route path="/instagram/step3" element={<Instagram3 />} />
+        <Route path="/facebook/step1" element={<Facebook1 />} />
+        <Route path="/facebook/step2" element={<Facebook2 />} />
+        <Route path="/facebook/step3" element={<Facebook3 />} />
+        <Route path="/facebook/step4" element={<Facebook4 />} />
+        <Route path="/snapchat/step1" element={<Snapchat1 />} />
+        <Route path="/snapchat/step2" element={<Snapchat2 />} />
+        <Route path="/snapchat/step3" element={<Snapchat3 />} />
+
+        {/* Tracking Devices */}
+        <Route path="/tracking/step1a" element={<Tracking1A />} />
+        <Route path="/tracking/step1b" element={<Tracking1B />} />
+        <Route path="/tracking/step2a" element={<Tracking2A />} />
+        <Route path="/tracking/step2b" element={<Tracking2B />} />
+        <Route path="/tracking/step3a" element={<Tracking3A />} />
+        <Route path="/tracking/step3b" element={<Tracking3B />} />
 
         {/* Google Account */}
         <Route path="/SecuringGoogleAccount/mfa/mfa1" element={<MFA1 />} />
@@ -126,11 +155,11 @@ function AppContent() {
         <Route path="/mfa/mfa4" element={<MFA4 />} />
         <Route path="/mfa/mfa5" element={<MFA5 />} />
         <Route path="/mfa/mfa6" element={<MFA6 />} />
-        <Route path="/securinggoogleaccount/device/device1" element={<Device1 />} />
+        <Route path="/device1" element={<Device1 />} />
         <Route path="/device/device2" element={<Device2 />} />
         <Route path="/device/device3" element={<Device3 />} />
         <Route path="/device/device4" element={<Device4 />} />
-        <Route path="/securinggoogleaccount/password/password1" element={<Password1 />} />
+        <Route path="/password1" element={<Password1 />} />
         <Route path="/password/password2" element={<Password2 />} />
         <Route path="/securinggoogleaccount/secure-browsing" element={<SecureBrowsing />} />
         <Route path="/secure-browsing/autosave" element={<Autosave />} />
@@ -145,7 +174,7 @@ function AppContent() {
         <Route path="/google-search-settings/removal-request" element={<RemovalRequest />} />
         <Route path="/google-search-settings/dark-web-report" element={<DarkWebReport />} />
 
-        {/* Apple */}
+        {/* Apple Account */}
         <Route path="/AppleAccounts/2FactorAuth/TwoFA1" element={<TwoFA1 />} />
         <Route path="/AppleAccounts/2FactorAuth/TwoFA2" element={<TwoFA2 />} />
         <Route path="/AppleAccounts/2FactorAuth/TwoFA3" element={<TwoFA3 />} />
@@ -181,26 +210,6 @@ function AppContent() {
         <Route path="/KidsPrivacy/FamilyModule5" element={<FamilyModule5 />} />
         <Route path="/KidsPrivacy/Intro" element={<KidsPrivacyIntro />} />
 
-        {/* Social Media */}
-        <Route path="/instagram/step1" element={<Instagram1 />} />
-        <Route path="/instagram/step2" element={<Instagram2 />} />
-        <Route path="/instagram/step3" element={<Instagram3 />} />
-        <Route path="/facebook/step1" element={<Facebook1 />} />
-        <Route path="/facebook/step2" element={<Facebook2 />} />
-        <Route path="/facebook/step3" element={<Facebook3 />} />
-        <Route path="/facebook/step4" element={<Facebook4 />} />
-        <Route path="/snapchat/step1" element={<Snapchat1 />} />
-        <Route path="/snapchat/step2" element={<Snapchat2 />} />
-        <Route path="/snapchat/step3" element={<Snapchat3 />} />
-
-        {/* Tracking Devices */}
-        <Route path="/tracking/step1a" element={<Tracking1A />} />
-        <Route path="/tracking/step1b" element={<Tracking1B />} />
-        <Route path="/tracking/step2a" element={<Tracking2A />} />
-        <Route path="/tracking/step2b" element={<Tracking2B />} />
-        <Route path="/tracking/step3a" element={<Tracking3A />} />
-        <Route path="/tracking/step3b" element={<Tracking3B />} />
-
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </>
@@ -210,7 +219,7 @@ function AppContent() {
 export default function App() {
   return (
     <Router>
-       <ScrollToTop />
+      <ScrollToTop />
       <AppContent />
     </Router>
   );
