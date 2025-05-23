@@ -28,7 +28,7 @@ const MFA3 = () => {
         stepLabels={stepLabels}
       />
 
-      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
+      <button className="close-btn" onClick={() => navigate("/guides")}>Close Guide</button>
 
       <div className="mfa-content">
         <div className="mfa-steps">

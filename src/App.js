@@ -5,6 +5,13 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import Survey1 from "./Survey1";
 import Survey2 from "./Survey2";
+import Survey3 from "./Survey3";
+import Survey4 from "./Survey4";
+import Survey5 from "./Survey5";
+import Survey6 from "./Survey6";
+import Survey7 from "./Survey7";
+import Survey8 from "./Survey8";
+import Survey9 from "./Survey9";
 import SurveyResults from "./SurveyResults";
 import Resources from "./Resources";
 import GuidesHome from "./GuidesHome";
@@ -101,8 +108,16 @@ function AppContent() {
       {!shouldHideNavbar && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* Updated Survey Routing */}
         <Route path="/survey1" element={<Survey1 />} />
         <Route path="/survey2" element={<Survey2 />} />
+        <Route path="/survey3" element={<Survey3 />} />
+        <Route path="/survey4" element={<Survey4 />} />
+        <Route path="/survey5" element={<Survey5 />} />
+        <Route path="/survey6" element={<Survey6 />} />
+        <Route path="/survey7" element={<Survey7 />} />
+        <Route path="/survey8" element={<Survey8 />} />
+        <Route path="/survey9" element={<Survey9 />} />
         <Route path="/surveyresults" element={<SurveyResults />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/guides" element={<GuidesHome />} />
@@ -125,7 +140,7 @@ function AppContent() {
         <Route path="/secure-browsing/adds" element={<Adds />} />
         <Route path="/secure-browsing/location" element={<Location />} />
         <Route path="/secure-browsing/search" element={<Search />} />
-        <Route path="/secure-browsing/trird-party-apps" element={<ThirdPartyApps />} />
+        <Route path="/secure-browsing/third-party-apps" element={<ThirdPartyApps />} />
         <Route path="/secure-browsing/clearing-browsing-history" element={<ClearHistory />} />
         <Route path="/secure-browsing/complete" element={<Complete1 />} />
         <Route path="/securinggoogleaccount/googlesearchsettings/overview" element={<Overview />} />

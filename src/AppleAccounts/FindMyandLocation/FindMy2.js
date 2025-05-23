@@ -25,7 +25,7 @@ const FindMy2 = () => {
       />
 
       <button className="close-btn" onClick={() => navigate("/guides")}>
-        X
+        Close Guide
       </button>
 
       <div className="find-my-content">
@@ -34,28 +34,24 @@ const FindMy2 = () => {
           <p></p>
 
           <p>1. Open "Settings" app.</p>
-          <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
+        
           <p>2. Tap your name at the top.</p>
           <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+            <img src="/img/apple-settings.jpg" alt="Apple Settings" className="find-my-img" />
           </div>
           <p>3. Go to "Find My."</p>
           <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+            <img src="/img/apple-findmy.jpg" alt="Apple FindMy button" className="find-my-img" />
           </div>
           <p>4. Tap “Find My iPhone."</p>
-          <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+         <div className="step-image">
+            <img src="/img/apple-findmy1.jpg" alt="Apple FindMy settings" className="find-my-img" />
           </div>
-          <p>5. Toggle "Find My iPhone" to "Off."</p><div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+          <p>5. Toggle "Find My iPhone" to "Off."</p>
+          <div className="step-image">
+            <img src="/img/findmy-toggle.jpg" alt="Apple FindMy toggle button" className="find-my-img" />
           </div>
           <p>6. Enter your Apple ID password to confirm.</p>
-          <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
         </div>
       </div>
 

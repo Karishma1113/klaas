@@ -80,10 +80,10 @@
   margin: 0;
 }
 
-.logo {
+/* .logo {
   height: 40px;
   width: 40px;
-}
+} */
 
 /* Step titles and text */
 h3 {
@@ -141,17 +141,26 @@ p {
   justify-content: flex-end;
   width: 100%;
 }
+  .next-btn {
+    background-color: #6d83a8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right;
+  }
 
-.next-btn {
-  padding: 0.5rem 1.2rem;
-  font-size: 0.95rem;
-  background: #e5e5ff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
+  .back-btn {
+    background-color: #6d83a8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: left;
+  }
 
-.next-btn:hover {
-  background: #cccaff;
-}
+  .next-btn:hover, .back-btn:hover {
+    background: #24354d;
+  }

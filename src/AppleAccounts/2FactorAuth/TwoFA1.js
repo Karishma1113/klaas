@@ -21,7 +21,7 @@ const TwoFA1 = () => {
       />
 
       <button className="close-btn" onClick={() => navigate("/guides")}>
-        X
+        Close Guide
       </button>
 
       <h1 className="twofa-title">

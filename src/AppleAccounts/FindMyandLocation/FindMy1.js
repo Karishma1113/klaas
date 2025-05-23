@@ -25,7 +25,7 @@ const FindMy1 = () => {
       />
 
       <button className="close-btn" onClick={() => navigate("/guides")}>
-        X
+        Close Guide
       </button>
 
       <h3 className="find-my-title">Find My iPhone</h3>

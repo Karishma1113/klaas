@@ -100,7 +100,7 @@ body, html {
   }
   
   .next-btn {
-    background-color: rgba(200, 210, 255, 0.7);
+    background-color: #6d83a8;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -110,7 +110,7 @@ body, html {
   }
 
   .back-btn {
-    background-color: rgba(200, 210, 255, 0.7);
+    background-color: #6d83a8;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -120,7 +120,7 @@ body, html {
   }
 
   .next-btn:hover, .back-btn:hover {
-    background: rgba(157, 160, 184, 0.917);
+    background:#24354d;
   }
 
   .step-image {

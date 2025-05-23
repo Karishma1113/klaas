@@ -28,7 +28,7 @@ const Device3 = () => {
 
 
       <button className="close-btn" onClick={() => navigate("/guides")}>
-        X
+        Close Guide
       </button>
       <h3>Step 2</h3>
       <p>Review account activity by checking recent security events and managing devices:</p>

@@ -21,28 +21,22 @@ const ChangePassword2 = () => {
       content: (
         <ul>
           <li>1. Open the Settings app.</li>
-           <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
           <li>2. Tap your name at the top.</li>
            <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+            <img src="/img/apple-settings.jpg" alt="Apple's settings screen" className="change-pass-img" />
           </div>
           <li>3. Tap “Sign-In & Security.”</li>
            <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+            <img src="/img/settings-icloud.jpg" alt="Apple's Sign-In & Security screen" className="change-pass-img" />
           </div>
           <li>4. Tap “Change Password.”</li>
            <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+            <img src="/img/apple-pass.jpg" alt="Change password button" className="change-pass-img" />
           </div>
           <li>5. Enter your device passcode if prompted.</li>
-           <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
           <li>6. Follow the on-screen steps to reset your password.</li>
-           <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+          <div className="step-image">
+            <img src="/img/change-pass.jpg" alt="Change password screen" className="change-pass-img" />
           </div>
         </ul>
       ),
@@ -51,28 +45,19 @@ const ChangePassword2 = () => {
       name: "Mac",
       content: (
         <ul>
-          <li>1. Go to the Apple menu  and choose System Settings.</li>
-           <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
+          <li>1. Go to the Apple menu  and choose "System Settings"."</li>
           <li>2. Click your name at the top of the sidebar.</li>
-           <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
-          <li>3. Click “Sign-In & Security.”</li> 
-           <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+          <li>3. Click “Password & Security.”</li> 
+       <div className="step-image">
+            <img src="/img/mac-settings.jpg" alt="Settings on Mac" className="change-pass-img" />
           </div>
           <li>4. Click “Change Password.”</li>
-           <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+          <div className="step-image">
+            <img src="/img/mac-pass.jpg" alt="Change Password button on Mac" className="change-pass-img" />
           </div>
           <li>5. Enter your Mac password if prompted.</li>
-           <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
           <li>6. Follow the instructions to reset your password.</li> <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+            <img src="/img/mac-change-pass.png" alt="Change Password screen on Mac" className="change-pass-img" />
           </div>
         </ul>
       ),
@@ -81,22 +66,22 @@ const ChangePassword2 = () => {
       name: "Web Browser",
       content: (
         <ul>
-          <li>1. Visit appleid.apple.com and sign in.</li>
-           <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
+          <li>1. Go to{" "}
+            <a href="https://account.apple.com" target="_blank" rel="noopener noreferrer" style={{ color: "blue", textDecoration: "underline" }}>
+              account.apple.com
+            </a>{" "}
+            and sign in.
+          </li>
+    
           <li>2. In the Sign-In and Security section, click “Password.”</li>
            <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+            <img src="/img/web-pass.jpg" alt="Apple's Change Password option on Web" className="change-pass-img" />
           </div>
           <li>3. Enter your current password, then your new password.</li>
            <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
+            <img src="/img/web-change-pass.png" alt="Apple's Change Password screen on Web" className="change-pass-img" />
           </div>
           <li>4. Click “Change Password.”</li>
-           <div className="step-image">
-            <img src="/img/" alt="insert later" className="signin-img" />
-          </div>
         </ul>
       ),
     },
@@ -117,7 +102,7 @@ const ChangePassword2 = () => {
       />
 
       <button className="close-btn" onClick={() => navigate("/guides")}>
-        X
+        Close Guide
       </button>
 
       <div className="change-pass-content">

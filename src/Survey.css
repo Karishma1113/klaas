@@ -1,73 +1,151 @@
 .survey-container {
   width: 60%;
-  margin: auto;
+  margin: 40px auto;
   background-color: white;
-  padding: 20px;
+  padding: 30px;
   border-radius: 8px;
   font-family: Arial, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.survey1-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #4e6590;
 }
 
 .survey-title {
   text-align: center;
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 600;
+  color: #4e6590;
+  margin-top: 30px;
 }
 
-.survey-subtitle {
+.survey1-subtitle {
   text-align: center;
-  font-size: 16px;
-  margin-bottom: 20px;
+  font-size: 25px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+/* Progress bar container */
+.survey-progress-bar {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  gap: 6px;
+}
+
+/* Progress steps */
+.progress-step {
+  width: 40px;
+  height: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #e0e0e0;
+}
+
+.progress-step.active {
+  background-color: #60779e;
 }
 
 .survey-section {
-  background-color: white;
-  padding: 15px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-bottom: 15px;
+  background-color: #f4f6ff;
+  padding: 25px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 30px;
 }
 
 .survey-question {
   font-weight: bold;
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
 .survey-options label {
   display: block;
-  margin: 5px 0;
-  font-size: 14px;
+  margin: 12px 0;
+  font-size: 16px;
   text-align: left;
 }
 
 .yes-no-options {
   display: flex;
-  gap: 15px;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .yes-no-options label {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
 }
 
-.yes-no-options input {
-  margin-right: 5px;
+.yes-no-options input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.2);
 }
 
+/* Submit or continue button */
 .continue-button {
   display: block;
   margin: auto;
-  background-color: #d9edc2;
-  color: black;
-  padding: 8px 15px;
-  border: 1px solid #b5d19a;
+  background-color: #60779e;
+  color: white;
+  padding: 15px 25px;
+  border: 1px solid black;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 18px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .continue-button:hover {
-  background-color: #cbe3b5;
+  background-color: #24354d;
+  transform: scale(1.05);
+}
+
+.survey-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* Next button */
+.next-button {
+  background-color: #60779e;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.next-button:hover {
+  background-color: #24354d;
+  transform: scale(1.05);
+}
+
+/* Back button */
+.back-button {
+  background-color: #60779e;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #24354d;
+  transform: scale(1.05);
 }

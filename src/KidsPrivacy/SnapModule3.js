@@ -16,7 +16,7 @@ const SnapModule3 = () => {
   return (
     <div className="twofa-container">
       <ProgressBar currentStep={3} totalSteps={stepLabels.length} stepLabels={stepLabels} />
-      <button className="close-btn" onClick={() => navigate("/guides")}>X</button>
+      <button className="close-btn" onClick={() => navigate("/guides")}>Close Guide</button>
       <h1 className="twofa-title">Enable Ghost Mode</h1>
       <div className="step-info">
         <h3>Step 3 – Turn on Ghost Mode</h3>
