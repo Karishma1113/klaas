@@ -14,6 +14,10 @@ export default function Tracking1B() {
     navigate("/tracking/step1a");
   };
 
+  const handleDone = () => {
+    navigate("/guides");
+  };
+
   return (
     <div className="module">
       <ProgressBar
@@ -47,7 +51,8 @@ export default function Tracking1B() {
 
       <div className="step-controls">
         <button className="back-btn" onClick={handleBack}>← Back</button>
-        <button className="next-btn" onClick={handleNext}>Next →</button>
+
+        <button className="next-btn" onClick={handleDone}>Done</button>
       </div>
     </div>
   );

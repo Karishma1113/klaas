@@ -6,10 +6,15 @@ import Home from "./Home";
 import Survey1 from "./Survey1";
 import Survey2 from "./Survey2";
 import Survey3 from "./Survey3";
+import Survey4 from "./Survey4";
+import Survey5 from "./Survey5";
+import Survey6 from "./Survey6";
+import Survey7 from "./Survey7";
+import Survey8 from "./Survey8";
+import Survey9 from "./Survey9";
 import SurveyResults from "./SurveyResults";
 import Resources from "./Resources";
 import GuidesHome from "./GuidesHome";
-import ScrollToTop from "./ScrollToTop";
 
 // Google Account Guides
 import MFA1 from "./SecuringGoogleAccount/MFA/MFA1";
@@ -44,15 +49,6 @@ import TwoFA3 from "./AppleAccounts/2FactorAuth/TwoFA3";
 import TwoFA4 from "./AppleAccounts/2FactorAuth/TwoFA4";
 import TwoFA5 from "./AppleAccounts/2FactorAuth/TwoFA5";
 import StolenDevice1 from "./AppleAccounts/StolenDeviceProtection/StolenDevice1";
-import StolenDevice2 from "./AppleAccounts/StolenDeviceProtection/StolenDevice2";
-import StolenDevice3 from "./AppleAccounts/StolenDeviceProtection/StolenDevice3";
-import StolenDevice4 from "./AppleAccounts/StolenDeviceProtection/StolenDevice4";
-import ChangePassword1 from "./AppleAccounts/ChangePassword/ChangePassword1";
-import ChangePassword2 from "./AppleAccounts/ChangePassword/ChangePassword2";
-import ChangePassword3 from "./AppleAccounts/ChangePassword/ChangePassword3";
-import FindMy1 from "./AppleAccounts/FindMyandLocation/FindMy1";
-import FindMy2 from "./AppleAccounts/FindMyandLocation/FindMy2";
-import FindMy3 from "./AppleAccounts/FindMyandLocation/FindMy3";
 
 // Kids Privacy
 import LocationModule1 from "./KidsPrivacy/LocationModule1";
@@ -112,9 +108,16 @@ function AppContent() {
       {!shouldHideNavbar && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* Updated Survey Routing */}
         <Route path="/survey1" element={<Survey1 />} />
         <Route path="/survey2" element={<Survey2 />} />
         <Route path="/survey3" element={<Survey3 />} />
+        <Route path="/survey4" element={<Survey4 />} />
+        <Route path="/survey5" element={<Survey5 />} />
+        <Route path="/survey6" element={<Survey6 />} />
+        <Route path="/survey7" element={<Survey7 />} />
+        <Route path="/survey8" element={<Survey8 />} />
+        <Route path="/survey9" element={<Survey9 />} />
         <Route path="/surveyresults" element={<SurveyResults />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/guides" element={<GuidesHome />} />
@@ -126,18 +129,18 @@ function AppContent() {
         <Route path="/mfa/mfa4" element={<MFA4 />} />
         <Route path="/mfa/mfa5" element={<MFA5 />} />
         <Route path="/mfa/mfa6" element={<MFA6 />} />
-        <Route path="/securinggoogleaccount/device/device1" element={<Device1 />} />
+        <Route path="/device1" element={<Device1 />} />
         <Route path="/device/device2" element={<Device2 />} />
         <Route path="/device/device3" element={<Device3 />} />
         <Route path="/device/device4" element={<Device4 />} />
-        <Route path="/securinggoogleaccount/password/password1" element={<Password1 />} />
+        <Route path="/password1" element={<Password1 />} />
         <Route path="/password/password2" element={<Password2 />} />
         <Route path="/securinggoogleaccount/secure-browsing" element={<SecureBrowsing />} />
         <Route path="/secure-browsing/autosave" element={<Autosave />} />
         <Route path="/secure-browsing/adds" element={<Adds />} />
         <Route path="/secure-browsing/location" element={<Location />} />
         <Route path="/secure-browsing/search" element={<Search />} />
-        <Route path="/secure-browsing/trird-party-apps" element={<ThirdPartyApps />} />
+        <Route path="/secure-browsing/third-party-apps" element={<ThirdPartyApps />} />
         <Route path="/secure-browsing/clearing-browsing-history" element={<ClearHistory />} />
         <Route path="/secure-browsing/complete" element={<Complete1 />} />
         <Route path="/securinggoogleaccount/googlesearchsettings/overview" element={<Overview />} />
@@ -152,15 +155,6 @@ function AppContent() {
         <Route path="/AppleAccounts/2FactorAuth/TwoFA4" element={<TwoFA4 />} />
         <Route path="/AppleAccounts/2FactorAuth/TwoFA5" element={<TwoFA5 />} />
         <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice1" element={<StolenDevice1 />} />
-        <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice2" element={<StolenDevice2 />} />
-        <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice3" element={<StolenDevice3 />} />
-        <Route path="/AppleAccounts/StolenDeviceProtection/StolenDevice4" element={<StolenDevice4 />} />
-        <Route path="/AppleAccounts/ChangePassword/ChangePassword1" element={<ChangePassword1 />} />
-        <Route path="/AppleAccounts/ChangePassword/ChangePassword2" element={<ChangePassword2 />} />
-        <Route path="/AppleAccounts/ChangePassword/ChangePassword3" element={<ChangePassword3 />} />
-        <Route path="/AppleAccounts/FindMyandLocation/FindMy1" element={<FindMy1 />} />
-        <Route path="/AppleAccounts/FindMyandLocation/FindMy2" element={<FindMy2 />} />
-        <Route path="/AppleAccounts/FindMyandLocation/FindMy3" element={<FindMy3 />} />
 
         {/* Kids Privacy */}
         <Route path="/KidsPrivacy/LocationModule1" element={<LocationModule1 />} />
@@ -210,7 +204,6 @@ function AppContent() {
 export default function App() {
   return (
     <Router>
-       <ScrollToTop />
       <AppContent />
     </Router>
   );
