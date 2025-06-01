@@ -1,15 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import ProgressBar from "../../ProgressBar";
 import "../socialmedia.css";
 
 export default function Snapchat3() {
-  const navigate = useNavigate();
-
-  const handleDone = () => {
-    navigate("/guides");
-  };
-
   return (
     <div className="module">
       <ProgressBar
@@ -52,11 +45,6 @@ export default function Snapchat3() {
       </ul>
 
       <p><em>Note: You can also disable Snapchat's location access from your phone's settings completely.</em></p>
-
-      <div className="step-controls">
-        <p><strong>You’ve completed the Snapchat security guide!</strong></p>
-        <button className="next-btn" onClick={handleDone}>Done</button>
-      </div>
     </div>
   );
 }

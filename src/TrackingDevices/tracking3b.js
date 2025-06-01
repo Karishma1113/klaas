@@ -10,10 +10,6 @@ export default function Tracking3B() {
     navigate("/tracking/step3a");
   };
 
-  const handleDone = () => {
-    navigate("/guides");
-  };
-
   return (
     <div className="module">
       <ProgressBar
@@ -58,11 +54,11 @@ export default function Tracking3B() {
         Check under the driver's wheel in the diagnostic port. That’s the only place where this kind of tracker can be located.
       </p>
       <p>It will typically look something like this:</p>
-      <img src="/img/track13.png" alt="Hardwired GPS Tracker Example" className="step-img" />
+       <img src="/img/track13.png" alt="Hardwired GPS Tracker Example" className="step-img" />
+
 
       <div className="step-controls">
         <button className="back-btn" onClick={handleBack}>← Back</button>
-        <button className="next-btn" onClick={handleDone}>Done</button>
       </div>
     </div>
   );

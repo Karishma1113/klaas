@@ -17,8 +17,8 @@ export default function Tracking3A() {
   return (
     <div className="module">
       <ProgressBar
-        totalSteps={2}
-        currentStep={1}
+        totalSteps={6}
+        currentStep={5}
         stepLabels={[
           "Android: Overview",
           "Android: Disabling",

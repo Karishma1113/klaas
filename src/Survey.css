@@ -1,11 +1,10 @@
 .survey-container {
   width: 60%;
-  margin: 40px auto;
+  margin: auto;
   background-color: white;
-  padding: 30px;
+  padding: 20px;
   border-radius: 8px;
   font-family: Arial, sans-serif;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .survey1-title {
@@ -36,16 +35,16 @@
   display: flex;
   justify-content: center;
   margin: 40px 0;
-  gap: 6px;
 }
 
 /* Progress steps */
 .progress-step {
-  width: 40px;
-  height: 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background-color: #e0e0e0;
+  width: 100px;
+  height: 20px;
+  border-radius: 0px;
+  border: 1px solid black;
+  background-color: white;
+  margin: 0 0px;
 }
 
 .progress-step.active {
@@ -53,45 +52,42 @@
 }
 
 .survey-section {
-  background-color: #f4f6ff;
-  padding: 25px;
-  border-radius: 10px;
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 0;
   border: none;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .survey-question {
   font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 25px;
+  margin-bottom: 10px;
   text-align: left;
 }
 
 .survey-options label {
   display: block;
-  margin: 12px 0;
-  font-size: 16px;
+  margin: 10px 0;
+  font-size: 18px;
   text-align: left;
 }
 
 .yes-no-options {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  gap: 15px;
 }
 
 .yes-no-options label {
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 14px;
 }
 
-.yes-no-options input[type="radio"] {
-  margin-right: 10px;
-  transform: scale(1.2);
+.yes-no-options input {
+  margin-right: 5px;
 }
 
-/* Submit or continue button */
 .continue-button {
   display: block;
   margin: auto;
@@ -100,13 +96,13 @@
   padding: 15px 25px;
   border: 1px solid black;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 24px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .continue-button:hover {
-  background-color: #24354d;
+  background-color: #24354d; 
   transform: scale(1.05);
 }
 
@@ -114,22 +110,23 @@
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+  width: 100%;
 }
 
 /* Next button */
 .next-button {
   background-color: #60779e;
   color: white;
-  padding: 10px 20px;
+  padding: 8px 15px;
   border: 1px solid black;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .next-button:hover {
-  background-color: #24354d;
+  background-color: #24354d; 
   transform: scale(1.05);
 }
 
@@ -137,15 +134,15 @@
 .back-button {
   background-color: #60779e;
   color: white;
-  padding: 10px 20px;
+  padding: 8px 15px;
   border: 1px solid black;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .back-button:hover {
-  background-color: #24354d;
+  background-color: #24354d; 
   transform: scale(1.05);
 }

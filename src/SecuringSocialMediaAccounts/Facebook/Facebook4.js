@@ -6,10 +6,6 @@ import "../socialmedia.css";
 export default function Facebook4() {
   const navigate = useNavigate();
 
-  const handleDone = () => {
-    navigate("/guides");
-  };
-
   return (
     <div className="module">
       <ProgressBar
@@ -35,7 +31,7 @@ export default function Facebook4() {
       <h3>Step 4: Check App Permissions and Third-Party Access</h3>
 
       <p>
-        <strong>1.</strong> In Settings, use the search bar and type <strong>"Apps and Websites"</strong>.
+      <strong> 1.</strong> In Settings, use the search bar and type <strong>"Apps and Websites"</strong>.
       </p>
       <img
         src="/img/facebook7.png"
@@ -44,8 +40,9 @@ export default function Facebook4() {
       />
 
       <p>
-        <strong>2.</strong> Review apps and websites that have access to your Facebook account. If any seem unfamiliar, click <strong>Remove</strong> next to them.
+      <strong>  2. </strong>Review apps and websites that have access to your Facebook account. If any seem unfamiliar, click <strong>Remove</strong> next to them.
       </p>
+
       <img
         src="/img/facebook8.png"
         alt="Facebook apps connected"
@@ -54,7 +51,6 @@ export default function Facebook4() {
 
       <div className="step-controls">
         <p><strong>You’ve completed the Facebook security guide!</strong></p>
-        <button className="next-btn" onClick={handleDone}>Done</button>
       </div>
     </div>
   );
