@@ -1,4 +1,5 @@
-.module {
+/* General Container */
+.tracking-container {
     max-width: 850px;
     margin: 0 auto;
     padding: 2rem;
@@ -6,94 +7,142 @@
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header {
+}
+
+/* Header */
+.header {
     text-align: center;
     margin-bottom: 2rem;
-  }
-  
-  .header h2 {
+}
+
+.header h2 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
-  }
-  
-  /* .logo {
-    width: 60px;
-    height: auto;
-    margin-top: 0.5rem;
-  } */
-  
-  h3 {
+}
+
+/* Main Titles */
+.tracking-title {
     font-size: 1.5rem;
+    font-weight: bold;
     margin-bottom: 1rem;
-  }
-  
-  p {
+    text-align: center;
+}
+
+/* Description */
+.tracking-desc {
     font-size: 1rem;
     line-height: 1.6;
+    text-align: center;
     margin-bottom: 1rem;
-  }
-  
-  ul {
+}
+
+.tracking-title,
+.tracking-desc,
+h3,
+h4,
+p,
+ul {
+    text-align: center; /* Ensures all text is centered */
+    margin: 0 auto; /* Keeps everything balanced */
+    max-width: 80%; /* Prevents overly wide text */
+}
+
+ul {
+    list-style-position: inside; /* Aligns bullet points within centered text */
+}
+
+/* Lists */
+ul {
     padding-left: 1.2rem;
+    text-align: center;
     margin-bottom: 1rem;
-  }
-  
-  ul li {
+}
+
+ul li {
     margin-bottom: 0.5rem;
-  }
-  
-  .step-img {
+    text-align: left;
+}
+
+/* Image Styling */
+.tracking-image {
     width: 100%;
     max-width: 600px;
     margin: 1rem auto;
     display: block;
     border: 1px solid #ddd;
     border-radius: 6px;
-  }
-  
-  .step-controls {
+}
+
+/* Navigation Buttons */
+.tracking-navigation {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-top: 2rem;
-  }
-  
-  .next-btn {
+}
+
+.back-btn, .next-btn {
     background-color: #6d83a8;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    float: right;
     color: white;
     font-weight: bold;
-  }
+}
 
-  .back-btn {
-    background-color: #6d83a8;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+.back-btn {
     float: left;
-    color: white;
-    font-weight: bold;
-  }
+}
 
-  .next-btn:hover, .back-btn:hover {
+.next-btn {
+    float: right;
+}
+
+.back-btn:hover, .next-btn:hover {
     background: #24354d;
-  }
-  
-  .arrow {
+}
+
+/* Step Block */
+.step-block {
+    margin-bottom: 2rem;
+}
+.tracking-container {
+    text-align: center; /* Ensures full-page centering */
+}
+
+.tracking-title,
+.tracking-desc,
+p,
+ul {
+    text-align: center; /* Centers all text */
+    margin: 0 auto; /* Keeps layout balanced */
+    max-width: 80%; /* Prevents overly wide text */
+}
+
+ul {
+    list-style-position: inside; /* Aligns bullet points within centered text */
+}
+
+
+.tracking-image {
+    display: block;
+    margin: 0 auto; /* Centers images */
+    text-align: center; /* Ensures alignment */
+    max-width: 30%; /* Prevents stretching */
+}
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+/* Arrows */
+.arrow {
     font-size: 1.5rem;
     margin: 0 1rem;
     text-align: center;
-  }
-  
-  .step-block {
-    margin-bottom: 2rem;
-  }
-  
+}

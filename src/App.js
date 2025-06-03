@@ -77,13 +77,13 @@ import KidsPrivacyIntro from "./KidsPrivacy/KidsPrivacyIntro";
 import Instagram1 from "./SecuringSocialMediaAccounts/instagram1";
 import Instagram2 from "./SecuringSocialMediaAccounts/instagram2";
 import Instagram3 from "./SecuringSocialMediaAccounts/instagram3";
-import Facebook1 from "./SecuringSocialMediaAccounts/Facebook/Facebook1";
-import Facebook2 from "./SecuringSocialMediaAccounts/Facebook/Facebook2";
-import Facebook3 from "./SecuringSocialMediaAccounts/Facebook/Facebook3";
-import Facebook4 from "./SecuringSocialMediaAccounts/Facebook/Facebook4";
-import Snapchat1 from "./SecuringSocialMediaAccounts/Snapchat/snapchat1";
-import Snapchat2 from "./SecuringSocialMediaAccounts/Snapchat/snapchat2";
-import Snapchat3 from "./SecuringSocialMediaAccounts/Snapchat/snapchat3";
+import Facebook1 from "./SecuringSocialMediaAccounts/Facebook1";
+import Facebook2 from "./SecuringSocialMediaAccounts/Facebook2";
+import Facebook3 from "./SecuringSocialMediaAccounts/Facebook3";
+import Facebook4 from "./SecuringSocialMediaAccounts/Facebook4";
+import Snapchat1 from "./SecuringSocialMediaAccounts/snapchat1";
+import Snapchat2 from "./SecuringSocialMediaAccounts/snapchat2";
+import Snapchat3 from "./SecuringSocialMediaAccounts/snapchat3";
 
 // Tracking Device Modules
 import Tracking1A from "./TrackingDevices/tracking1a";

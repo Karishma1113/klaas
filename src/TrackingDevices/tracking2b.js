@@ -3,103 +3,84 @@ import { useNavigate } from "react-router-dom";
 import ProgressBar from "../ProgressBar";
 import "./tracking.css";
 
-export default function Tracking2B() {
+const Tracking2B = () => {
   const navigate = useNavigate();
-
-  const handleBack = () => {
-    navigate("/tracking/step2a");
-  };
-
-  const handleDone = () => {
-    navigate("/guides");
-  };
+  const stepLabels = [
+    "Android: Overview",
+    "Android: Disable Tracker",
+    
+  ];
 
   return (
-    <div className="module">
-      <ProgressBar
-        totalSteps={2}
-        currentStep={2}
-        stepLabels={[
-          "Android: Overview",
-          "Android: Disable Tracker",
-          "Apple: Overview",
-          "Apple: Disable Tracker",
-          "GPS: Overview",
-          "GPS: Disable Tracker"
-        ]}
-      />
+    <>
+      <ProgressBar currentStep={2} totalSteps={stepLabels.length} stepLabels={stepLabels} />
 
-      <div className="header">
-        <h2>Apple – Disabling Common Bluetooth Trackers</h2>
-        <p>Step 2: How to Disable Each Tracker</p>
-      </div>
+      <button className="close-btn" onClick={() => navigate("/guides")}>Close Guide</button>
+      <h1 className="tracking-title">Apple – Disabling Common Bluetooth Trackers</h1>
+      <p className="tracking-desc">Step 2: How to Disable Each Tracker</p>
 
       <h3>Apple Airtag</h3>
       <p>
-        Basically, to disable Apple Airtag you need to remove the battery. To remove the battery push down and twist counterclockwise on the back of the Apple Airtag. That will allow you to remove the back cover and remove the battery.
+        To disable an Apple Airtag, remove the battery by **pushing down and twisting counterclockwise** on the back cover.
       </p>
       <p>
-        You can report the serial number of the Apple AirTag here:
-        <br />
+        You can report the serial number of an Apple AirTag here:  
         <a href="https://found.apple.com/airtag/disable" target="_blank" rel="noopener noreferrer">
           https://found.apple.com/airtag/disable
         </a>
       </p>
 
       <h3>Chipolo trackers</h3>
-      <p>
-        Generally to turn off the Chipolo tracker you need to start by locating the main button. Hold the button for 30 seconds until you hear that the tracker is starting beeping. Wait until the tracker beeps 10 times and release the button. If the turn off was successful, you’ll hear a confirmation sound
-      </p>
+      <p>Hold the button for **30 seconds**, wait for **10 beeps**, and release to disable.</p>
 
       <h4>Chipolo CARD</h4>
-      <p>Main button located on the bottom left of the tracker.</p>
-      <img src="/img/track2.png" alt="Chipolo CARD" className="step-img" />
+      <p>Main button located on the bottom left.</p>
+      <img src="/img/track2.png" alt="Chipolo CARD" className="tracking-image" />
 
       <h4>Chipolo ONE</h4>
-      <p>Main button located in the center of the tracker</p>
-      <img src="/img/track3.png" alt="Chipolo ONE" className="step-img" />
+      <p>Main button located at the center.</p>
+      <img src="/img/tack3.png" alt="Chipolo ONE" className="tracking-image" />
 
       <h3>Motorola Moto Tag</h3>
       <p>
-        Locate the button with a letter M at the center of the tracker. Press it three times and then hold it for 20 seconds. Once you hear a beep, release the button. Second beep will mean that the tracker has been disabled
+        Press the **M button** three times, then hold for **20 seconds** until you hear two beeps.
       </p>
-      <img src="/img/track4.png" alt="Motorola Moto Tag" className="step-img" />
+      <img src="/img/track4.png" alt="Motorola Moto Tag" className="tracking-image" />
 
       <h3>Pebblebee trackers</h3>
-      <p>
-        Generally to turn off the Pebblebee tracker you need to start by locating the main button. Double press it and hold for 10 seconds. Once you start hearing beeping, wait until you hear a second beep, and release the button before the second beep ends. After the release, the tracker will beep one more time to confirm its disablement.
-      </p>
+      <p>Double press the button, hold for **10 seconds**, release **after second beep**.</p>
 
       <h4>Pebblebee CARD</h4>
-      <p>Main button located at the center of the tracker</p>
-      <img src="/img/track5.png" alt="Pebblebee CARD" className="step-img" />
+      <p>Main button located in the center.</p>
+      <img src="/img/track5.png" alt="Pebblebee CARD" className="tracking-image" />
 
       <h4>Pebblebee ONE</h4>
-      <p>Main button located at the front of the device under the logo</p>
-      <img src="/img/track 8.png" alt="Pebblebee ONE" className="step-img" />
+      <p>Main button located at the front under the logo.</p>
+      <img src="/img/track 8.png" alt="Pebblebee ONE" className="tracking-image" />
 
       <h4>Pebblebee TAG</h4>
-      <p>Main button located at the front of the device under the logo</p>
-      <img src="/img/track9.png" alt="Pebblebee TAG" className="step-img" />
+      <p>Main button located at the front under the logo.</p>
+      <img src="/img/track9.png" alt="Pebblebee TAG" className="tracking-image" />
 
       <h3>Overview:</h3>
-      <p>
-        In terms of tracking through bluetooth, Apple devices can only be tracked using other Apple devices. Apple's official website provides a simple guide on how to locate such devices.
-      </p>
-      <p>Here it is:</p>
-      <p>
-        However sometimes you might not hear the sound right away. In that case if you have an iPhone of a version 11 or higher, you can use a Find Nearby Apple feature. Follow these steps:
-      </p>
+      <p>Apple devices use **Bluetooth tracking**, only detectable by other Apple devices.</p>
 
-      <img src="/img/track6.png" alt="Apple Airtag - Typical appearance" className="step-img" />
-      <img src="/img/track7.png" alt="Find Nearby screen" className="step-img" />
-      <img src="/img/track10.png" alt="Additional appearance of Apple tag" className="step-img" />
+      <h3>Find Nearby Feature (iPhone 11+)</h3>
+     
+      <img src="/img/track6.png" alt="Apple Airtag appearance" className="tracking-image"/>
+      <img src="/img/track7.png" alt="Find Nearby screen" className="tracking-image"/>
+      <img src="/img/track10.png" alt="Apple tag appearance" className="tracking-image"/>
+
+      <div className="tracking-navigation">
+        <button className="back-btn" onClick={() => navigate("/tracking/step2a")}>← Back</button>
+        <button className="next-btn" onClick={() => navigate("/guides")}>Done</button>
+      </div>
 
       <div className="step-controls">
-        <button className="back-btn" onClick={handleBack}>← Back</button>
-        <button className="next-btn" onClick={handleDone}>Done</button>
-        <p>Most likely appearance of the tag:</p>
+        <p><strong>You’ve completed the Apple tracking disable guide!</strong></p>
       </div>
-    </div>
+    </>
   );
-}
+};
+
+export default Tracking2B;
